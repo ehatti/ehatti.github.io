@@ -1,5 +1,6 @@
 ---
 title: Perceived Issues with Interaction Nets
+publish: true
 ---
 
 I really like the idea of interaction nets, which means I'm obligated to learn at least a little about them. It seems to me that they have fundamental issues that make them impractical, so I'll post them here and hope someone can prove me wrong ;)
