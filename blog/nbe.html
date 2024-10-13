@@ -25,15 +25,15 @@ equations, maybe a computer algebra system or something of the sort. For
 starters, you decide to implement a function that decides when two
 expressions are <em>equal</em>. For simplicity, we’re only going to
 allow variables and addition in our expressions. Some examples:</p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>y</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+<p><span class="math display">\[
 z + (x + y) = y + (x + z)
-</annotation></semantics></math></p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">
+\]</span></p>
+<p><span class="math display">\[
 a + (b + c) = c
-</annotation></semantics></math></p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>x</mi><mo>+</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">
+\]</span></p>
+<p><span class="math display">\[
 x = x + y
-</annotation></semantics></math></p>
+\]</span></p>
 <p>Our program will take in a data structure representing these
 expressions as an input, and output a boolean telling us whether the
 expressions are equal or not. For instance on these three examples it
@@ -56,9 +56,9 @@ class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-
 <p>Seems simple enough, we represent our expressions as trees, and
 <code>equal</code> just walks down the tree. This simple program doesn’t
 work though!</p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mi>y</mi><mo>+</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">
+<p><span class="math display">\[
 x + y = y + x
-</annotation></semantics></math></p>
+\]</span></p>
 <p>In the above equation, the algorithm will fail even though the two
 sides of the equation are indeed equal – the algorithm doesn’t deal with
 <em>commutativity</em>.</p>
@@ -80,13 +80,12 @@ class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>Our algorithm now works for the commutativity example. But we’re
 still not done! We need to deal with <em>associativity</em>, the fact
-that
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">x + (y + z) = (x + y) + z</annotation></semantics></math>.
-You probably get the point now – what should be a simple program is
-turning into something very complicated. This is such a simple
-expression language and we’re already running into this issue, imagine
-the explosion of rules there would be once we added nontrivial features
-like negation and multiplication.</p>
+that <span class="math inline">\(x + (y + z) = (x + y) + z\)</span>. You
+probably get the point now – what should be a simple program is turning
+into something very complicated. This is such a simple expression
+language and we’re already running into this issue, imagine the
+explosion of rules there would be once we added nontrivial features like
+negation and multiplication.</p>
 <h2 id="the-solution">The Solution</h2>
 <p>The solution you would probably think of, without ever hearing about
 NbE, is to simplify your data structure. This isn’t even something
@@ -94,13 +93,11 @@ specific to evaluating expressions – everywhere in CS changing your data
 structure is often the first thing you’re recommended to try!</p>
 <p>Let’s first deal with associativity, what changes to our data
 structure can we make? Well in math we deal with associativity by just
-removing parenthesis completely. Instead of writing
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">x + (y + z)</annotation></semantics></math>
-or
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">(x + y) + z</annotation></semantics></math>,
-we just write
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">x + y + z</annotation></semantics></math>.
-Can we reify this practice in our choice of data structure? Yes!</p>
+removing parenthesis completely. Instead of writing <span
+class="math inline">\(x + (y + z)\)</span> or <span
+class="math inline">\((x + y) + z\)</span>, we just write <span
+class="math inline">\(x + y + z\)</span>. Can we reify this practice in
+our choice of data structure? Yes!</p>
 <p>Instead of representing our expressions as trees, we’ll represent
 them as <em>lists</em>. To convert our tree expressions to list
 expressions, we just flatten the trees.</p>
@@ -142,18 +139,18 @@ class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb5-
 <span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="kw">true</span></span>
 <span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>And now our equality function works on these sorts of equations:</p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">
+<p><span class="math display">\[
 x + (y + z) = (x + y) + z
-</annotation></semantics></math></p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>w</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo>+</mo><mi>w</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+\]</span></p>
+<p><span class="math display">\[
 x + ((y + z) + w) = (x + y) + (z + w)
-</annotation></semantics></math></p>
+\]</span></p>
 <p>It will correctly return <code>true</code> on both.</p>
-<p>Now let’s deal with commutativity – the fact that
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mi>y</mi><mo>+</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x + y = y + x</annotation></semantics></math>.
-What’s another simple change to our data structure that will make this
-easy? One solution: We sort the list! The change to our
-<code>equal</code> function is simple:</p>
+<p>Now let’s deal with commutativity – the fact that <span
+class="math inline">\(x + y = y + x\)</span>. What’s another simple
+change to our data structure that will make this easy? One solution: We
+sort the list! The change to our <code>equal</code> function is
+simple:</p>
 <div class="sourceCode" id="cb6"><pre
 class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">equal</span>(x<span class="op">,</span> y) {</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> x <span class="op">=</span> <span class="fu">flatten</span>(x)</span>
