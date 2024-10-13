@@ -74,7 +74,7 @@ Our algorithm now works for the commutativity example. But we're still not done!
 
 ## The Solution
 
-The solution you would probably think of, without ever hearing about NbE, is to simplify your data structure. This isn't even something specific to evaluating expressions -- everywhere in CS changing your data structure if often the first thing you're recommended to try!
+The solution you would probably think of, without ever hearing about NbE, is to simplify your data structure. This isn't even something specific to evaluating expressions -- everywhere in CS changing your data structure is often the first thing you're recommended to try!
 
 Let's first deal with associativity, what changes to our data structure can we make? Well in math we deal with associativity by just removing parenthesis completely. Instead of writing $x + (y + z)$ or $(x + y) + z$, we just write $x + y + z$. Can we reflect this practice in our choice of data structure? Yes!
 
