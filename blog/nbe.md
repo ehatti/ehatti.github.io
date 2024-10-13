@@ -78,7 +78,7 @@ The solution you would probably think of, without ever hearing about NbE, is to 
 
 Let's first deal with associativity, what changes to our data structure can we make? Well in math we deal with associativity by just removing parenthesis completely. Instead of writing $x + (y + z)$ or $(x + y) + z$, we just write $x + y + z$. Can we reflect this practice in our choice of data structure? Yes!
 
-Instead of representing our expressions as trees, we'll represent them as _lists_. To covert our tree expressions to list expressions, we just flatten the trees.
+Instead of representing our expressions as trees, we'll represent them as _lists_. To convert our tree expressions to list expressions, we just flatten the trees.
 ```javascript
 function flatten(expr) {
     if(expr is Var(name)) {
