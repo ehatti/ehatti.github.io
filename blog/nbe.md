@@ -197,9 +197,9 @@ All we've done is split out the steps more cleanly -- we have the `evaluate` fun
 
 In a programming language for instance, we would see these same steps, except that the original data structure is a tree representing _lambda terms_. The evaluation function that partially normalizes these lambda terms into a form that is easy for equality checking and other functions to work with.
 
-A function we did not implement, but that you would probably need, is called **reification**. This function takes the normal form and transforms it back into the original data structure. This would be needed say for instance, if you wanted to print back the expressions to the user. You don't want to expose the gory details of your internal normal form data structure to the user, so you instead expose this "`reify`" function. Here's the code:
+A function we did not implement, but that you would probably need, is called **reflection**. This function takes the normal form and transforms it back into the original data structure. This would be needed say for instance, if you wanted to print back the expressions to the user. You don't want to expose the gory details of your internal normal form data structure to the user, so you instead expose this "`reflect`" function. Here's the code:
 ```javascript
-function reify(x) {
+function reflect(x) {
     var new_x = Var(x[0])
     for(var i = 1; i < x.length; i++) {
         new_x = Add(new_x, x[i])
@@ -207,8 +207,8 @@ function reify(x) {
 }
 ```
 ```javascript
-> reify(["x", "y", "z"])               // x + y + z
-Add(Add(Var("x"), Var("y")), Var("z")) // (x + y) + z
+> reflect(["x", "y", "z"])               // x + y + z
+Add(Add(Var("x"), Var("y")), Var("z"))   // (x + y) + z
 ```
 You could write a better version of this function, but it works well enough.
 

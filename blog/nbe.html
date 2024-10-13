@@ -232,21 +232,21 @@ steps, except that the original data structure is a tree representing
 these lambda terms into a form that is easy for equality checking and
 other functions to work with.</p>
 <p>A function we did not implement, but that you would probably need, is
-called <strong>reification</strong>. This function takes the normal form
+called <strong>reflection</strong>. This function takes the normal form
 and transforms it back into the original data structure. This would be
 needed say for instance, if you wanted to print back the expressions to
 the user. You don’t want to expose the gory details of your internal
 normal form data structure to the user, so you instead expose this
-“<code>reify</code>” function. Here’s the code:</p>
+“<code>reflect</code>” function. Here’s the code:</p>
 <div class="sourceCode" id="cb8"><pre
-class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">reify</span>(x) {</span>
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">reflect</span>(x) {</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> new_x <span class="op">=</span> <span class="fu">Var</span>(x[<span class="dv">0</span>])</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span>(<span class="kw">var</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> x<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        new_x <span class="op">=</span> <span class="fu">Add</span>(new_x<span class="op">,</span> x[i])</span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <div class="sourceCode" id="cb9"><pre
-class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="fu">reify</span>([<span class="st">&quot;x&quot;</span><span class="op">,</span> <span class="st">&quot;y&quot;</span><span class="op">,</span> <span class="st">&quot;z&quot;</span>])               <span class="co">// x + y + z</span></span>
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="fu">reflect</span>([<span class="st">&quot;x&quot;</span><span class="op">,</span> <span class="st">&quot;y&quot;</span><span class="op">,</span> <span class="st">&quot;z&quot;</span>])               <span class="co">// x + y + z</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Add</span>(<span class="fu">Add</span>(<span class="fu">Var</span>(<span class="st">&quot;x&quot;</span>)<span class="op">,</span> <span class="fu">Var</span>(<span class="st">&quot;y&quot;</span>))<span class="op">,</span> <span class="fu">Var</span>(<span class="st">&quot;z&quot;</span>)) <span class="co">// (x + y) + z</span></span></code></pre></div>
 <p>You could write a better version of this function, but it works well
 enough.</p>
