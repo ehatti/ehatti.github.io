@@ -76,7 +76,7 @@ Our algorithm now works for the commutativity example. But we're still not done!
 
 The solution you would probably think of, without ever hearing about NbE, is to simplify your data structure. This isn't even something specific to evaluating expressions -- everywhere in CS changing your data structure is often the first thing you're recommended to try!
 
-Let's first deal with associativity, what changes to our data structure can we make? Well in math we deal with associativity by just removing parenthesis completely. Instead of writing $x + (y + z)$ or $(x + y) + z$, we just write $x + y + z$. Can we reflect this practice in our choice of data structure? Yes!
+Let's first deal with associativity, what changes to our data structure can we make? Well in math we deal with associativity by just removing parenthesis completely. Instead of writing $x + (y + z)$ or $(x + y) + z$, we just write $x + y + z$. Can we reify this practice in our choice of data structure? Yes!
 
 Instead of representing our expressions as trees, we'll represent them as _lists_. To convert our tree expressions to list expressions, we just flatten the trees.
 ```javascript
@@ -197,9 +197,9 @@ All we've done is split out the steps more cleanly -- we have the `evaluate` fun
 
 In a programming language for instance, we would see these same steps, except that the original data structure is a tree representing _lambda terms_. The evaluation function that partially normalizes these lambda terms into a form that is easy for equality checking and other functions to work with.
 
-A function we did not implement, but that you would probably need, is called **reflection**. This function takes the normal form and transforms it back into the original data structure. This would be needed say for instance, if you wanted to print back the expressions to the user. You don't want to expose the gory details of your internal normal form data structure to the user, so you instead expose this "`reflect`" function. Here's the code:
+A function we did not implement, but that you would probably need, is called **reification**. This function takes the normal form and transforms it back into the original data structure. This would be needed say for instance, if you wanted to print back the expressions to the user. You don't want to expose the gory details of your internal normal form data structure to the user, so you instead expose this "`reify`" function. Here's the code:
 ```javascript
-function reflect(x) {
+function reify(x) {
     var new_x = Var(x[0])
     for(var i = 1; i < x.length; i++) {
         new_x = Add(new_x, x[i])
@@ -207,7 +207,7 @@ function reflect(x) {
 }
 ```
 ```javascript
-> reflect(["x", "y", "z"])               // x + y + z
+> reify(["x", "y", "z"])                 // x + y + z
 Add(Add(Var("x"), Var("y")), Var("z"))   // (x + y) + z
 ```
 You could write a better version of this function, but it works well enough.
