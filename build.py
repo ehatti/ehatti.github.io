@@ -9,4 +9,4 @@ os.chdir('blog')
 
 for f in os.listdir():
     f, _ = os.path.splitext(f)
-    proc(f, '../style', '../template')
+    proc(f, '../style', '../blog-template')
