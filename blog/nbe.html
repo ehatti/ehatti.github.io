@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <meta charset="utf-8">
+    <meta name="date" content=''>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+<h1 id="you-could-have-invented-normalization-by-evaluation">You Could
+Have Invented Normalization-by-Evaluation</h1>
+<p>If you’re implement some sort of dependently typed language, you’ve
+probably heard of normalization-by-evaluation, or NbE. Wikipedia
+describes NbE like this:</p>
+<blockquote>
+<p>In programming language semantics, normalisation by evaluation (NBE)
+is a method of obtaining the normal form of terms in the λ-calculus by
+appealing to their denotational semantics.</p>
+</blockquote>
+<p>That probably doesn’t say much to you, so let’s go over it in a more
+practical fashion.</p>
+<h2 id="the-problem">The Problem</h2>
+<p>Let’s say you’re implementing some sort of program that deals with
+equations, maybe a computer algebra system or something of the sort. For
+starters, you decide to implement a function that decides when two
+expressions are <em>equal</em>. For simplicity, we’re only going to
+allow variables and addition in our expressions. Some examples:</p>
+<p><span class="math display">\[
+z + (x + y) = y + (x + z)
+\]</span></p>
+<p><span class="math display">\[
+a + (b + c) = c
+\]</span></p>
+<p><span class="math display">\[
+x = x + y
+\]</span></p>
+<p>Our program will take in a data structure representing these
+expressions as an input, and output a boolean telling us whether the
+expressions are equal or not. For instance on these three examples it
+should output <code>true</code>, <code>false</code>,
+<code>false</code>.</p>
+<p>Let’s go ahead and write out the pseudocode for the algorithm</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">equal</span>(x<span class="op">,</span> y) {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(x is <span class="fu">Add</span>(leftx<span class="op">,</span> rightx)) {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(y is <span class="fu">Add</span>(lefty<span class="op">,</span> righty)) {</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="fu">equal</span>(leftx<span class="op">,</span> lefty) <span class="op">&amp;&amp;</span> <span class="fu">equal</span>(rightx<span class="op">,</span> righty)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span>(x is <span class="fu">Var</span>(namex)) {</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(y is <span class="fu">Var</span>(namey)) {</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> namex <span class="op">==</span> namey</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="kw">false</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Seems simple enough, we represent our expressions as trees, and
+<code>equal</code> just walks down the tree. This simple program doesn’t
+work though!</p>
+<p><span class="math display">\[
+x + y = y + x
+\]</span></p>
+<p>In the above equation, the algorithm will fail even though the two
+sides of the equation are indeed equal – the algorithm doesn’t deal with
+<em>commutativity</em>.</p>
+<p>Simple enough, let’s just add a case into the program for that</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">equal</span>(x<span class="op">,</span> y) {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(x is <span class="fu">Add</span>(leftx<span class="op">,</span> rightx)) {</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(y is <span class="fu">Add</span>(lefty<span class="op">,</span> righty)) {</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>                <span class="fu">equal</span>(leftx<span class="op">,</span> lefty) <span class="op">&amp;&amp;</span> <span class="fu">equal</span>(rightx<span class="op">,</span> righty) <span class="op">||</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>                <span class="fu">equal</span>(leftx<span class="op">,</span> righty) <span class="op">&amp;&amp;</span> <span class="fu">equal</span>(lefty<span class="op">,</span> rightx)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span>(x is <span class="fu">Var</span>(namex)) {</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(y is <span class="fu">Var</span>(namey)) {</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> namex <span class="op">==</span> namey</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="kw">false</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Our algorithm now works for the commutativity example. But we’re
+still not done! We need to deal with <em>associativity</em>, the fact
+that <span class="math inline">\(x + (y + z) = (x + y) + z\)</span>. You
+probably get the point now – what should be a simple program is turning
+into something very complicated. This is such a simple expression
+language and we’re already running into this issue, imagine the
+explosion of rules there would be once we added nontrivial features like
+negation and multiplication.</p>
+<h2 id="the-solution">The Solution</h2>
+<p>The solution you would probably think of, without ever hearing about
+NbE, is to simplify your data structure. This isn’t even something
+specific to evaluating expressions – everywhere in CS changing your data
+structure if often the first thing you’re recommended to try!</p>
+<p>Let’s first deal with associativity, what changes to our data
+structure can we make? Well in math we deal with associativity by just
+removing parenthesis completely. Instead of writing <span
+class="math inline">\(x + (y + z)\)</span> or <span
+class="math inline">\((x + y) + z\)</span>, we just write <span
+class="math inline">\(x + y + z\)</span>. Can we reflect this practice
+in our choice of data structure? Yes!</p>
+<p>Instead of representing our expressions as trees, we’ll represent
+them as <em>lists</em>. To covert our tree expressions to list
+expressions, we just flatten the trees.</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">flatten</span>(expr) {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(expr is <span class="fu">Var</span>(name)) {</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> [name]</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span>(expr is <span class="fu">Add</span>(x<span class="op">,</span> y)) {</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fu">flatten</span>(x) <span class="op">++</span> <span class="fu">flatten</span>(y)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Some examples at a REPL:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="fu">flatten</span>(<span class="fu">Add</span>(<span class="fu">Var</span>(<span class="st">&quot;x&quot;</span>)<span class="op">,</span> <span class="fu">Var</span>(<span class="st">&quot;y&quot;</span>)))                <span class="co">// x + y</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>[<span class="st">&quot;x&quot;</span><span class="op">,</span> <span class="st">&quot;y&quot;</span>]                                        <span class="co">// x + y</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="fu">flatten</span>(<span class="fu">Add</span>(<span class="fu">Var</span>(<span class="st">&quot;x&quot;</span>)<span class="op">,</span> <span class="fu">Add</span>(<span class="fu">Var</span>(<span class="st">&quot;y&quot;</span>)<span class="op">,</span> <span class="fu">Var</span>(<span class="st">&quot;z&quot;</span>)))) <span class="co">// x + (y + z)</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>[<span class="st">&quot;x&quot;</span><span class="op">,</span> <span class="st">&quot;y&quot;</span><span class="op">,</span> <span class="st">&quot;z&quot;</span>]                                   <span class="co">// x + y + z</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="fu">flatten</span>(<span class="fu">Add</span>(<span class="fu">Add</span>(<span class="fu">Var</span>(<span class="st">&quot;x&quot;</span>)<span class="op">,</span> <span class="fu">Var</span>(<span class="st">&quot;y&quot;</span>))<span class="op">,</span> <span class="fu">Var</span>(<span class="st">&quot;z&quot;</span>))) <span class="co">// (x + y) + z</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>[<span class="st">&quot;x&quot;</span><span class="op">,</span> <span class="st">&quot;y&quot;</span><span class="op">,</span> <span class="st">&quot;z&quot;</span>]                                   <span class="co">// x + y + z</span></span></code></pre></div>
+<p>Now our equality function works with these list-based expressions
+instead of the tree-based expressions. Much simpler!</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">equal</span>(x<span class="op">,</span> y) {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> x <span class="op">=</span> <span class="fu">flatten</span>(x)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> y <span class="op">=</span> <span class="fu">flatten</span>(y)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(x<span class="op">.</span><span class="at">length</span> <span class="op">!=</span> y<span class="op">.</span><span class="at">length</span>) {</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        <span class="co">// expressions have different number of variables</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        <span class="co">// so we can say they&#39;re not equal</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="kw">false</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        <span class="co">// expressions have same number of variables</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        <span class="co">// so we compare each variable</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span>(<span class="kw">var</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> x<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span>(x[i] <span class="op">!=</span> y[i]) {</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>                <span class="cf">return</span> <span class="kw">false</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="kw">true</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>And now our equality function works on these sorts of equations:</p>
+<p><span class="math display">\[
+x + (y + z) = (x + y) + z
+\]</span></p>
+<p><span class="math display">\[
+x + ((y + z) + w) = (x + y) + (z + w)
+\]</span></p>
+<p>It will correctly return <code>true</code> on both.</p>
+<p>Now let’s deal with commutativity – the fact that <span
+class="math inline">\(x + y = y + x\)</span>. What’s another simple
+change to our data structure that will make this easy? One solution: We
+sort the list! The change to our <code>equal</code> function is
+simple:</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">equal</span>(x<span class="op">,</span> y) {</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> x <span class="op">=</span> <span class="fu">flatten</span>(x)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    x<span class="op">.</span><span class="fu">sort</span>() <span class="co">// add call to sort</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> y <span class="op">=</span> <span class="fu">flatten</span>(y)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    y<span class="op">.</span><span class="fu">sort</span>() <span class="co">// add call to sort</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(x<span class="op">.</span><span class="at">length</span> <span class="op">!=</span> y<span class="op">.</span><span class="at">length</span>) {</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="co">// expressions have different number of variables</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        <span class="co">// so we can say they&#39;re not equal</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="kw">false</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="co">// expressions have same number of variables</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="co">// so we compare each variable</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span>(<span class="kw">var</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> x<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span>(x[i] <span class="op">!=</span> y[i]) {</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>                <span class="cf">return</span> <span class="kw">false</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="kw">true</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Our code now correctly decides equality of expressions with addition,
+and obeys the associative and commutative laws correctly. All in very
+simple program! If you’re ever done this sort of thing – adding a
+preprocessing step to your expression or program data structure to make
+some function easier to implement – then you’ve essentially done
+NbE.</p>
+<h2 id="nbe-in-practice">NbE in Practice</h2>
+<p>Congratulations! You just reinvented NbE. NbE <em>in practice</em> is
+just this – adding a preprocessing step in between your data structure
+and your function that <em>transforms</em> the original data structure
+into a new one, where the new one is easier for the function to work
+with. This intermediate data structure is called a <strong>normal
+form</strong>, and the preprocessing step is called
+<strong>evaluation</strong>. A person more familiar with the standard
+practice of NbE would have reorganized our code into this shape:</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">flatten</span>(expr) {</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(expr is <span class="fu">Var</span>(name)) {</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> [name]</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span>(expr is <span class="fu">Add</span>(x<span class="op">,</span> y)) {</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fu">flatten</span>(x) <span class="op">++</span> <span class="fu">flatten</span>(y)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">evaluate</span>(expr) {</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> flat_expr <span class="op">=</span> <span class="fu">flatten</span>(expr)<span class="op">;</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    flat_expr<span class="op">.</span><span class="fu">sort</span>()<span class="op">;</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> flat_expr<span class="op">;</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">equalAux</span>(x<span class="op">,</span> y) {</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(x<span class="op">.</span><span class="at">length</span> <span class="op">!=</span> y<span class="op">.</span><span class="at">length</span>) {</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="kw">false</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span>(<span class="kw">var</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> x<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span>(x[i] <span class="op">!=</span> y[i]) {</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>                <span class="cf">return</span> <span class="kw">false</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="kw">true</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">equal</span>(x<span class="op">,</span> y) {</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">equalAux</span>(<span class="fu">evaluate</span>(x)<span class="op">,</span> <span class="fu">evaluate</span>(y))</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>All we’ve done is split out the steps more cleanly – we have the
+<code>evaluate</code> function that transforms our original data
+structure into our normal form (lists of sorted variables), we have an
+<code>equalAux</code> function that works with our normal form, and we
+have the <code>equal</code> runner function that combines all these
+steps.</p>
+<p>In a programming language for instance, we would see these same
+steps, except that the original data structure is a tree representing
+<em>lambda terms</em>. The evaluation function that partially normalizes
+these lambda terms into a form that is easy for equality checking and
+other functions to work with.</p>
+<p>A function we did not implement, but that you would probably need, is
+called <strong>reification</strong>. This function takes the normal form
+and transforms it back into the original data structure. This would be
+needed say for instance, if you wanted to print back the expressions to
+the user. You don’t want to expose the gory details of your internal
+normal form data structure to the user, so you instead expose this
+“<code>reify</code>” function. Here’s the code:</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">reify</span>(x) {</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> new_x <span class="op">=</span> <span class="fu">Var</span>(x[<span class="dv">0</span>])</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span>(<span class="kw">var</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> x<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        new_x <span class="op">=</span> <span class="fu">Add</span>(new_x<span class="op">,</span> x[i])</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="fu">reify</span>([<span class="st">&quot;x&quot;</span><span class="op">,</span> <span class="st">&quot;y&quot;</span><span class="op">,</span> <span class="st">&quot;z&quot;</span>])               <span class="co">// x + y + z</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Add</span>(<span class="fu">Add</span>(<span class="fu">Var</span>(<span class="st">&quot;x&quot;</span>)<span class="op">,</span> <span class="fu">Var</span>(<span class="st">&quot;y&quot;</span>))<span class="op">,</span> <span class="fu">Var</span>(<span class="st">&quot;z&quot;</span>)) <span class="co">// (x + y) + z</span></span></code></pre></div>
+<p>You could write a better version of this function, but it works well
+enough.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Anyway, in conclusion, you could have invented NbE! It’s a fairly
+simple technique that just happens to have some domain-specific
+terminology around it because of the theory it is founded in. I won’t go
+over the theory here, but maybe I will in a future post. Bye!</p>
+  </body>
+</html>
