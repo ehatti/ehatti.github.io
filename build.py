@@ -1,7 +1,7 @@
 import os
 
 def proc(path, style, template):
-    os.system(f'pandoc --standalone --mathjax --metadata style-path="{style}.css" --template {template}.html {path}.md -o {path}.html')
+    os.system(f'pandoc --standalone --mathml --metadata style-path="{style}.css" --template {template}.html {path}.md -o {path}.html')
 
 proc('index', 'style', 'template')
 
