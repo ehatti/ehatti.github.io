@@ -11,9 +11,9 @@ This post only covers NbE from the _implementation_ perspective. The original fo
 
 ## Introduction
 
-If you're implement some sort of dependently typed language, you've probably heard of normalization-by-evaluation, or NbE. Wikipedia describes NbE like this:
+If you're implementing some sort of dependently typed language, you've probably heard of normalization-by-evaluation, or NbE. Wikipedia describes NbE like this:
 
-> In programming language semantics, normalisation by evaluation (NBE) is a method of obtaining the normal form of terms in the λ-calculus by appealing to their denotational semantics.
+> In programming language semantics, normalization by evaluation (NBE) is a method of obtaining the normal form of terms in the λ-calculus by appealing to their denotational semantics.
 
 That probably doesn't say much to you, so let's go over it in a more practical fashion.
 
