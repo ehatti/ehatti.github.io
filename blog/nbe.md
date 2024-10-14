@@ -2,6 +2,15 @@
 title: You Could Have Invented Normalization-by-Evaluation
 date: October 13, 2024
 ---
+
+### Author's Note
+
+This post only covers NbE from the _implementation_ perspective. The original formulation of NbE is a _proof technique_ used for properties of programming languages, and this use of NbE in implementation settings was derived from that. If you're interested, check out [Andreas Abel's habilitation](https://www.cse.chalmers.se/~abela/habil.pdf) for a comprehensive rundown of NbE as a proof technique.
+
+---
+
+## Introduction
+
 If you're implement some sort of dependently typed language, you've probably heard of normalization-by-evaluation, or NbE. Wikipedia describes NbE like this:
 
 > In programming language semantics, normalisation by evaluation (NBE) is a method of obtaining the normal form of terms in the λ-calculus by appealing to their denotational semantics.
@@ -157,7 +166,9 @@ Our code now correctly decides equality of expressions with addition, and obeys 
 
 ## NbE in Practice
 
-Congratulations! You just reinvented NbE. NbE _in practice_ is just this -- adding a preprocessing step in between your data structure and your function that _transforms_ the original data structure into a new one, where the new one is easier for the function to work with. This intermediate data structure is called a **normal form**, and the preprocessing step is called **evaluation**. A person more familiar with the standard practice of NbE would have reorganized our code into this shape:
+Congratulations! You just reinvented NbE. This is the meat of NbE -- adding a preprocessing step in between your data structure and your function that _transforms_ the original data structure into a new one, where the new one is easier for the function to work with. This intermediate data structure is called a **normal form**, and the preprocessing step is called **evaluation**.
+
+Anyway, a person more familiar with the standard practice of NbE would have reorganized our code into this shape:
 ```javascript
 function flatten(expr) {
     if(expr is Var(name)) {

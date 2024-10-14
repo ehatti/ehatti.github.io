@@ -14,6 +14,17 @@
   <em>By Eashan Hatti</em>
   <hr>
   <body>
+<h3 id="authors-note">Author’s Note</h3>
+<p>This post only covers NbE from the <em>implementation</em>
+perspective. The original formulation of NbE is a <em>proof
+technique</em> used for properties of programming languages, and this
+use of NbE in implementation settings was derived from that. If you’re
+interested, check out <a
+href="https://www.cse.chalmers.se/~abela/habil.pdf">Andreas Abel’s
+habilitation</a> for a comprehensive rundown of NbE as a proof
+technique.</p>
+<hr />
+<h2 id="introduction">Introduction</h2>
 <p>If you’re implement some sort of dependently typed language, you’ve
 probably heard of normalization-by-evaluation, or NbE. Wikipedia
 describes NbE like this:</p>
@@ -184,14 +195,14 @@ preprocessing step to your expression or program data structure to make
 some function easier to implement – then you’ve essentially done
 NbE.</p>
 <h2 id="nbe-in-practice">NbE in Practice</h2>
-<p>Congratulations! You just reinvented NbE. NbE <em>in practice</em> is
-just this – adding a preprocessing step in between your data structure
-and your function that <em>transforms</em> the original data structure
-into a new one, where the new one is easier for the function to work
-with. This intermediate data structure is called a <strong>normal
-form</strong>, and the preprocessing step is called
-<strong>evaluation</strong>. A person more familiar with the standard
-practice of NbE would have reorganized our code into this shape:</p>
+<p>Congratulations! You just reinvented NbE. This is the meat of NbE –
+adding a preprocessing step in between your data structure and your
+function that <em>transforms</em> the original data structure into a new
+one, where the new one is easier for the function to work with. This
+intermediate data structure is called a <strong>normal form</strong>,
+and the preprocessing step is called <strong>evaluation</strong>.</p>
+<p>Anyway, a person more familiar with the standard practice of NbE
+would have reorganized our code into this shape:</p>
 <div class="sourceCode" id="cb7"><pre
 class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">flatten</span>(expr) {</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(expr is <span class="fu">Var</span>(name)) {</span>
