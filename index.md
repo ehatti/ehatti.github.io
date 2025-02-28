@@ -7,6 +7,7 @@ Hello! My name is Eashan Hatti, and I'm currently a CS undergrad at Yale Univers
 
 **Blogposts**:
 
+- [Perceived Issues with Interaction Nets](blog/inets-issues.html)
 - [You Could Have Invented Normalization-by-Evaluation](blog/nbe.html)
 
 **Projects**:

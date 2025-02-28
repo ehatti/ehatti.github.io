@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <meta charset="utf-8">
+    <meta name="date" content='2025-02-27'>
+    <link rel="stylesheet" href="../style.css">
+    <title>Perceived Issues with Interaction Nets</title>
+  </head>
+  <h3><a href="../index.html" style="color: inherit; ">Homepage</a></h3>
+  <h1>Perceived Issues with Interaction Nets</h1>
+  <em>Last updated February 27, 2025</em>
+  <br>
+  <em>By Eashan Hatti</em>
+  <hr>
+  <body>
+<p>I really like the idea of interaction nets, which means I’m obligated
+to learn at least a little about them. It seems to me that they have
+fundamental issues that make them impractical, so I’ll post them here
+and hope someone can prove me wrong ;-)</p>
+<p>Interaction nets are seen as promising for huge performance gains
+because of two things:</p>
+<ol type="1">
+<li>They allow for optimal evaluation</li>
+<li>They allow for massive parallelism</li>
+</ol>
+<p>Let’s work through the two and find the issues.</p>
+<h2 id="optimal-evaluation-optimal-performance">Optimal Evaluation ≠
+Optimal Performance</h2>
+<p>Interaction nets are said to allow for optimal evaluation. The first
+thing we have to do is actually define this, because it does not mean
+“optimal performance”. Optimal evaluation refers to the very specific
+concept of work – work is time spent performing a computation. If
+evaluation is optimal, multiple computations that produce the same
+result will not be evaluated multiple times – the results will be shared
+between all of the computations so that they don’t have to repeat a
+task. The problem is that you gain this optimal time complexity in
+exchange for horrible space complexity, the brackets and croissants used
+to implement the “bookkeeping” that higher-order sharing requires can
+build up and result in exponential memory consumption.</p>
+<p>Alright, so interaction nets inherently require enormous space
+blowups, but what if we just say that’s fine? We have huge amounts of
+memory at our disposal and we can probably employ some dumb
+optimizations to make the space consumption at least manageable. The
+problem here becomes that the optimal evaluation that interaction nets
+give us just isn’t that useful in the first place.</p>
+<p>Let’s add some nuance to the first paragraph, when do we actually
+need optimal evaluation? We need it whenever we have lambdas – any sort
+of higher-order terms. The problem that interaction nets really solve is
+sharing under lambdas. Languages such as Haskell already do a lot of
+sharing! Computations are memoised and so only performed once, except
+for one main case: Namely, when they are inside a function – function
+bodies have to be duplicated. Interaction nets do not have this issue,
+and so achieve optimal sharing.</p>
+<p>The problem with this is a very concrete one – in practice, the
+performance gains of interaction nets just don’t match up to the
+traditional optimizations we have for functions. The place interaction
+nets start to really show massive performance gains is in massively
+higher order programs, the kinds of programs you only get if you use
+stuff like Church encodings, and these higher order programs appear very
+rarely in practice. Because of this, the theoretical performance gains
+of interaction nets never have a chance to actually be realized.</p>
+<p>In practice, you don’t want to optimally evaluate stuff like basic
+addition. You can get much higher performance by just using native
+integers and machine instructions. And the more and more you do this,
+the less and less you exploit the actual benefits of interaction
+nets.</p>
+<h2 id="applicability-of-massive-parallelism">Applicability of Massive
+Parallelism</h2>
+<p>The second benefit of interaction nets that people tout is massive
+parallelism. There are some easy criticisms of this that I’ll start
+with, namely that CPUs just can’t exploit this property of interaction
+nets because they don’t have enough cores. So of course, you move to
+GPUs and FGPAs, but by doing that you’re limiting the applicability of
+interaction nets – you can’t use them for as many tasks because they
+have to be used on specialized hardware.</p>
+<p>But an even more fundamental thing here is that we can already
+realize this massive parallelism in more traditional languages. The
+lambda calculus already can be massively parallelized to somewhat the
+same effect as interaction nets, see Futhark. The advantage of
+interaction nets is that fundamentally <em>every</em> computation can be
+parallelized, but we run into the same issue as with optimal evaluation
+– that the kinds of workloads that that property benefits just don’t
+appear in practice, and the bookkeeping runtime costs of doing all that
+parallelism offset the potential gains.</p>
+<hr />
+<p><strong>TL;DR</strong>: Interaction nets allow us to parallelize and
+compute optimally on the most fine-grained levels possible, but the
+space/hardware overhead of doing that means that all but the most
+utterly massive computations end up being slower in practice as opposed
+to traditional methods.</p>
+<script src="https://utteranc.es/client.js"
+        repo="ehatti/ehatti.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+  </body>
+</html>
