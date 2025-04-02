@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>402</fr:anchor>
+    <fr:anchor>403</fr:anchor>
     <fr:addr type="user">mltt-pi-rules</fr:addr>
     <fr:route>mltt-pi-rules.xml</fr:route>
     <fr:title text="Rules for Pi Types in MLTT">Rules for Pi Types in MLTT</fr:title>
@@ -26,7 +26,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>403</fr:anchor>
+            <fr:anchor>404</fr:anchor>
             <fr:addr type="user">mltt-disc</fr:addr>
             <fr:route>mltt-disc.xml</fr:route>
             <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
@@ -44,7 +44,7 @@
                 <fr:authors />
               </fr:frontmatter>
               <fr:mainmatter>
-                <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as formal systems consisting of the following four judgements.
+                <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">formal systems</fr:link> over the following four judgements.
   <fr:ul><fr:li><fr:tex display="inline"><![CDATA[A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type.</fr:li>
     <fr:li><fr:tex display="inline"><![CDATA[A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types.</fr:li>
     <fr:li><fr:tex display="inline"><![CDATA[s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li>
@@ -105,7 +105,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>404</fr:anchor>
+            <fr:anchor>405</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>

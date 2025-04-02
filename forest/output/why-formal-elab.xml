@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>453</fr:anchor>
+    <fr:anchor>455</fr:anchor>
     <fr:addr type="user">why-formal-elab</fr:addr>
     <fr:route>why-formal-elab.xml</fr:route>
     <fr:title text="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:title>
@@ -23,7 +23,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>454</fr:anchor>
+            <fr:anchor>456</fr:anchor>
             <fr:addr type="user">elaboration-formal</fr:addr>
             <fr:route>elaboration-formal.xml</fr:route>
             <fr:title text="Elaboration, Formally">Elaboration, Formally</fr:title>
@@ -62,7 +62,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>455</fr:anchor>
+            <fr:anchor>457</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>
@@ -121,7 +121,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>456</fr:anchor>
+            <fr:anchor>458</fr:anchor>
             <fr:addr type="user">proof-assistant-explosion</fr:addr>
             <fr:route>proof-assistant-explosion.xml</fr:route>
             <fr:title text="Constructing Proof Assistants">Constructing Proof Assistants</fr:title>

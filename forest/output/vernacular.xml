@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>446</fr:anchor>
+    <fr:anchor>448</fr:anchor>
     <fr:addr type="user">vernacular</fr:addr>
     <fr:route>vernacular.xml</fr:route>
     <fr:title text="Vernacular Languages">Vernacular Languages</fr:title>
@@ -21,7 +21,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>447</fr:anchor>
+            <fr:anchor>449</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>
@@ -71,7 +71,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>448</fr:anchor>
+            <fr:anchor>450</fr:anchor>
             <fr:addr type="user">elaboration-intuition</fr:addr>
             <fr:route>elaboration-intuition.xml</fr:route>
             <fr:title text="Elaboration, Intuitively">Elaboration, Intuitively</fr:title>
@@ -89,7 +89,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>449</fr:anchor>
+            <fr:anchor>451</fr:anchor>
             <fr:addr type="user">tactics</fr:addr>
             <fr:route>tactics.xml</fr:route>
             <fr:title text="Tactics">Tactics</fr:title>
@@ -115,7 +115,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>450</fr:anchor>
+            <fr:anchor>452</fr:anchor>
             <fr:addr type="user">elaboration</fr:addr>
             <fr:route>elaboration.xml</fr:route>
             <fr:title text="Elaboration">Elaboration</fr:title>
@@ -192,7 +192,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>451</fr:anchor>
+            <fr:anchor>453</fr:anchor>
             <fr:addr type="user">kernel</fr:addr>
             <fr:route>kernel.xml</fr:route>
             <fr:title text="Kernel Languages">Kernel Languages</fr:title>
@@ -206,7 +206,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>452</fr:anchor>
+            <fr:anchor>454</fr:anchor>
             <fr:addr type="user">tactics</fr:addr>
             <fr:route>tactics.xml</fr:route>
             <fr:title text="Tactics">Tactics</fr:title>

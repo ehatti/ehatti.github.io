@@ -10,7 +10,7 @@
     <fr:authors />
   </fr:frontmatter>
   <fr:mainmatter>
-    <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as formal systems consisting of the following four judgements.
+    <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">formal systems</fr:link> over the following four judgements.
   <fr:ul><fr:li><fr:tex display="inline"><![CDATA[A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type.</fr:li>
     <fr:li><fr:tex display="inline"><![CDATA[A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types.</fr:li>
     <fr:li><fr:tex display="inline"><![CDATA[s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li>
@@ -43,7 +43,7 @@
                 <fr:authors />
               </fr:frontmatter>
               <fr:mainmatter>
-                <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as formal systems consisting of the following four judgements.
+                <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">formal systems</fr:link> over the following four judgements.
   <fr:ul><fr:li><fr:tex display="inline"><![CDATA[A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type.</fr:li>
     <fr:li><fr:tex display="inline"><![CDATA[A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types.</fr:li>
     <fr:li><fr:tex display="inline"><![CDATA[s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li>
@@ -183,6 +183,20 @@
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
             <fr:anchor>391</fr:anchor>
+            <fr:addr type="user">first-order-theory</fr:addr>
+            <fr:route>first-order-theory.xml</fr:route>
+            <fr:title text="Theories">Theories</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>A theory over a <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">signature</fr:link> <fr:tex display="inline"><![CDATA[E]]></fr:tex> is merely a set of <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">judgements</fr:link> over <fr:tex display="inline"><![CDATA[E]]></fr:tex>.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>392</fr:anchor>
             <fr:addr type="user">type-theory</fr:addr>
             <fr:route>type-theory.xml</fr:route>
             <fr:title text="Type Theory">Type Theory</fr:title>
@@ -211,7 +225,7 @@
                     <fr:authors />
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as formal systems consisting of the following four judgements.
+                    <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">formal systems</fr:link> over the following four judgements.
   <fr:ul><fr:li><fr:tex display="inline"><![CDATA[A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type.</fr:li>
     <fr:li><fr:tex display="inline"><![CDATA[A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types.</fr:li>
     <fr:li><fr:tex display="inline"><![CDATA[s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li>

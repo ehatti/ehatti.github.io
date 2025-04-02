@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>413</fr:anchor>
+    <fr:anchor>414</fr:anchor>
     <fr:addr type="user">string-rewrite-system</fr:addr>
     <fr:route>string-rewrite-system.xml</fr:route>
     <fr:title text="String Rewrite System">String Rewrite System</fr:title>
@@ -21,7 +21,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>414</fr:anchor>
+            <fr:anchor>415</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>
@@ -71,7 +71,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>415</fr:anchor>
+            <fr:anchor>416</fr:anchor>
             <fr:addr type="user">srs-eager</fr:addr>
             <fr:route>srs-eager.xml</fr:route>
             <fr:title text="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:title>
@@ -85,7 +85,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>416</fr:anchor>
+            <fr:anchor>417</fr:anchor>
             <fr:addr type="user">srs-eager-is-eager</fr:addr>
             <fr:route>srs-eager-is-eager.xml</fr:route>
             <fr:title text="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:title>
@@ -100,7 +100,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>417</fr:anchor>
+            <fr:anchor>418</fr:anchor>
             <fr:addr type="user">srs-eager-prop</fr:addr>
             <fr:route>srs-eager-prop.xml</fr:route>
             <fr:title text="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:title>
@@ -115,7 +115,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>418</fr:anchor>
+            <fr:anchor>419</fr:anchor>
             <fr:addr type="user">srs-eager-twice-noop</fr:addr>
             <fr:route>srs-eager-twice-noop.xml</fr:route>
             <fr:title text="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:title>

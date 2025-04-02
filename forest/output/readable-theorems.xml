@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>405</fr:anchor>
+    <fr:anchor>406</fr:anchor>
     <fr:addr type="user">readable-theorems</fr:addr>
     <fr:route>readable-theorems.xml</fr:route>
     <fr:title text="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:title>
@@ -25,7 +25,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>406</fr:anchor>
+            <fr:anchor>407</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>
@@ -84,7 +84,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>407</fr:anchor>
+            <fr:anchor>408</fr:anchor>
             <fr:addr type="user">elaboration</fr:addr>
             <fr:route>elaboration.xml</fr:route>
             <fr:title text="Elaboration">Elaboration</fr:title>
@@ -161,7 +161,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>408</fr:anchor>
+            <fr:anchor>409</fr:anchor>
             <fr:addr type="user">kernel</fr:addr>
             <fr:route>kernel.xml</fr:route>
             <fr:title text="Kernel Languages">Kernel Languages</fr:title>

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>424</fr:anchor>
+    <fr:anchor>425</fr:anchor>
     <fr:addr type="user">first-order-theory</fr:addr>
     <fr:route>first-order-theory.xml</fr:route>
     <fr:title text="Theories">Theories</fr:title>
@@ -21,7 +21,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>425</fr:anchor>
+            <fr:anchor>426</fr:anchor>
             <fr:addr type="user">admissible-rule</fr:addr>
             <fr:route>admissible-rule.xml</fr:route>
             <fr:title text="Admissible Rules">Admissible Rules</fr:title>
@@ -35,7 +35,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>426</fr:anchor>
+            <fr:anchor>427</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>
@@ -85,34 +85,6 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>427</fr:anchor>
-            <fr:addr type="user">judgement</fr:addr>
-            <fr:route>judgement.xml</fr:route>
-            <fr:title text="Judgements">Judgements</fr:title>
-            <fr:taxon>Definition</fr:taxon>
-            <fr:authors />
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:p>The <fr:em>judgements</fr:em> over a <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">signature</fr:link> <fr:tex display="inline"><![CDATA[E]]></fr:tex> are defined as follows.
-  <fr:tex display="block"><![CDATA[     \mathcal {J} :=       \mathcal {R}(\overline {e}) \,\, | \,\,       \{x\} \, \mathcal {J} \,\, | \,\,       \mathcal {J} \vdash  \mathcal {J}   ]]></fr:tex>
-  The proof rules for judgements are then straightfoward.
-  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\mathcal {R}(\overline {e})]]></fr:tex>: Supplied by the background <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">theory</fr:link></fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\{x\} \, \mathcal {J}]]></fr:tex>: Generalization and specialization</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\mathcal {H} \vdash  \mathcal {J}]]></fr:tex>: Abstraction and application</fr:li></fr:ul></fr:p>
-          </fr:mainmatter>
-          <fr:backmatter />
-        </fr:tree>
-      </fr:mainmatter>
-      <fr:backmatter />
-    </fr:tree>
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-      <fr:frontmatter>
-        <fr:title text="Related">Related</fr:title>
-        <fr:authors />
-      </fr:frontmatter>
-      <fr:mainmatter>
-        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-          <fr:frontmatter>
             <fr:anchor>428</fr:anchor>
             <fr:addr type="user">judgement</fr:addr>
             <fr:route>judgement.xml</fr:route>
@@ -133,6 +105,52 @@
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
             <fr:anchor>429</fr:anchor>
+            <fr:addr type="user">mltt</fr:addr>
+            <fr:route>mltt.xml</fr:route>
+            <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">formal systems</fr:link> over the following four judgements.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li></fr:ul></fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Related">Related</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>430</fr:anchor>
+            <fr:addr type="user">judgement</fr:addr>
+            <fr:route>judgement.xml</fr:route>
+            <fr:title text="Judgements">Judgements</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>The <fr:em>judgements</fr:em> over a <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">signature</fr:link> <fr:tex display="inline"><![CDATA[E]]></fr:tex> are defined as follows.
+  <fr:tex display="block"><![CDATA[     \mathcal {J} :=       \mathcal {R}(\overline {e}) \,\, | \,\,       \{x\} \, \mathcal {J} \,\, | \,\,       \mathcal {J} \vdash  \mathcal {J}   ]]></fr:tex>
+  The proof rules for judgements are then straightfoward.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\mathcal {R}(\overline {e})]]></fr:tex>: Supplied by the background <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">theory</fr:link></fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\{x\} \, \mathcal {J}]]></fr:tex>: Generalization and specialization</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\mathcal {H} \vdash  \mathcal {J}]]></fr:tex>: Abstraction and application</fr:li></fr:ul></fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>431</fr:anchor>
             <fr:addr type="user">signature</fr:addr>
             <fr:route>signature.xml</fr:route>
             <fr:title text="Signatures">Signatures</fr:title>
