@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>273</fr:anchor>
+    <fr:addr type="user">work-0008</fr:addr>
+    <fr:route>work-0008.xml</fr:route>
+    <fr:title text="MLTT">MLTT</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>31</fr:day>
+    </fr:date>
+    <fr:authors />
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p>An MLTT is a <fr:link type="local" href="work-0009.xml" addr="work-0009" title="Theories">theory</fr:link> over the following <fr:link type="local" href="work-0006.xml" addr="work-0006" title="First-Order Signatures">first-order signature</fr:link>.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[       \mathcal {C} = \{         \text {Ty}, \text {Tm}       \}     ]]></fr:tex></fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[       \mathcal {R} = \{         - : -,         - \, \text {type},         - \equiv  - \, \text {type}       \}     ]]></fr:tex></fr:li></fr:ul>
+  TODO: fill the rest of this out, talk about extending the signature to term equality?</fr:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Related">Related</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>274</fr:anchor>
+            <fr:addr type="user">work-0006</fr:addr>
+            <fr:route>work-0006.xml</fr:route>
+            <fr:title text="First-Order Signatures">First-Order Signatures</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>31</fr:day>
+            </fr:date>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>A first-order signature <fr:tex display="inline"><![CDATA[E]]></fr:tex> is a tuple <fr:tex display="inline"><![CDATA[(\mathcal {C}, \mathcal {R}, \sigma , \mathcal {F}, \alpha )]]></fr:tex>, where
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is the set of syntax classes</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\mathcal {R}]]></fr:tex> is the set of relation symbols</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex> assigns relation symbols to <fr:link type="local" href="work-0007.xml" addr="work-0007" title="First-Order Arities">arities</fr:link></fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\mathcal {F}]]></fr:tex> is the set of function symbols</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\alpha ]]></fr:tex> assigns function symbols to <fr:link type="local" href="work-0007.xml" addr="work-0007" title="First-Order Arities">arities</fr:link></fr:li></fr:ul></fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>275</fr:anchor>
+            <fr:addr type="user">work-0009</fr:addr>
+            <fr:route>work-0009.xml</fr:route>
+            <fr:title text="Theories">Theories</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>31</fr:day>
+            </fr:date>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>A <fr:em>theory</fr:em> is a set of <fr:link type="local" href="work-0001.xml" addr="work-0001" title="Judgement Calculi">judgements</fr:link> over a <fr:link type="local" href="work-0006.xml" addr="work-0006" title="First-Order Signatures">first-order signature</fr:link>.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

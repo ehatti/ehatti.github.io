@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>364</fr:anchor>
+    <fr:addr type="user">srs-eager-twice-noop</fr:addr>
+    <fr:route>srs-eager-twice-noop.xml</fr:route>
+    <fr:title text="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:title>
+    <fr:taxon>Theorem</fr:taxon>
+    <fr:authors />
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p>Given a <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">string rewrite system</fr:link>, the following holds of <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">eager evaluation</fr:link>.</fr:p>
+    <fr:tex display="block"><![CDATA[   \frac {    }{     \textbf {norm}(x \cdot  y \cdot  z) = \textbf {norm}(x \cdot  \textbf {norm}(y \cdot  z))   } ]]></fr:tex>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Context">Context</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>365</fr:anchor>
+            <fr:addr type="user">srs-eager-prop-proof</fr:addr>
+            <fr:route>srs-eager-prop-proof.xml</fr:route>
+            <fr:title text="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:title>
+            <fr:taxon>Proof</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>287</fr:anchor>
+                <fr:addr type="user">srs-eager-prop</fr:addr>
+                <fr:route>srs-eager-prop.xml</fr:route>
+                <fr:title text="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:title>
+                <fr:taxon>Theorem</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Given a <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">string rewrite system</fr:link>, the following holds of <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">eager evaluation</fr:link>.</fr:p>
+                <fr:tex display="block"><![CDATA[   \frac {     s \rightsquigarrow  t   }{     \textbf {norm}(l \cdot  s \cdot  r) = \textbf {norm}(l \cdot  t \cdot  r)   } ]]></fr:tex>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:p>We want to prove that, given a string rewrite system, <fr:link type="local" href="srs-eager-prop.xml" addr="srs-eager-prop" title="Local Rewriting Preserves Normal Forms">local rewrites preserve normal forms</fr:link>. First, we notice the following lemmas</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>288</fr:anchor>
+                <fr:addr type="user">srs-eager-twice-noop</fr:addr>
+                <fr:route>srs-eager-twice-noop.xml</fr:route>
+                <fr:title text="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:title>
+                <fr:taxon>Theorem</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Given a <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">string rewrite system</fr:link>, the following holds of <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">eager evaluation</fr:link>.</fr:p>
+                <fr:tex display="block"><![CDATA[   \frac {    }{     \textbf {norm}(x \cdot  y \cdot  z) = \textbf {norm}(x \cdot  \textbf {norm}(y \cdot  z))   } ]]></fr:tex>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>289</fr:anchor>
+                <fr:addr type="user">srs-eager-is-eager</fr:addr>
+                <fr:route>srs-eager-is-eager.xml</fr:route>
+                <fr:title text="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:title>
+                <fr:taxon>Lemma</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Given a <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">string rewrite system</fr:link>, the following holds of <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">eager evaluation</fr:link>.</fr:p>
+                <fr:tex display="block"><![CDATA[   \frac {     s \rightsquigarrow  t   }{     \textbf {norm}(s \cdot  r) = \textbf {norm}(t \cdot  r)   } ]]></fr:tex>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:p>The first lemma is fairly obvious. The second lemma expresses that if there is a redex at the front of a string, the eager evaluation strategy will reduce it first. Now we do this: We first use <fr:link type="local" href="srs-eager-twice-noop.xml" addr="srs-eager-twice-noop" title="Normalizing Normalize Does Nothing">the first lemma</fr:link> to transform the goal into the following.
+
+  <fr:tex display="block"><![CDATA[     \frac {       s \rightsquigarrow  t     }{       \textbf {norm}(l \cdot  s \cdot  r) = \textbf {norm}(l \cdot  \textbf {norm}(t \cdot  r))     }   ]]></fr:tex>
+
+  From here, we use <fr:link type="local" href="srs-eager-is-eager.xml" addr="srs-eager-is-eager" title="Eager Evaluation is Eager">the second lemma</fr:link> to transform it again.
+
+  <fr:tex display="block"><![CDATA[     \frac {      }{       \textbf {norm}(l \cdot  s \cdot  r) = \textbf {norm}(l \cdot  \textbf {norm}(s \cdot  r))     }   ]]></fr:tex>
+
+  Finally, we again use the first lemma, and this final goal is discharged by reflexivity.
+  
+  <fr:tex display="block"><![CDATA[     \frac {      }{       \textbf {norm}(l \cdot  s \cdot  r) = \textbf {norm}(l \cdot  s \cdot  r)     }   ]]></fr:tex>
+
+  QED.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Backlinks">Backlinks</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>366</fr:anchor>
+            <fr:addr type="user">pages</fr:addr>
+            <fr:route>pages.xml</fr:route>
+            <fr:title text="All Pages">All Pages</fr:title>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>
+              <fr:ul>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="admissible-rule.xml" addr="admissible-rule" title="Admissible Rules">Admissible Rules</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration-formal.xml" addr="elaboration-formal" title="Elaboration, Formally">Elaboration, Formally</fr:link></fr:li>
+                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="elaboration-intuition.xml" addr="elaboration-intuition" title="Elaboration, Intuitively">Elaboration, Intuitively</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration.xml" addr="elaboration" title="Elaboration">Elaboration</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">Theories</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">Judgements</fr:link></fr:li>
+                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="judgements-disc.xml" addr="judgements-disc" title="Judgements">Judgements</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">Kernel Languages</fr:link></fr:li>
+                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="macro-elab-definition.xml" addr="macro-elab-definition" title="A Macro-Based Explanation of Elaboration">A Macro-Based Explanation of Elaboration</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="macro-expansion.xml" addr="macro-expansion" title="Macro Expansion">Macro Expansion</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="programming-language-explosion.xml" addr="programming-language-explosion" title="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:link></fr:li>
+                <fr:li><fr:strong>Problem</fr:strong>. <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">Constructing Proof Assistants</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="readable-theorems.xml" addr="readable-theorems" title="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-fol.xml" addr="rel-judgements-fol" title="Judgements and FOL">Judgements and FOL</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-natural-deduction.xml" addr="rel-judgements-natural-deduction" title="Judgements and Natural Deduction">Judgements and Natural Deduction</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">Signatures</fr:link></fr:li>
+                <fr:li><fr:strong>Lemma</fr:strong>. <fr:link type="local" href="srs-eager-is-eager.xml" addr="srs-eager-is-eager" title="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:link></fr:li>
+                <fr:li><fr:strong>Proof</fr:strong>. <fr:link type="local" href="srs-eager-prop-proof.xml" addr="srs-eager-prop-proof" title="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:link></fr:li>
+                <fr:li><fr:strong>Theorem</fr:strong>. <fr:link type="local" href="srs-eager-prop.xml" addr="srs-eager-prop" title="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:link></fr:li>
+                <fr:li><fr:strong>Theorem</fr:strong>. <fr:link type="local" href="srs-eager-twice-noop.xml" addr="srs-eager-twice-noop" title="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">String Rewrite System</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="tactics.xml" addr="tactics" title="Tactics">Tactics</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">Vernacular Languages</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="why-formal-elab.xml" addr="why-formal-elab" title="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:link></fr:li>
+              </fr:ul>
+            </fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>367</fr:anchor>
+            <fr:addr type="user">srs-eager-prop-proof</fr:addr>
+            <fr:route>srs-eager-prop-proof.xml</fr:route>
+            <fr:title text="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:title>
+            <fr:taxon>Proof</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>287</fr:anchor>
+                <fr:addr type="user">srs-eager-prop</fr:addr>
+                <fr:route>srs-eager-prop.xml</fr:route>
+                <fr:title text="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:title>
+                <fr:taxon>Theorem</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Given a <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">string rewrite system</fr:link>, the following holds of <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">eager evaluation</fr:link>.</fr:p>
+                <fr:tex display="block"><![CDATA[   \frac {     s \rightsquigarrow  t   }{     \textbf {norm}(l \cdot  s \cdot  r) = \textbf {norm}(l \cdot  t \cdot  r)   } ]]></fr:tex>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:p>We want to prove that, given a string rewrite system, <fr:link type="local" href="srs-eager-prop.xml" addr="srs-eager-prop" title="Local Rewriting Preserves Normal Forms">local rewrites preserve normal forms</fr:link>. First, we notice the following lemmas</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>288</fr:anchor>
+                <fr:addr type="user">srs-eager-twice-noop</fr:addr>
+                <fr:route>srs-eager-twice-noop.xml</fr:route>
+                <fr:title text="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:title>
+                <fr:taxon>Theorem</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Given a <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">string rewrite system</fr:link>, the following holds of <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">eager evaluation</fr:link>.</fr:p>
+                <fr:tex display="block"><![CDATA[   \frac {    }{     \textbf {norm}(x \cdot  y \cdot  z) = \textbf {norm}(x \cdot  \textbf {norm}(y \cdot  z))   } ]]></fr:tex>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>289</fr:anchor>
+                <fr:addr type="user">srs-eager-is-eager</fr:addr>
+                <fr:route>srs-eager-is-eager.xml</fr:route>
+                <fr:title text="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:title>
+                <fr:taxon>Lemma</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Given a <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">string rewrite system</fr:link>, the following holds of <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">eager evaluation</fr:link>.</fr:p>
+                <fr:tex display="block"><![CDATA[   \frac {     s \rightsquigarrow  t   }{     \textbf {norm}(s \cdot  r) = \textbf {norm}(t \cdot  r)   } ]]></fr:tex>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:p>The first lemma is fairly obvious. The second lemma expresses that if there is a redex at the front of a string, the eager evaluation strategy will reduce it first. Now we do this: We first use <fr:link type="local" href="srs-eager-twice-noop.xml" addr="srs-eager-twice-noop" title="Normalizing Normalize Does Nothing">the first lemma</fr:link> to transform the goal into the following.
+
+  <fr:tex display="block"><![CDATA[     \frac {       s \rightsquigarrow  t     }{       \textbf {norm}(l \cdot  s \cdot  r) = \textbf {norm}(l \cdot  \textbf {norm}(t \cdot  r))     }   ]]></fr:tex>
+
+  From here, we use <fr:link type="local" href="srs-eager-is-eager.xml" addr="srs-eager-is-eager" title="Eager Evaluation is Eager">the second lemma</fr:link> to transform it again.
+
+  <fr:tex display="block"><![CDATA[     \frac {      }{       \textbf {norm}(l \cdot  s \cdot  r) = \textbf {norm}(l \cdot  \textbf {norm}(s \cdot  r))     }   ]]></fr:tex>
+
+  Finally, we again use the first lemma, and this final goal is discharged by reflexivity.
+  
+  <fr:tex display="block"><![CDATA[     \frac {      }{       \textbf {norm}(l \cdot  s \cdot  r) = \textbf {norm}(l \cdot  s \cdot  r)     }   ]]></fr:tex>
+
+  QED.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Related">Related</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>368</fr:anchor>
+            <fr:addr type="user">srs-eager</fr:addr>
+            <fr:route>srs-eager.xml</fr:route>
+            <fr:title text="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>The eager evaluation strategy <fr:tex display="inline"><![CDATA[\textbf {norm}(s)]]></fr:tex> on a <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">string rewrite system</fr:link> <fr:tex display="inline"><![CDATA[\rightsquigarrow ]]></fr:tex> is merely to take the fixpoint of the function that performs the leftmost reduction on <fr:tex display="inline"><![CDATA[s]]></fr:tex>.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>369</fr:anchor>
+            <fr:addr type="user">string-rewrite-system</fr:addr>
+            <fr:route>string-rewrite-system.xml</fr:route>
+            <fr:title text="String Rewrite System">String Rewrite System</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>A string rewrite system over a set <fr:tex display="inline"><![CDATA[\Sigma ]]></fr:tex> is a relation <fr:tex display="inline"><![CDATA[\rightsquigarrow  \, \in  \Sigma ^\star  \to  \Sigma ^\star ]]></fr:tex>. The path relation is generated by taking the reflexive-transitive closure over the <fr:em>lift</fr:em> of this relation, which turns the relation from one that handles local rewrites to one that handles global rewrites.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

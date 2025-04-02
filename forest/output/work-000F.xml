@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>248</fr:anchor>
+    <fr:addr type="user">work-000F</fr:addr>
+    <fr:route>work-000F.xml</fr:route>
+    <fr:title text="Failure in Tactics">Failure in Tactics</fr:title>
+    <fr:taxon>Discussion</fr:taxon>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>31</fr:day>
+    </fr:date>
+    <fr:authors />
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p><fr:em>Failure</fr:em> is a seemingly essential notion to tactics. For instance <fr:code>lia</fr:code> needs to be able to fail if the goal is not a linear integer expression. We would like to extract failure out of the definition of tactics in order to make a formal definition easier to wrangle.</fr:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Context">Context</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>249</fr:anchor>
+            <fr:addr type="user">work-000C</fr:addr>
+            <fr:route>work-000C.xml</fr:route>
+            <fr:title text="Notions of Tactics">Notions of Tactics</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>31</fr:day>
+            </fr:date>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>There are a few definitions of what a tactic is. I collect some here.</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>250</fr:anchor>
+                <fr:addr type="user">work-000D</fr:addr>
+                <fr:route>work-000D.xml</fr:route>
+                <fr:title text="Tactics as Admissible Rules">Tactics as Admissible Rules</fr:title>
+                <fr:taxon>Remark</fr:taxon>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>31</fr:day>
+                </fr:date>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Some characterize tactics as <fr:em>admissible rules</fr:em> -- i.e rules that may be added to a <fr:link type="local" href="work-0009.xml" addr="work-0009" title="Theories">theory</fr:link> to improve UX but do not add new theorems to the theory.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>251</fr:anchor>
+                <fr:addr type="user">work-000E</fr:addr>
+                <fr:route>work-000E.xml</fr:route>
+                <fr:title text="Tactics as Metaprogramming">Tactics as Metaprogramming</fr:title>
+                <fr:taxon>Remark</fr:taxon>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>31</fr:day>
+                </fr:date>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Some characterize tactics as essentially <fr:em>metaprograms</fr:em>. Tactics manipulate the syntax of a <fr:link type="local" href="work-0006.xml" addr="work-0006" title="First-Order Signatures">signature</fr:link> to automate production of proofs in <fr:link type="local" href="work-0009.xml" addr="work-0009" title="Theories">theories</fr:link> of the signature. Most proof assistants fall into this category.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:p>The admissible rule view is of course more restricted than the metaprogramming view. The question is, what is the <fr:em>right</fr:em> formal definition of tactics? There does seem to be some "essential flavor" to tactics in that they split a goal into a number of subgoals, but how should we formalize beyond that?</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>252</fr:anchor>
+                <fr:addr type="user">work-000F</fr:addr>
+                <fr:route>work-000F.xml</fr:route>
+                <fr:title text="Failure in Tactics">Failure in Tactics</fr:title>
+                <fr:taxon>Discussion</fr:taxon>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>31</fr:day>
+                </fr:date>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p><fr:em>Failure</fr:em> is a seemingly essential notion to tactics. For instance <fr:code>lia</fr:code> needs to be able to fail if the goal is not a linear integer expression. We would like to extract failure out of the definition of tactics in order to make a formal definition easier to wrangle.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>253</fr:anchor>
+                <fr:addr type="user">work-000G</fr:addr>
+                <fr:route>work-000G.xml</fr:route>
+                <fr:title text="Tactics and Conversions">Tactics and Conversions</fr:title>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>31</fr:day>
+                </fr:date>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>254</fr:anchor>
+                    <fr:addr type="user">work-000H</fr:addr>
+                    <fr:route>work-000H.xml</fr:route>
+                    <fr:title text="Tactic Subgoals in Different Signatures">Tactic Subgoals in Different Signatures</fr:title>
+                    <fr:taxon>Remark</fr:taxon>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>31</fr:day>
+                    </fr:date>
+                    <fr:authors />
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>It may be the case that a tactic's subgoals need not be in the same signature as the original goal.</fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>255</fr:anchor>
+                    <fr:addr type="user">work-000D</fr:addr>
+                    <fr:route>work-000D.xml</fr:route>
+                    <fr:title text="Tactics as Admissible Rules">Tactics as Admissible Rules</fr:title>
+                    <fr:taxon>Remark</fr:taxon>
+                    <fr:date>
+                      <fr:year>2025</fr:year>
+                      <fr:month>3</fr:month>
+                      <fr:day>31</fr:day>
+                    </fr:date>
+                    <fr:authors />
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>Some characterize tactics as <fr:em>admissible rules</fr:em> -- i.e rules that may be added to a <fr:link type="local" href="work-0009.xml" addr="work-0009" title="Theories">theory</fr:link> to improve UX but do not add new theorems to the theory.</fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:p>We split out tactics into conversions, which either change the goal or fail, and tactics, which are just admissible rules.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

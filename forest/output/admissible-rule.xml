@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>261</fr:anchor>
+    <fr:addr type="user">admissible-rule</fr:addr>
+    <fr:route>admissible-rule.xml</fr:route>
+    <fr:title text="Admissible Rules">Admissible Rules</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+    <fr:authors />
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p>Given a <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">theory</fr:link> <fr:tex display="inline"><![CDATA[\mathbb {T}]]></fr:tex>, an axiom is admissible if adding it to <fr:tex display="inline"><![CDATA[\mathbb {T}]]></fr:tex> doesn't change <fr:tex display="inline"><![CDATA[\mathbb {T}]]></fr:tex>'s set of <fr:em>theorems</fr:em>, i.e the set of true <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">judgements</fr:link>.</fr:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Backlinks">Backlinks</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>262</fr:anchor>
+            <fr:addr type="user">pages</fr:addr>
+            <fr:route>pages.xml</fr:route>
+            <fr:title text="All Pages">All Pages</fr:title>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>
+              <fr:ul>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="admissible-rule.xml" addr="admissible-rule" title="Admissible Rules">Admissible Rules</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration-formal.xml" addr="elaboration-formal" title="Elaboration, Formally">Elaboration, Formally</fr:link></fr:li>
+                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="elaboration-intuition.xml" addr="elaboration-intuition" title="Elaboration, Intuitively">Elaboration, Intuitively</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration.xml" addr="elaboration" title="Elaboration">Elaboration</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">Theories</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">Judgements</fr:link></fr:li>
+                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="judgements-disc.xml" addr="judgements-disc" title="Judgements">Judgements</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">Kernel Languages</fr:link></fr:li>
+                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="macro-elab-definition.xml" addr="macro-elab-definition" title="A Macro-Based Explanation of Elaboration">A Macro-Based Explanation of Elaboration</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="macro-expansion.xml" addr="macro-expansion" title="Macro Expansion">Macro Expansion</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="programming-language-explosion.xml" addr="programming-language-explosion" title="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:link></fr:li>
+                <fr:li><fr:strong>Problem</fr:strong>. <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">Constructing Proof Assistants</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="readable-theorems.xml" addr="readable-theorems" title="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-fol.xml" addr="rel-judgements-fol" title="Judgements and FOL">Judgements and FOL</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-natural-deduction.xml" addr="rel-judgements-natural-deduction" title="Judgements and Natural Deduction">Judgements and Natural Deduction</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">Signatures</fr:link></fr:li>
+                <fr:li><fr:strong>Lemma</fr:strong>. <fr:link type="local" href="srs-eager-is-eager.xml" addr="srs-eager-is-eager" title="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:link></fr:li>
+                <fr:li><fr:strong>Proof</fr:strong>. <fr:link type="local" href="srs-eager-prop-proof.xml" addr="srs-eager-prop-proof" title="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:link></fr:li>
+                <fr:li><fr:strong>Theorem</fr:strong>. <fr:link type="local" href="srs-eager-prop.xml" addr="srs-eager-prop" title="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:link></fr:li>
+                <fr:li><fr:strong>Theorem</fr:strong>. <fr:link type="local" href="srs-eager-twice-noop.xml" addr="srs-eager-twice-noop" title="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">String Rewrite System</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="tactics.xml" addr="tactics" title="Tactics">Tactics</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">Vernacular Languages</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="why-formal-elab.xml" addr="why-formal-elab" title="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:link></fr:li>
+              </fr:ul>
+            </fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Related">Related</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>263</fr:anchor>
+            <fr:addr type="user">judgement</fr:addr>
+            <fr:route>judgement.xml</fr:route>
+            <fr:title text="Judgements">Judgements</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>The <fr:em>judgements</fr:em> over a <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">signature</fr:link> <fr:tex display="inline"><![CDATA[E]]></fr:tex> are defined as follows.
+  <fr:tex display="block"><![CDATA[     \mathcal {J} :=       \mathcal {R}(\overline {e}) \,\, | \,\,       \{x\} \, \mathcal {J} \,\, | \,\,       \mathcal {J} \vdash  \mathcal {J}   ]]></fr:tex>
+  The proof rules for judgements are then straightfoward.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\mathcal {R}(\overline {e})]]></fr:tex>: Supplied by the background <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">theory</fr:link></fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\{x\} \, \mathcal {J}]]></fr:tex>: Generalization and specialization</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\mathcal {H} \vdash  \mathcal {J}]]></fr:tex>: Abstraction and application</fr:li></fr:ul></fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>264</fr:anchor>
+            <fr:addr type="user">first-order-theory</fr:addr>
+            <fr:route>first-order-theory.xml</fr:route>
+            <fr:title text="Theories">Theories</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>A theory over a <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">signature</fr:link> <fr:tex display="inline"><![CDATA[E]]></fr:tex> is merely a set of <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">judgements</fr:link> over <fr:tex display="inline"><![CDATA[E]]></fr:tex>.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

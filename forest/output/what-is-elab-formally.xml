@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>366</fr:anchor>
+    <fr:addr type="user">what-is-elab-formally</fr:addr>
+    <fr:route>what-is-elab-formally.xml</fr:route>
+    <fr:title text="What is Elaboration, Formally?">What is Elaboration, Formally?</fr:title>
+    <fr:taxon>Problem</fr:taxon>
+    <fr:authors />
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p>The <fr:link type="local" href="elaboration-intuition.xml" addr="elaboration-intuition" title="Elaboration, Intuitively">intuitive definition</fr:link> being so broad is what makes it so hard to formalize. First, formally defining elaboration is important for two reasons:
+  <fr:ol><fr:li>It forces us to determine what elaboration <fr:em>should</fr:em> be. What do the "best" examples of elaborators look like, and how do we determine what a "bad" elaborator is?</fr:li>
+    <fr:li>It paves the way for developing abstractions in the space of elaborators. This allows for reusable software components to be developed, which is essential to <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">making construction of proof assistants easier</fr:link>.</fr:li></fr:ol></fr:p>
+    <fr:p>The fact that we can already see two distinct qualities elaboration has is good progress.</fr:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Context">Context</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>367</fr:anchor>
+            <fr:addr type="user">elaboration</fr:addr>
+            <fr:route>elaboration.xml</fr:route>
+            <fr:title text="Elaboration">Elaboration</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>265</fr:anchor>
+                <fr:addr type="user">elaboration-intuition</fr:addr>
+                <fr:route>elaboration-intuition.xml</fr:route>
+                <fr:title text="Elaboration, Intuitively">Elaboration, Intuitively</fr:title>
+                <fr:taxon>Discussion</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Elaboration is a concept that pops up in every proof assistant, but what is it? Intuitively, elaboration seems to have two main qualities:
+  <fr:ol><fr:li>It functions somewhat like <fr:link type="local" href="macro-expansion.xml" addr="macro-expansion" title="Macro Expansion">macro expansion</fr:link>. Given some term in the <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">vernacular</fr:link>, an elaborator will lower it down to a term in the <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">kernel language</fr:link>.</fr:li>
+    <fr:li>It involves reconstruction of information left implicit by the user.</fr:li></fr:ol></fr:p>
+                <fr:p>The key thing that makes this like macro expansion is that the kernel term that the vernacular term expanded to may be <fr:em>observed</fr:em> by the user. If you write a term in a type signature and look at the goal the system gives you for the definition, you're going to see the kernel term. Kernel terms are not necessarily human-readable, so pretty-printing will likely do a lot of work to massage the goal into a nice form, but this is purely syntactic tricks, the term is ultimately still in the kernel language.</fr:p>
+                <fr:p>Expanding a bit on the second quality: For instance, the elaborator may perform type inference to fill a metavariable, or perform typeclass resolution to fill a class obligation, or use the type of an expression to determine what notation scope to interpret it in. All of these things are information that the elaborator implicitly reconstructs for the user.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>266</fr:anchor>
+                <fr:addr type="user">what-is-elab-formally</fr:addr>
+                <fr:route>what-is-elab-formally.xml</fr:route>
+                <fr:title text="What is Elaboration, Formally?">What is Elaboration, Formally?</fr:title>
+                <fr:taxon>Problem</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>The <fr:link type="local" href="elaboration-intuition.xml" addr="elaboration-intuition" title="Elaboration, Intuitively">intuitive definition</fr:link> being so broad is what makes it so hard to formalize. First, formally defining elaboration is important for two reasons:
+  <fr:ol><fr:li>It forces us to determine what elaboration <fr:em>should</fr:em> be. What do the "best" examples of elaborators look like, and how do we determine what a "bad" elaborator is?</fr:li>
+    <fr:li>It paves the way for developing abstractions in the space of elaborators. This allows for reusable software components to be developed, which is essential to <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">making construction of proof assistants easier</fr:link>.</fr:li></fr:ol></fr:p>
+                <fr:p>The fact that we can already see two distinct qualities elaboration has is good progress.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Backlinks">Backlinks</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>368</fr:anchor>
+            <fr:addr type="user">pages</fr:addr>
+            <fr:route>pages.xml</fr:route>
+            <fr:title text="All Pages">All Pages</fr:title>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>
+              <fr:ul>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="admissible-rule.xml" addr="admissible-rule" title="Admissible Rules">Admissible Rules</fr:link></fr:li>
+                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="elaboration-intuition.xml" addr="elaboration-intuition" title="Elaboration, Intuitively">Elaboration, Intuitively</fr:link></fr:li>
+                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="elaboration.xml" addr="elaboration" title="Elaboration">Elaboration</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">Theories</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="forward-chaining.xml" addr="forward-chaining" title="Forward Chaining">Forward Chaining</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">Judgements</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">Kernel Languages</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="macro-expansion.xml" addr="macro-expansion" title="Macro Expansion">Macro Expansion</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="programming-language-explosion.xml" addr="programming-language-explosion" title="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:link></fr:li>
+                <fr:li><fr:strong>Problem</fr:strong>. <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">Constructing Proof Assistants</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="readable-theorems.xml" addr="readable-theorems" title="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">Signatures</fr:link></fr:li>
+                <fr:li><fr:strong>Lemma</fr:strong>. <fr:link type="local" href="srs-eager-is-eager.xml" addr="srs-eager-is-eager" title="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:link></fr:li>
+                <fr:li><fr:strong>Proof</fr:strong>. <fr:link type="local" href="srs-eager-prop-proof.xml" addr="srs-eager-prop-proof" title="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:link></fr:li>
+                <fr:li><fr:strong>Theorem</fr:strong>. <fr:link type="local" href="srs-eager-prop.xml" addr="srs-eager-prop" title="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:link></fr:li>
+                <fr:li><fr:strong>Theorem</fr:strong>. <fr:link type="local" href="srs-eager-twice-noop.xml" addr="srs-eager-twice-noop" title="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">String Rewrite System</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">Vernacular Languages</fr:link></fr:li>
+                <fr:li><fr:strong>Problem</fr:strong>. <fr:link type="local" href="what-is-elab-formally.xml" addr="what-is-elab-formally" title="What is Elaboration, Formally?">What is Elaboration, Formally?</fr:link></fr:li>
+              </fr:ul>
+            </fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Related">Related</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>369</fr:anchor>
+            <fr:addr type="user">proof-assistant-explosion</fr:addr>
+            <fr:route>proof-assistant-explosion.xml</fr:route>
+            <fr:title text="Constructing Proof Assistants">Constructing Proof Assistants</fr:title>
+            <fr:taxon>Problem</fr:taxon>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>31</fr:day>
+            </fr:date>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>246</fr:anchor>
+                <fr:addr type="user">programming-language-explosion</fr:addr>
+                <fr:route>programming-language-explosion.xml</fr:route>
+                <fr:title text="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:title>
+                <fr:taxon>Remark</fr:taxon>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>3</fr:month>
+                  <fr:day>31</fr:day>
+                </fr:date>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>It has been known in the PL community for a long time that the number of programming languages has been rising at an increasing rate. This is because there are an increasingly large number of tools that <fr:em>abstract</fr:em> over various parts of language construction, thereby making the entire process much quicker. This is a good thing! It allows for rapid experimentation and iteration on new ideas.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:p>A problem the proof assistant community faces is that we do not have the same abstractions for constructing provers that the PL people have. We must implement complex algorithms like higher-order unification and normalization-by-evaluation over and over again with slight variations. In recent times there is an ever-growing need for constructing provers to be easier due to the number of new type theories emerging, but we currently do not have the tools to develop provers for these theories at a fast-enough rate.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>370</fr:anchor>
+            <fr:addr type="user">elaboration-intuition</fr:addr>
+            <fr:route>elaboration-intuition.xml</fr:route>
+            <fr:title text="Elaboration, Intuitively">Elaboration, Intuitively</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Elaboration is a concept that pops up in every proof assistant, but what is it? Intuitively, elaboration seems to have two main qualities:
+  <fr:ol><fr:li>It functions somewhat like <fr:link type="local" href="macro-expansion.xml" addr="macro-expansion" title="Macro Expansion">macro expansion</fr:link>. Given some term in the <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">vernacular</fr:link>, an elaborator will lower it down to a term in the <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">kernel language</fr:link>.</fr:li>
+    <fr:li>It involves reconstruction of information left implicit by the user.</fr:li></fr:ol></fr:p>
+            <fr:p>The key thing that makes this like macro expansion is that the kernel term that the vernacular term expanded to may be <fr:em>observed</fr:em> by the user. If you write a term in a type signature and look at the goal the system gives you for the definition, you're going to see the kernel term. Kernel terms are not necessarily human-readable, so pretty-printing will likely do a lot of work to massage the goal into a nice form, but this is purely syntactic tricks, the term is ultimately still in the kernel language.</fr:p>
+            <fr:p>Expanding a bit on the second quality: For instance, the elaborator may perform type inference to fill a metavariable, or perform typeclass resolution to fill a class obligation, or use the type of an expression to determine what notation scope to interpret it in. All of these things are information that the elaborator implicitly reconstructs for the user.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

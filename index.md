@@ -5,6 +5,10 @@ date: October 13, 2024
 
 Hello! My name is Eashan Hatti, and I'm currently a CS undergrad at Yale University. I'm primarily interested in PL, particularly semantics and formal verification. You can reach me at `<first>.<last>@yale.edu`.
 
+**Public Notes**
+
+You can read my notes [here](forest/output/index.xml). They're written using Jon Sterling's [Forester](https://sr.ht/~jonsterling/forester/) tool.
+
 **Blogposts**:
 
 - [Perceived Issues with Interaction Nets](blog/inets-issues.html)

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>344</fr:anchor>
+    <fr:addr type="user">kernel</fr:addr>
+    <fr:route>kernel.xml</fr:route>
+    <fr:title text="Kernel Languages">Kernel Languages</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+    <fr:authors />
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p>A kernel is a logic designed to be simple, expressive, and easily machine-readable. The readability for humans is explicitly an <fr:em>anti</fr:em>-concern, kernel logics are meant to be the central source of truth for a proof assistant, and thus cannot be bound up in imprecise human reasoning.</fr:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Backlinks">Backlinks</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>345</fr:anchor>
+            <fr:addr type="user">pages</fr:addr>
+            <fr:route>pages.xml</fr:route>
+            <fr:title text="All Pages">All Pages</fr:title>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>
+              <fr:ul>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="admissible-rule.xml" addr="admissible-rule" title="Admissible Rules">Admissible Rules</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration-formal.xml" addr="elaboration-formal" title="Elaboration, Formally">Elaboration, Formally</fr:link></fr:li>
+                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="elaboration-intuition.xml" addr="elaboration-intuition" title="Elaboration, Intuitively">Elaboration, Intuitively</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration.xml" addr="elaboration" title="Elaboration">Elaboration</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">Theories</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">Judgements</fr:link></fr:li>
+                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="judgements-disc.xml" addr="judgements-disc" title="Judgements">Judgements</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">Kernel Languages</fr:link></fr:li>
+                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="macro-elab-definition.xml" addr="macro-elab-definition" title="A Macro-Based Explanation of Elaboration">A Macro-Based Explanation of Elaboration</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="macro-expansion.xml" addr="macro-expansion" title="Macro Expansion">Macro Expansion</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="programming-language-explosion.xml" addr="programming-language-explosion" title="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:link></fr:li>
+                <fr:li><fr:strong>Problem</fr:strong>. <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">Constructing Proof Assistants</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="readable-theorems.xml" addr="readable-theorems" title="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-fol.xml" addr="rel-judgements-fol" title="Judgements and FOL">Judgements and FOL</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-natural-deduction.xml" addr="rel-judgements-natural-deduction" title="Judgements and Natural Deduction">Judgements and Natural Deduction</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">Signatures</fr:link></fr:li>
+                <fr:li><fr:strong>Lemma</fr:strong>. <fr:link type="local" href="srs-eager-is-eager.xml" addr="srs-eager-is-eager" title="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:link></fr:li>
+                <fr:li><fr:strong>Proof</fr:strong>. <fr:link type="local" href="srs-eager-prop-proof.xml" addr="srs-eager-prop-proof" title="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:link></fr:li>
+                <fr:li><fr:strong>Theorem</fr:strong>. <fr:link type="local" href="srs-eager-prop.xml" addr="srs-eager-prop" title="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:link></fr:li>
+                <fr:li><fr:strong>Theorem</fr:strong>. <fr:link type="local" href="srs-eager-twice-noop.xml" addr="srs-eager-twice-noop" title="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">String Rewrite System</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="tactics.xml" addr="tactics" title="Tactics">Tactics</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">Vernacular Languages</fr:link></fr:li>
+                <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="why-formal-elab.xml" addr="why-formal-elab" title="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:link></fr:li>
+              </fr:ul>
+            </fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>346</fr:anchor>
+            <fr:addr type="user">elaboration-intuition</fr:addr>
+            <fr:route>elaboration-intuition.xml</fr:route>
+            <fr:title text="Elaboration, Intuitively">Elaboration, Intuitively</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Elaboration is a concept that pops up in every proof assistant, but what is it? Intuitively, elaboration seems to have two main qualities:
+  <fr:ol><fr:li>It functions somewhat like <fr:link type="local" href="macro-expansion.xml" addr="macro-expansion" title="Macro Expansion">macro expansion</fr:link>. Given some term in the <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">vernacular</fr:link>, an elaborator will lower it down to a term in the <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">kernel language</fr:link>.</fr:li>
+    <fr:li>It involves reconstruction of information left implicit by the user.</fr:li></fr:ol></fr:p>
+            <fr:p>The key thing that makes this like macro expansion is that the kernel term that the vernacular term expanded to may be <fr:em>observed</fr:em> by the user. If you write a term in a type signature and look at the goal the system gives you for the definition, you're going to see the kernel term. Kernel terms are not necessarily human-readable, so pretty-printing will likely do a lot of work to massage the goal into a nice form, but this is purely syntactic tricks, the term is ultimately still in the kernel language.</fr:p>
+            <fr:p>Expanding a bit on the second quality: For instance, the elaborator may perform type inference to fill a metavariable, or perform typeclass resolution to fill a class obligation, or use the type of an expression to determine what notation scope to interpret it in. All of these things are information that the elaborator implicitly reconstructs for the user.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>347</fr:anchor>
+            <fr:addr type="user">readable-theorems</fr:addr>
+            <fr:route>readable-theorems.xml</fr:route>
+            <fr:title text="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:title>
+            <fr:taxon>Remark</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>A key quality of <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">kernel</fr:link> logics is that they are explicitly geared toward being <fr:em>machine</fr:em>-readable rather than human readable. But does this extend only to the proofs, only to the propositions, or to both?</fr:p>
+            <fr:p>What I believe is that while the proofs need not be human-readable, the propositions <fr:em>should</fr:em>. This is because ultimately the machine should follow the <fr:link type="external" href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment">principle of least surprise</fr:link>. What this means simply is that the machine should never try to guess the user's intent. One of the worst errors you can make as a mathematician is proving the wrong theorem -- even worse if the machine <fr:em>misinterpreted</fr:em> the theorem you meant to prove!</fr:p>
+            <fr:p>Machines can be quite clever, but cleverness is not cleverness at all if the machine is not obeying the user! What this tells us is that the machine should never employ clever strategies when <fr:link type="local" href="elaboration.xml" addr="elaboration" title="Elaboration">elaborating</fr:link> the propositions the user supplies, but may employ anything it wishes when elaborating the user's proofs.</fr:p>
+            <fr:p>In practice anyway, propositions employ far less complicated constructs than proofs, meaning that we don't lose much by requiring this principle to be followed.</fr:p>
+            <fr:p>This also fuels some of my gripes about dependent types. Allowing arbitrary programs to execute in the propositions destroys the nice separation between the machine-readable world and the human-readable world. In dependently typed proof assistants, the machine can surprise you!</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>348</fr:anchor>
+            <fr:addr type="user">tactics</fr:addr>
+            <fr:route>tactics.xml</fr:route>
+            <fr:title text="Tactics">Tactics</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Tactics are a common <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">vernacular language</fr:link> feature, prominently used in proof assistants like Rocq, Lean, and HOL. There doesn't seem to be a formalization out there, but tactic languages share some common features.
+  <fr:ul><fr:li>Tactics are semi-arbitrary code in a metalanguage that uses an API to construct <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">kernel</fr:link> terms. The terms may be typechecked post-hoc a la Lean or Rocq, or the API ensures terms are correct-by-construction.</fr:li>
+    <fr:li>Tactics are encouraged to be used only in <fr:em>proof-irrelevant</fr:em> settings. This is an informal contract between the tactic user and tactic implementor: The user promises not to depend on the proof terms constructed by tactics, and the implementor interprets this as a freedom that makes constructing the tactic easier.</fr:li>
+    <fr:li>They implement forward chaining in that each tactic essentially implements an implication -- each application of a tactic solves a goal by spawning subgoals that entail it. This enables interactive proofs, with each tactic being an individual "unit" of the proof that the user may step through. At every step the user may pause, evaluate, and consider which tactic should next be applied.</fr:li></fr:ul></fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>349</fr:anchor>
+            <fr:addr type="user">vernacular</fr:addr>
+            <fr:route>vernacular.xml</fr:route>
+            <fr:title text="Vernacular Languages">Vernacular Languages</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>The concept of a vernacular is central to proof assistants, but it is not usually defined. The vernacular completes the separation of concerns that the <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">kernel</fr:link> begins -- it is a language with human-comprehensible propositions and proofs. Vernacular languages take many forms, for instance an <fr:link type="local" href="elaboration.xml" addr="elaboration" title="Elaboration">elaborator</fr:link> may lower vernacular syntax down to kernel syntax, or kernel syntax may be constructed by <fr:link type="local" href="tactics.xml" addr="tactics" title="Tactics">tactics</fr:link>.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

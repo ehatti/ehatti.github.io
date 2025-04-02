@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>266</fr:anchor>
+    <fr:addr type="user">work-0007</fr:addr>
+    <fr:route>work-0007.xml</fr:route>
+    <fr:title text="First-Order Arities">First-Order Arities</fr:title>
+    <fr:taxon>Definition</fr:taxon>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>3</fr:month>
+      <fr:day>31</fr:day>
+    </fr:date>
+    <fr:authors />
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p>A first-order arity over a set of syntax classes <fr:tex display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is a <fr:em>rose tree</fr:em> labelled by elements of <fr:tex display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Backlinks">Backlinks</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>267</fr:anchor>
+            <fr:addr type="user">work-0006</fr:addr>
+            <fr:route>work-0006.xml</fr:route>
+            <fr:title text="First-Order Signatures">First-Order Signatures</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>3</fr:month>
+              <fr:day>31</fr:day>
+            </fr:date>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>A first-order signature <fr:tex display="inline"><![CDATA[E]]></fr:tex> is a tuple <fr:tex display="inline"><![CDATA[(\mathcal {C}, \mathcal {R}, \sigma , \mathcal {F}, \alpha )]]></fr:tex>, where
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is the set of syntax classes</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\mathcal {R}]]></fr:tex> is the set of relation symbols</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\sigma ]]></fr:tex> assigns relation symbols to <fr:link type="local" href="work-0007.xml" addr="work-0007" title="First-Order Arities">arities</fr:link></fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\mathcal {F}]]></fr:tex> is the set of function symbols</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\alpha ]]></fr:tex> assigns function symbols to <fr:link type="local" href="work-0007.xml" addr="work-0007" title="First-Order Arities">arities</fr:link></fr:li></fr:ul></fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
