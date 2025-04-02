@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>265</fr:anchor>
+    <fr:anchor>274</fr:anchor>
     <fr:addr type="user">pages</fr:addr>
     <fr:route>pages.xml</fr:route>
     <fr:title text="All Pages">All Pages</fr:title>
@@ -12,6 +12,8 @@
     <fr:p>
       <fr:ul>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="admissible-rule.xml" addr="admissible-rule" title="Admissible Rules">Admissible Rules</fr:link></fr:li>
+        <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="algebra.xml" addr="algebra" title="Algebra">Algebra</fr:link></fr:li>
+        <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="categories-with-families.xml" addr="categories-with-families" title="Categories with Families">Categories with Families</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration-formal.xml" addr="elaboration-formal" title="Elaboration, Formally">Elaboration, Formally</fr:link></fr:li>
         <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="elaboration-intuition.xml" addr="elaboration-intuition" title="Elaboration, Intuitively">Elaboration, Intuitively</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration.xml" addr="elaboration" title="Elaboration">Elaboration</fr:link></fr:li>
@@ -21,6 +23,10 @@
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">Kernel Languages</fr:link></fr:li>
         <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="macro-elab-definition.xml" addr="macro-elab-definition" title="A Macro-Based Explanation of Elaboration">A Macro-Based Explanation of Elaboration</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="macro-expansion.xml" addr="macro-expansion" title="Macro Expansion">Macro Expansion</fr:link></fr:li>
+        <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="mltt-disc.xml" addr="mltt-disc" title="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:link></fr:li>
+        <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="mltt-pi-rules.xml" addr="mltt-pi-rules" title="Rules for Pi Types in MLTT">Rules for Pi Types in MLTT</fr:link></fr:li>
+        <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="mltt-pres-trad.xml" addr="mltt-pres-trad" title="Traditional Presentation of MLTT">Traditional Presentation of MLTT</fr:link></fr:li>
+        <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="mltt.xml" addr="mltt" title="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:link></fr:li>
         <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="programming-language-explosion.xml" addr="programming-language-explosion" title="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:link></fr:li>
         <fr:li><fr:strong>Problem</fr:strong>. <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">Constructing Proof Assistants</fr:link></fr:li>
         <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="readable-theorems.xml" addr="readable-theorems" title="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:link></fr:li>
@@ -34,6 +40,9 @@
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">String Rewrite System</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="tactics.xml" addr="tactics" title="Tactics">Tactics</fr:link></fr:li>
+        <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-algebra.xml" addr="tt-as-algebra" title="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:link></fr:li>
+        <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-cwf.xml" addr="tt-as-cwf" title="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:link></fr:li>
+        <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">Type Theory</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">Vernacular Languages</fr:link></fr:li>
         <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="why-formal-elab.xml" addr="why-formal-elab" title="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:link></fr:li>
       </fr:ul>
@@ -48,7 +57,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>266</fr:anchor>
+            <fr:anchor>275</fr:anchor>
             <fr:addr type="user">index</fr:addr>
             <fr:route>index.xml</fr:route>
             <fr:title text="Eashan Hatti">Eashan Hatti</fr:title>
@@ -62,7 +71,7 @@
             <fr:p>I'm a CS undergrad at Yale University, primarily interested in automated formal methods and the construction of proof assistants. These are my public notes, if you have any comments -- disagreement, agreement, discussion, or otherwise -- feel free to message me at <fr:code>eashan.hatti@yale.edu</fr:code>!</fr:p>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>267</fr:anchor>
+                <fr:anchor>276</fr:anchor>
                 <fr:addr type="user">pages</fr:addr>
                 <fr:route>pages.xml</fr:route>
                 <fr:title text="All Pages">All Pages</fr:title>
@@ -72,6 +81,8 @@
                 <fr:p>
                   <fr:ul>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="admissible-rule.xml" addr="admissible-rule" title="Admissible Rules">Admissible Rules</fr:link></fr:li>
+                    <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="algebra.xml" addr="algebra" title="Algebra">Algebra</fr:link></fr:li>
+                    <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="categories-with-families.xml" addr="categories-with-families" title="Categories with Families">Categories with Families</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration-formal.xml" addr="elaboration-formal" title="Elaboration, Formally">Elaboration, Formally</fr:link></fr:li>
                     <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="elaboration-intuition.xml" addr="elaboration-intuition" title="Elaboration, Intuitively">Elaboration, Intuitively</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration.xml" addr="elaboration" title="Elaboration">Elaboration</fr:link></fr:li>
@@ -81,6 +92,10 @@
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">Kernel Languages</fr:link></fr:li>
                     <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="macro-elab-definition.xml" addr="macro-elab-definition" title="A Macro-Based Explanation of Elaboration">A Macro-Based Explanation of Elaboration</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="macro-expansion.xml" addr="macro-expansion" title="Macro Expansion">Macro Expansion</fr:link></fr:li>
+                    <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="mltt-disc.xml" addr="mltt-disc" title="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:link></fr:li>
+                    <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="mltt-pi-rules.xml" addr="mltt-pi-rules" title="Rules for Pi Types in MLTT">Rules for Pi Types in MLTT</fr:link></fr:li>
+                    <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="mltt-pres-trad.xml" addr="mltt-pres-trad" title="Traditional Presentation of MLTT">Traditional Presentation of MLTT</fr:link></fr:li>
+                    <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="mltt.xml" addr="mltt" title="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:link></fr:li>
                     <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="programming-language-explosion.xml" addr="programming-language-explosion" title="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:link></fr:li>
                     <fr:li><fr:strong>Problem</fr:strong>. <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">Constructing Proof Assistants</fr:link></fr:li>
                     <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="readable-theorems.xml" addr="readable-theorems" title="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:link></fr:li>
@@ -94,6 +109,9 @@
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">String Rewrite System</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="tactics.xml" addr="tactics" title="Tactics">Tactics</fr:link></fr:li>
+                    <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-algebra.xml" addr="tt-as-algebra" title="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:link></fr:li>
+                    <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-cwf.xml" addr="tt-as-cwf" title="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:link></fr:li>
+                    <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">Type Theory</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">Vernacular Languages</fr:link></fr:li>
                     <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="why-formal-elab.xml" addr="why-formal-elab" title="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:link></fr:li>
                   </fr:ul>
@@ -115,7 +133,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>268</fr:anchor>
+            <fr:anchor>277</fr:anchor>
             <fr:addr type="user">proof-assistant-explosion</fr:addr>
             <fr:route>proof-assistant-explosion.xml</fr:route>
             <fr:title text="Constructing Proof Assistants">Constructing Proof Assistants</fr:title>
@@ -153,7 +171,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>269</fr:anchor>
+            <fr:anchor>278</fr:anchor>
             <fr:addr type="user">programming-language-explosion</fr:addr>
             <fr:route>programming-language-explosion.xml</fr:route>
             <fr:title text="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:title>
@@ -172,7 +190,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>270</fr:anchor>
+            <fr:anchor>279</fr:anchor>
             <fr:addr type="user">macro-elab-definition</fr:addr>
             <fr:route>macro-elab-definition.xml</fr:route>
             <fr:title text="A Macro-Based Explanation of Elaboration">A Macro-Based Explanation of Elaboration</fr:title>
@@ -188,7 +206,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>271</fr:anchor>
+            <fr:anchor>280</fr:anchor>
             <fr:addr type="user">admissible-rule</fr:addr>
             <fr:route>admissible-rule.xml</fr:route>
             <fr:title text="Admissible Rules">Admissible Rules</fr:title>
@@ -202,7 +220,35 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>272</fr:anchor>
+            <fr:anchor>281</fr:anchor>
+            <fr:addr type="user">algebra</fr:addr>
+            <fr:route>algebra.xml</fr:route>
+            <fr:title text="Algebra">Algebra</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>TODO</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>282</fr:anchor>
+            <fr:addr type="user">categories-with-families</fr:addr>
+            <fr:route>categories-with-families.xml</fr:route>
+            <fr:title text="Categories with Families">Categories with Families</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>TODO</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>283</fr:anchor>
             <fr:addr type="user">srs-eager</fr:addr>
             <fr:route>srs-eager.xml</fr:route>
             <fr:title text="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:title>
@@ -216,7 +262,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>273</fr:anchor>
+            <fr:anchor>284</fr:anchor>
             <fr:addr type="user">srs-eager-is-eager</fr:addr>
             <fr:route>srs-eager-is-eager.xml</fr:route>
             <fr:title text="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:title>
@@ -231,7 +277,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>274</fr:anchor>
+            <fr:anchor>285</fr:anchor>
             <fr:addr type="user">elaboration</fr:addr>
             <fr:route>elaboration.xml</fr:route>
             <fr:title text="Elaboration">Elaboration</fr:title>
@@ -299,7 +345,7 @@
                   </fr:mainmatter>
                   <fr:backmatter />
                 </fr:tree>
-                <fr:p>TODO: Write this</fr:p>
+                <fr:p>TODO</fr:p>
               </fr:mainmatter>
               <fr:backmatter />
             </fr:tree>
@@ -308,7 +354,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>275</fr:anchor>
+            <fr:anchor>286</fr:anchor>
             <fr:addr type="user">elaboration-formal</fr:addr>
             <fr:route>elaboration-formal.xml</fr:route>
             <fr:title text="Elaboration, Formally">Elaboration, Formally</fr:title>
@@ -332,13 +378,13 @@
               </fr:mainmatter>
               <fr:backmatter />
             </fr:tree>
-            <fr:p>TODO: Write this</fr:p>
+            <fr:p>TODO</fr:p>
           </fr:mainmatter>
           <fr:backmatter />
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>276</fr:anchor>
+            <fr:anchor>287</fr:anchor>
             <fr:addr type="user">elaboration-intuition</fr:addr>
             <fr:route>elaboration-intuition.xml</fr:route>
             <fr:title text="Elaboration, Intuitively">Elaboration, Intuitively</fr:title>
@@ -356,7 +402,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>277</fr:anchor>
+            <fr:anchor>288</fr:anchor>
             <fr:addr type="user">judgement</fr:addr>
             <fr:route>judgement.xml</fr:route>
             <fr:title text="Judgements">Judgements</fr:title>
@@ -375,7 +421,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>278</fr:anchor>
+            <fr:anchor>289</fr:anchor>
             <fr:addr type="user">judgements-disc</fr:addr>
             <fr:route>judgements-disc.xml</fr:route>
             <fr:title text="Judgements">Judgements</fr:title>
@@ -385,7 +431,7 @@
           <fr:mainmatter>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>279</fr:anchor>
+                <fr:anchor>290</fr:anchor>
                 <fr:addr type="user">judgement</fr:addr>
                 <fr:route>judgement.xml</fr:route>
                 <fr:title text="Judgements">Judgements</fr:title>
@@ -404,7 +450,7 @@
             </fr:tree>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>280</fr:anchor>
+                <fr:anchor>291</fr:anchor>
                 <fr:addr type="user">rel-judgements-fol</fr:addr>
                 <fr:route>rel-judgements-fol.xml</fr:route>
                 <fr:title text="Judgements and FOL">Judgements and FOL</fr:title>
@@ -419,7 +465,7 @@
             </fr:tree>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>281</fr:anchor>
+                <fr:anchor>292</fr:anchor>
                 <fr:addr type="user">rel-judgements-natural-deduction</fr:addr>
                 <fr:route>rel-judgements-natural-deduction.xml</fr:route>
                 <fr:title text="Judgements and Natural Deduction">Judgements and Natural Deduction</fr:title>
@@ -437,7 +483,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>282</fr:anchor>
+            <fr:anchor>293</fr:anchor>
             <fr:addr type="user">rel-judgements-fol</fr:addr>
             <fr:route>rel-judgements-fol.xml</fr:route>
             <fr:title text="Judgements and FOL">Judgements and FOL</fr:title>
@@ -452,7 +498,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>283</fr:anchor>
+            <fr:anchor>294</fr:anchor>
             <fr:addr type="user">rel-judgements-natural-deduction</fr:addr>
             <fr:route>rel-judgements-natural-deduction.xml</fr:route>
             <fr:title text="Judgements and Natural Deduction">Judgements and Natural Deduction</fr:title>
@@ -467,7 +513,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>284</fr:anchor>
+            <fr:anchor>295</fr:anchor>
             <fr:addr type="user">kernel</fr:addr>
             <fr:route>kernel.xml</fr:route>
             <fr:title text="Kernel Languages">Kernel Languages</fr:title>
@@ -481,7 +527,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>285</fr:anchor>
+            <fr:anchor>296</fr:anchor>
             <fr:addr type="user">srs-eager-prop</fr:addr>
             <fr:route>srs-eager-prop.xml</fr:route>
             <fr:title text="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:title>
@@ -496,7 +542,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>286</fr:anchor>
+            <fr:anchor>297</fr:anchor>
             <fr:addr type="user">srs-eager-prop-proof</fr:addr>
             <fr:route>srs-eager-prop-proof.xml</fr:route>
             <fr:title text="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:title>
@@ -506,7 +552,7 @@
           <fr:mainmatter>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>287</fr:anchor>
+                <fr:anchor>298</fr:anchor>
                 <fr:addr type="user">srs-eager-prop</fr:addr>
                 <fr:route>srs-eager-prop.xml</fr:route>
                 <fr:title text="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:title>
@@ -522,7 +568,7 @@
             <fr:p>We want to prove that, given a string rewrite system, <fr:link type="local" href="srs-eager-prop.xml" addr="srs-eager-prop" title="Local Rewriting Preserves Normal Forms">local rewrites preserve normal forms</fr:link>. First, we notice the following lemmas</fr:p>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>288</fr:anchor>
+                <fr:anchor>299</fr:anchor>
                 <fr:addr type="user">srs-eager-twice-noop</fr:addr>
                 <fr:route>srs-eager-twice-noop.xml</fr:route>
                 <fr:title text="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:title>
@@ -537,7 +583,7 @@
             </fr:tree>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>289</fr:anchor>
+                <fr:anchor>300</fr:anchor>
                 <fr:addr type="user">srs-eager-is-eager</fr:addr>
                 <fr:route>srs-eager-is-eager.xml</fr:route>
                 <fr:title text="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:title>
@@ -568,7 +614,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>290</fr:anchor>
+            <fr:anchor>301</fr:anchor>
             <fr:addr type="user">macro-expansion</fr:addr>
             <fr:route>macro-expansion.xml</fr:route>
             <fr:title text="Macro Expansion">Macro Expansion</fr:title>
@@ -582,7 +628,95 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>291</fr:anchor>
+            <fr:anchor>302</fr:anchor>
+            <fr:addr type="user">mltt</fr:addr>
+            <fr:route>mltt.xml</fr:route>
+            <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as formal systems consisting of the following four judgements.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li></fr:ul></fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>303</fr:anchor>
+            <fr:addr type="user">mltt-disc</fr:addr>
+            <fr:route>mltt-disc.xml</fr:route>
+            <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>269</fr:anchor>
+                <fr:addr type="user">mltt</fr:addr>
+                <fr:route>mltt.xml</fr:route>
+                <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as formal systems consisting of the following four judgements.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li></fr:ul></fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:p>Combined with <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">hypothetical and generalized judgements</fr:link>, the rules of MLTT may then be presented. For instance, the rules for function types look like the following.</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>270</fr:anchor>
+                <fr:addr type="user">mltt-pi-rules</fr:addr>
+                <fr:route>mltt-pi-rules.xml</fr:route>
+                <fr:title text="Rules for Pi Types in MLTT">Rules for Pi Types in MLTT</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>
+                  <fr:ul><fr:li>Formation, introduction, elimination.
+      <fr:tex display="block"><![CDATA[         \frac {           A \, \text {type} \quad            \{x\} \, x : A \vdash  B \, \text {type}         }{           \Pi _{x : A} \, B \, \text {type}         }         \quad          \frac {           \{x\} \, x : A \vdash  e : B         }{           \lambda  x. \, e : \Pi _{x : A} \, B         }         \quad          \frac {           f : \Pi _{x : A} \, B \quad            a : A         }{           f \, a : B[x \mapsto  a]         }       ]]></fr:tex></fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\beta ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\eta ]]></fr:tex> equations.
+      <fr:tex display="block"><![CDATA[         \frac {           A \, \text {type} \quad            \{x\} \, x : A \vdash  e : B \quad            a : A         }{           (\lambda  x. \, e) \, a = e[x \mapsto  a] : B[x \mapsto  a]         }         \quad          \frac {           f : \Pi _{x : A} \, B         }{           f = \lambda  x. \, f \, x : \Pi _{x : A} \, B         }       ]]></fr:tex></fr:li></fr:ul>
+                </fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>271</fr:anchor>
+                <fr:addr type="user">mltt-pres-trad</fr:addr>
+                <fr:route>mltt-pres-trad.xml</fr:route>
+                <fr:title text="Traditional Presentation of MLTT">Traditional Presentation of MLTT</fr:title>
+                <fr:taxon>Remark</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>In contrast to <fr:link type="local" href="mltt.xml" addr="mltt" title="Martin-Löf Type Theory">my presentation of MLTT's judgements</fr:link>, the traditional presentation of MLTT usually combines the hypothetical judgement with each of the typing/equation <fr:link type="external" href="judgements">judgements</fr:link>, i.e the traditional presentation looks like the following.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex> in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex> in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li></fr:ul>
+  Where each <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are <fr:em>multisets</fr:em> containing typings <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. Finally, the <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">generalized judgement</fr:link> is left implicit. This more specialized presentation is valid because in traditional MLTT, the hypothetical judgements <fr:em>only</fr:em> abstract over typing judgements <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. I use the contextless presentation because it is more general and also a bit easier to read.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>304</fr:anchor>
             <fr:addr type="user">srs-eager-twice-noop</fr:addr>
             <fr:route>srs-eager-twice-noop.xml</fr:route>
             <fr:title text="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:title>
@@ -597,7 +731,26 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>292</fr:anchor>
+            <fr:anchor>305</fr:anchor>
+            <fr:addr type="user">mltt-pi-rules</fr:addr>
+            <fr:route>mltt-pi-rules.xml</fr:route>
+            <fr:title text="Rules for Pi Types in MLTT">Rules for Pi Types in MLTT</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>
+              <fr:ul><fr:li>Formation, introduction, elimination.
+      <fr:tex display="block"><![CDATA[         \frac {           A \, \text {type} \quad            \{x\} \, x : A \vdash  B \, \text {type}         }{           \Pi _{x : A} \, B \, \text {type}         }         \quad          \frac {           \{x\} \, x : A \vdash  e : B         }{           \lambda  x. \, e : \Pi _{x : A} \, B         }         \quad          \frac {           f : \Pi _{x : A} \, B \quad            a : A         }{           f \, a : B[x \mapsto  a]         }       ]]></fr:tex></fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\beta ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\eta ]]></fr:tex> equations.
+      <fr:tex display="block"><![CDATA[         \frac {           A \, \text {type} \quad            \{x\} \, x : A \vdash  e : B \quad            a : A         }{           (\lambda  x. \, e) \, a = e[x \mapsto  a] : B[x \mapsto  a]         }         \quad          \frac {           f : \Pi _{x : A} \, B         }{           f = \lambda  x. \, f \, x : \Pi _{x : A} \, B         }       ]]></fr:tex></fr:li></fr:ul>
+            </fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>306</fr:anchor>
             <fr:addr type="user">readable-theorems</fr:addr>
             <fr:route>readable-theorems.xml</fr:route>
             <fr:title text="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:title>
@@ -615,7 +768,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>293</fr:anchor>
+            <fr:anchor>307</fr:anchor>
             <fr:addr type="user">signature</fr:addr>
             <fr:route>signature.xml</fr:route>
             <fr:title text="Signatures">Signatures</fr:title>
@@ -629,7 +782,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>294</fr:anchor>
+            <fr:anchor>308</fr:anchor>
             <fr:addr type="user">string-rewrite-system</fr:addr>
             <fr:route>string-rewrite-system.xml</fr:route>
             <fr:title text="String Rewrite System">String Rewrite System</fr:title>
@@ -643,7 +796,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>295</fr:anchor>
+            <fr:anchor>309</fr:anchor>
             <fr:addr type="user">tactics</fr:addr>
             <fr:route>tactics.xml</fr:route>
             <fr:title text="Tactics">Tactics</fr:title>
@@ -660,7 +813,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>296</fr:anchor>
+            <fr:anchor>310</fr:anchor>
             <fr:addr type="user">first-order-theory</fr:addr>
             <fr:route>first-order-theory.xml</fr:route>
             <fr:title text="Theories">Theories</fr:title>
@@ -674,7 +827,167 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>297</fr:anchor>
+            <fr:anchor>311</fr:anchor>
+            <fr:addr type="user">mltt-pres-trad</fr:addr>
+            <fr:route>mltt-pres-trad.xml</fr:route>
+            <fr:title text="Traditional Presentation of MLTT">Traditional Presentation of MLTT</fr:title>
+            <fr:taxon>Remark</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>In contrast to <fr:link type="local" href="mltt.xml" addr="mltt" title="Martin-Löf Type Theory">my presentation of MLTT's judgements</fr:link>, the traditional presentation of MLTT usually combines the hypothetical judgement with each of the typing/equation <fr:link type="external" href="judgements">judgements</fr:link>, i.e the traditional presentation looks like the following.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex> in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex> in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li></fr:ul>
+  Where each <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are <fr:em>multisets</fr:em> containing typings <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. Finally, the <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">generalized judgement</fr:link> is left implicit. This more specialized presentation is valid because in traditional MLTT, the hypothetical judgements <fr:em>only</fr:em> abstract over typing judgements <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. I use the contextless presentation because it is more general and also a bit easier to read.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>312</fr:anchor>
+            <fr:addr type="user">tt-as-algebra</fr:addr>
+            <fr:route>tt-as-algebra.xml</fr:route>
+            <fr:title text="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>TODO</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>313</fr:anchor>
+            <fr:addr type="user">tt-as-cwf</fr:addr>
+            <fr:route>tt-as-cwf.xml</fr:route>
+            <fr:title text="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>TODO</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>314</fr:anchor>
+            <fr:addr type="user">type-theory</fr:addr>
+            <fr:route>type-theory.xml</fr:route>
+            <fr:title text="Type Theory">Type Theory</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Type theory is a style of formal system that emphasizes syntax.</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>268</fr:anchor>
+                <fr:addr type="user">mltt-disc</fr:addr>
+                <fr:route>mltt-disc.xml</fr:route>
+                <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
+                <fr:taxon>Discussion</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>269</fr:anchor>
+                    <fr:addr type="user">mltt</fr:addr>
+                    <fr:route>mltt.xml</fr:route>
+                    <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                    <fr:authors />
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as formal systems consisting of the following four judgements.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li></fr:ul></fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:p>Combined with <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">hypothetical and generalized judgements</fr:link>, the rules of MLTT may then be presented. For instance, the rules for function types look like the following.</fr:p>
+                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>270</fr:anchor>
+                    <fr:addr type="user">mltt-pi-rules</fr:addr>
+                    <fr:route>mltt-pi-rules.xml</fr:route>
+                    <fr:title text="Rules for Pi Types in MLTT">Rules for Pi Types in MLTT</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                    <fr:authors />
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>
+                      <fr:ul><fr:li>Formation, introduction, elimination.
+      <fr:tex display="block"><![CDATA[         \frac {           A \, \text {type} \quad            \{x\} \, x : A \vdash  B \, \text {type}         }{           \Pi _{x : A} \, B \, \text {type}         }         \quad          \frac {           \{x\} \, x : A \vdash  e : B         }{           \lambda  x. \, e : \Pi _{x : A} \, B         }         \quad          \frac {           f : \Pi _{x : A} \, B \quad            a : A         }{           f \, a : B[x \mapsto  a]         }       ]]></fr:tex></fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\beta ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\eta ]]></fr:tex> equations.
+      <fr:tex display="block"><![CDATA[         \frac {           A \, \text {type} \quad            \{x\} \, x : A \vdash  e : B \quad            a : A         }{           (\lambda  x. \, e) \, a = e[x \mapsto  a] : B[x \mapsto  a]         }         \quad          \frac {           f : \Pi _{x : A} \, B         }{           f = \lambda  x. \, f \, x : \Pi _{x : A} \, B         }       ]]></fr:tex></fr:li></fr:ul>
+                    </fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>271</fr:anchor>
+                    <fr:addr type="user">mltt-pres-trad</fr:addr>
+                    <fr:route>mltt-pres-trad.xml</fr:route>
+                    <fr:title text="Traditional Presentation of MLTT">Traditional Presentation of MLTT</fr:title>
+                    <fr:taxon>Remark</fr:taxon>
+                    <fr:authors />
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>In contrast to <fr:link type="local" href="mltt.xml" addr="mltt" title="Martin-Löf Type Theory">my presentation of MLTT's judgements</fr:link>, the traditional presentation of MLTT usually combines the hypothetical judgement with each of the typing/equation <fr:link type="external" href="judgements">judgements</fr:link>, i.e the traditional presentation looks like the following.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex> in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex> in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li></fr:ul>
+  Where each <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are <fr:em>multisets</fr:em> containing typings <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. Finally, the <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">generalized judgement</fr:link> is left implicit. This more specialized presentation is valid because in traditional MLTT, the hypothetical judgements <fr:em>only</fr:em> abstract over typing judgements <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. I use the contextless presentation because it is more general and also a bit easier to read.</fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:p>The metatheory of type theory is still being developed, but generally people have converged on giving type theories semantics in <fr:link type="local" href="categories-with-families.xml" addr="categories-with-families" title="Categories with Families">categories with families</fr:link> and <fr:link type="local" href="algebra.xml" addr="algebra" title="Algebra">algebraic theories</fr:link>.</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>272</fr:anchor>
+                <fr:addr type="user">tt-as-cwf</fr:addr>
+                <fr:route>tt-as-cwf.xml</fr:route>
+                <fr:title text="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:title>
+                <fr:taxon>Discussion</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>TODO</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>273</fr:anchor>
+                <fr:addr type="user">tt-as-algebra</fr:addr>
+                <fr:route>tt-as-algebra.xml</fr:route>
+                <fr:title text="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:title>
+                <fr:taxon>Discussion</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>TODO</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>315</fr:anchor>
             <fr:addr type="user">vernacular</fr:addr>
             <fr:route>vernacular.xml</fr:route>
             <fr:title text="Vernacular Languages">Vernacular Languages</fr:title>
@@ -688,7 +1001,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>298</fr:anchor>
+            <fr:anchor>316</fr:anchor>
             <fr:addr type="user">why-formal-elab</fr:addr>
             <fr:route>why-formal-elab.xml</fr:route>
             <fr:title text="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:title>

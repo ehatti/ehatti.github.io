@@ -2,16 +2,15 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>360</fr:anchor>
-    <fr:addr type="user">rel-judgements-fol</fr:addr>
-    <fr:route>rel-judgements-fol.xml</fr:route>
-    <fr:title text="Judgements and FOL">Judgements and FOL</fr:title>
-    <fr:taxon>Remark</fr:taxon>
+    <fr:anchor>435</fr:anchor>
+    <fr:addr type="user">tt-as-algebra</fr:addr>
+    <fr:route>tt-as-algebra.xml</fr:route>
+    <fr:title text="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:title>
+    <fr:taxon>Discussion</fr:taxon>
     <fr:authors />
   </fr:frontmatter>
   <fr:mainmatter>
-    <fr:p>One may notice that the syntax of <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">judgements</fr:link> is merely a fragment of FOL. The transformation is syntactic.
-  <fr:tex display="block"><![CDATA[     \mathcal {J} :=       \mathcal {R}(\overline {e}) \,\, | \,\,       \forall  x. \, \mathcal {J} \,\, | \,\,       \mathcal {J} \Rightarrow  \mathcal {J}   ]]></fr:tex></fr:p>
+    <fr:p>TODO</fr:p>
   </fr:mainmatter>
   <fr:backmatter>
     <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
@@ -22,60 +21,111 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>361</fr:anchor>
-            <fr:addr type="user">judgements-disc</fr:addr>
-            <fr:route>judgements-disc.xml</fr:route>
-            <fr:title text="Judgements">Judgements</fr:title>
+            <fr:anchor>436</fr:anchor>
+            <fr:addr type="user">type-theory</fr:addr>
+            <fr:route>type-theory.xml</fr:route>
+            <fr:title text="Type Theory">Type Theory</fr:title>
             <fr:taxon>Discussion</fr:taxon>
             <fr:authors />
           </fr:frontmatter>
           <fr:mainmatter>
+            <fr:p>Type theory is a style of formal system that emphasizes syntax.</fr:p>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>290</fr:anchor>
-                <fr:addr type="user">judgement</fr:addr>
-                <fr:route>judgement.xml</fr:route>
-                <fr:title text="Judgements">Judgements</fr:title>
-                <fr:taxon>Definition</fr:taxon>
+                <fr:anchor>268</fr:anchor>
+                <fr:addr type="user">mltt-disc</fr:addr>
+                <fr:route>mltt-disc.xml</fr:route>
+                <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
+                <fr:taxon>Discussion</fr:taxon>
                 <fr:authors />
               </fr:frontmatter>
               <fr:mainmatter>
-                <fr:p>The <fr:em>judgements</fr:em> over a <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">signature</fr:link> <fr:tex display="inline"><![CDATA[E]]></fr:tex> are defined as follows.
-  <fr:tex display="block"><![CDATA[     \mathcal {J} :=       \mathcal {R}(\overline {e}) \,\, | \,\,       \{x\} \, \mathcal {J} \,\, | \,\,       \mathcal {J} \vdash  \mathcal {J}   ]]></fr:tex>
-  The proof rules for judgements are then straightfoward.
-  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\mathcal {R}(\overline {e})]]></fr:tex>: Supplied by the background <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">theory</fr:link></fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\{x\} \, \mathcal {J}]]></fr:tex>: Generalization and specialization</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\mathcal {H} \vdash  \mathcal {J}]]></fr:tex>: Abstraction and application</fr:li></fr:ul></fr:p>
+                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>269</fr:anchor>
+                    <fr:addr type="user">mltt</fr:addr>
+                    <fr:route>mltt.xml</fr:route>
+                    <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                    <fr:authors />
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as formal systems consisting of the following four judgements.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li></fr:ul></fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:p>Combined with <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">hypothetical and generalized judgements</fr:link>, the rules of MLTT may then be presented. For instance, the rules for function types look like the following.</fr:p>
+                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>270</fr:anchor>
+                    <fr:addr type="user">mltt-pi-rules</fr:addr>
+                    <fr:route>mltt-pi-rules.xml</fr:route>
+                    <fr:title text="Rules for Pi Types in MLTT">Rules for Pi Types in MLTT</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                    <fr:authors />
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>
+                      <fr:ul><fr:li>Formation, introduction, elimination.
+      <fr:tex display="block"><![CDATA[         \frac {           A \, \text {type} \quad            \{x\} \, x : A \vdash  B \, \text {type}         }{           \Pi _{x : A} \, B \, \text {type}         }         \quad          \frac {           \{x\} \, x : A \vdash  e : B         }{           \lambda  x. \, e : \Pi _{x : A} \, B         }         \quad          \frac {           f : \Pi _{x : A} \, B \quad            a : A         }{           f \, a : B[x \mapsto  a]         }       ]]></fr:tex></fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\beta ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\eta ]]></fr:tex> equations.
+      <fr:tex display="block"><![CDATA[         \frac {           A \, \text {type} \quad            \{x\} \, x : A \vdash  e : B \quad            a : A         }{           (\lambda  x. \, e) \, a = e[x \mapsto  a] : B[x \mapsto  a]         }         \quad          \frac {           f : \Pi _{x : A} \, B         }{           f = \lambda  x. \, f \, x : \Pi _{x : A} \, B         }       ]]></fr:tex></fr:li></fr:ul>
+                    </fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>271</fr:anchor>
+                    <fr:addr type="user">mltt-pres-trad</fr:addr>
+                    <fr:route>mltt-pres-trad.xml</fr:route>
+                    <fr:title text="Traditional Presentation of MLTT">Traditional Presentation of MLTT</fr:title>
+                    <fr:taxon>Remark</fr:taxon>
+                    <fr:authors />
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>In contrast to <fr:link type="local" href="mltt.xml" addr="mltt" title="Martin-Löf Type Theory">my presentation of MLTT's judgements</fr:link>, the traditional presentation of MLTT usually combines the hypothetical judgement with each of the typing/equation <fr:link type="external" href="judgements">judgements</fr:link>, i.e the traditional presentation looks like the following.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex> in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex> in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li></fr:ul>
+  Where each <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are <fr:em>multisets</fr:em> containing typings <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. Finally, the <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">generalized judgement</fr:link> is left implicit. This more specialized presentation is valid because in traditional MLTT, the hypothetical judgements <fr:em>only</fr:em> abstract over typing judgements <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. I use the contextless presentation because it is more general and also a bit easier to read.</fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:p>The metatheory of type theory is still being developed, but generally people have converged on giving type theories semantics in <fr:link type="local" href="categories-with-families.xml" addr="categories-with-families" title="Categories with Families">categories with families</fr:link> and <fr:link type="local" href="algebra.xml" addr="algebra" title="Algebra">algebraic theories</fr:link>.</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>272</fr:anchor>
+                <fr:addr type="user">tt-as-cwf</fr:addr>
+                <fr:route>tt-as-cwf.xml</fr:route>
+                <fr:title text="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:title>
+                <fr:taxon>Discussion</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>TODO</fr:p>
               </fr:mainmatter>
               <fr:backmatter />
             </fr:tree>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>291</fr:anchor>
-                <fr:addr type="user">rel-judgements-fol</fr:addr>
-                <fr:route>rel-judgements-fol.xml</fr:route>
-                <fr:title text="Judgements and FOL">Judgements and FOL</fr:title>
-                <fr:taxon>Remark</fr:taxon>
+                <fr:anchor>273</fr:anchor>
+                <fr:addr type="user">tt-as-algebra</fr:addr>
+                <fr:route>tt-as-algebra.xml</fr:route>
+                <fr:title text="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:title>
+                <fr:taxon>Discussion</fr:taxon>
                 <fr:authors />
               </fr:frontmatter>
               <fr:mainmatter>
-                <fr:p>One may notice that the syntax of <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">judgements</fr:link> is merely a fragment of FOL. The transformation is syntactic.
-  <fr:tex display="block"><![CDATA[     \mathcal {J} :=       \mathcal {R}(\overline {e}) \,\, | \,\,       \forall  x. \, \mathcal {J} \,\, | \,\,       \mathcal {J} \Rightarrow  \mathcal {J}   ]]></fr:tex></fr:p>
-              </fr:mainmatter>
-              <fr:backmatter />
-            </fr:tree>
-            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-              <fr:frontmatter>
-                <fr:anchor>292</fr:anchor>
-                <fr:addr type="user">rel-judgements-natural-deduction</fr:addr>
-                <fr:route>rel-judgements-natural-deduction.xml</fr:route>
-                <fr:title text="Judgements and Natural Deduction">Judgements and Natural Deduction</fr:title>
-                <fr:taxon>Remark</fr:taxon>
-                <fr:authors />
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <fr:p>Switching between traditional natural deduction syntax and judgement syntax is a simple syntactic transformation. Do as follows, where the generalized judgement on the right quantifies over all the metavariables on the left.
-  <fr:tex display="block"><![CDATA[     \frac {       \mathcal {H}_0 \,\,       \dots  \,\,       \mathcal {H}_n     }{       \mathcal {J}     }     \quad      \longrightarrow      \quad      \{\,\dots \} \,\, \mathcal {H}_0 \dots  \mathcal {H}_n \vdash  \mathcal {J}   ]]></fr:tex></fr:p>
+                <fr:p>TODO</fr:p>
               </fr:mainmatter>
               <fr:backmatter />
             </fr:tree>
@@ -93,7 +143,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>362</fr:anchor>
+            <fr:anchor>437</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>
@@ -138,34 +188,6 @@
                 <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="why-formal-elab.xml" addr="why-formal-elab" title="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:link></fr:li>
               </fr:ul>
             </fr:p>
-          </fr:mainmatter>
-          <fr:backmatter />
-        </fr:tree>
-      </fr:mainmatter>
-      <fr:backmatter />
-    </fr:tree>
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-      <fr:frontmatter>
-        <fr:title text="Related">Related</fr:title>
-        <fr:authors />
-      </fr:frontmatter>
-      <fr:mainmatter>
-        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-          <fr:frontmatter>
-            <fr:anchor>363</fr:anchor>
-            <fr:addr type="user">judgement</fr:addr>
-            <fr:route>judgement.xml</fr:route>
-            <fr:title text="Judgements">Judgements</fr:title>
-            <fr:taxon>Definition</fr:taxon>
-            <fr:authors />
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:p>The <fr:em>judgements</fr:em> over a <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">signature</fr:link> <fr:tex display="inline"><![CDATA[E]]></fr:tex> are defined as follows.
-  <fr:tex display="block"><![CDATA[     \mathcal {J} :=       \mathcal {R}(\overline {e}) \,\, | \,\,       \{x\} \, \mathcal {J} \,\, | \,\,       \mathcal {J} \vdash  \mathcal {J}   ]]></fr:tex>
-  The proof rules for judgements are then straightfoward.
-  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\mathcal {R}(\overline {e})]]></fr:tex>: Supplied by the background <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">theory</fr:link></fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\{x\} \, \mathcal {J}]]></fr:tex>: Generalization and specialization</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\mathcal {H} \vdash  \mathcal {J}]]></fr:tex>: Abstraction and application</fr:li></fr:ul></fr:p>
           </fr:mainmatter>
           <fr:backmatter />
         </fr:tree>

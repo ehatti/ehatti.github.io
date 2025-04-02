@@ -2,19 +2,15 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>405</fr:anchor>
-    <fr:addr type="user">readable-theorems</fr:addr>
-    <fr:route>readable-theorems.xml</fr:route>
-    <fr:title text="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:title>
-    <fr:taxon>Remark</fr:taxon>
+    <fr:anchor>265</fr:anchor>
+    <fr:addr type="user">algebra</fr:addr>
+    <fr:route>algebra.xml</fr:route>
+    <fr:title text="Algebra">Algebra</fr:title>
+    <fr:taxon>Definition</fr:taxon>
     <fr:authors />
   </fr:frontmatter>
   <fr:mainmatter>
-    <fr:p>A key quality of <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">kernel</fr:link> logics is that they are explicitly geared toward being <fr:em>machine</fr:em>-readable rather than human readable. But does this extend only to the proofs, only to the propositions, or to both?</fr:p>
-    <fr:p>What I believe is that while the proofs need not be human-readable, the propositions <fr:em>should</fr:em>. This is because ultimately the machine should follow the <fr:link type="external" href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment">principle of least surprise</fr:link>. What this means simply is that the machine should never try to guess the user's intent. One of the worst errors you can make as a mathematician is proving the wrong theorem -- even worse if the machine <fr:em>misinterpreted</fr:em> the theorem you meant to prove!</fr:p>
-    <fr:p>Machines can be quite clever, but cleverness is not cleverness at all if the machine is not obeying the user! What this tells us is that the machine should never employ clever strategies when <fr:link type="local" href="elaboration.xml" addr="elaboration" title="Elaboration">elaborating</fr:link> the propositions the user supplies, but may employ anything it wishes when elaborating the user's proofs.</fr:p>
-    <fr:p>In practice anyway, propositions employ far less complicated constructs than proofs, meaning that we don't lose much by requiring this principle to be followed.</fr:p>
-    <fr:p>This also fuels some of my gripes about dependent types. Allowing arbitrary programs to execute in the propositions destroys the nice separation between the machine-readable world and the human-readable world. In dependently typed proof assistants, the machine can surprise you!</fr:p>
+    <fr:p>TODO</fr:p>
   </fr:mainmatter>
   <fr:backmatter>
     <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
@@ -25,7 +21,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>406</fr:anchor>
+            <fr:anchor>266</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>
@@ -73,103 +69,116 @@
           </fr:mainmatter>
           <fr:backmatter />
         </fr:tree>
-      </fr:mainmatter>
-      <fr:backmatter />
-    </fr:tree>
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-      <fr:frontmatter>
-        <fr:title text="Related">Related</fr:title>
-        <fr:authors />
-      </fr:frontmatter>
-      <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>407</fr:anchor>
-            <fr:addr type="user">elaboration</fr:addr>
-            <fr:route>elaboration.xml</fr:route>
-            <fr:title text="Elaboration">Elaboration</fr:title>
-            <fr:taxon>Definition</fr:taxon>
+            <fr:anchor>267</fr:anchor>
+            <fr:addr type="user">type-theory</fr:addr>
+            <fr:route>type-theory.xml</fr:route>
+            <fr:title text="Type Theory">Type Theory</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
             <fr:authors />
           </fr:frontmatter>
           <fr:mainmatter>
+            <fr:p>Type theory is a style of formal system that emphasizes syntax.</fr:p>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>254</fr:anchor>
-                <fr:addr type="user">elaboration-intuition</fr:addr>
-                <fr:route>elaboration-intuition.xml</fr:route>
-                <fr:title text="Elaboration, Intuitively">Elaboration, Intuitively</fr:title>
+                <fr:anchor>268</fr:anchor>
+                <fr:addr type="user">mltt-disc</fr:addr>
+                <fr:route>mltt-disc.xml</fr:route>
+                <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
                 <fr:taxon>Discussion</fr:taxon>
-                <fr:authors />
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <fr:p>Elaboration is a concept that pops up in every proof assistant, but what is it? Intuitively, elaboration seems to have two main qualities:
-  <fr:ol><fr:li>It functions somewhat like <fr:link type="local" href="macro-expansion.xml" addr="macro-expansion" title="Macro Expansion">macro expansion</fr:link>. Given some term in the <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">vernacular</fr:link>, an elaborator will lower it down to a term in the <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">kernel language</fr:link>.</fr:li>
-    <fr:li>It involves reconstruction of information left implicit by the user.</fr:li></fr:ol></fr:p>
-                <fr:p>The key thing that makes this like macro expansion is that the kernel term that the vernacular term expanded to may be <fr:em>observed</fr:em> by the user. If you write a term in a type signature and look at the goal the system gives you for the definition, you're going to see the kernel term. Kernel terms are not necessarily human-readable, so pretty-printing will likely do a lot of work to massage the goal into a nice form, but this is purely syntactic tricks, the term is ultimately still in the kernel language.</fr:p>
-                <fr:p>Expanding a bit on the second quality: For instance, the elaborator may perform type inference to fill a metavariable, or perform typeclass resolution to fill a class obligation, or use the type of an expression to determine what notation scope to interpret it in. All of these things are information that the elaborator implicitly reconstructs for the user.</fr:p>
-              </fr:mainmatter>
-              <fr:backmatter />
-            </fr:tree>
-            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-              <fr:frontmatter>
-                <fr:anchor>255</fr:anchor>
-                <fr:addr type="user">macro-elab-definition</fr:addr>
-                <fr:route>macro-elab-definition.xml</fr:route>
-                <fr:title text="A Macro-Based Explanation of Elaboration">A Macro-Based Explanation of Elaboration</fr:title>
-                <fr:taxon>Discussion</fr:taxon>
-                <fr:authors />
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <fr:p>A preliminary definition of <fr:link type="local" href="elaboration.xml" addr="elaboration" title="Elaboration">elaboration</fr:link> we may use essentially just captures the initial <fr:link type="local" href="elaboration-intuition.xml" addr="elaboration-intuition" title="Elaboration, Intuitively">intuition for elaboration</fr:link> in a more systematic way. An elaborator is quite literally just a set of syntactic macro rules which may both spawn and solve <fr:em>metavariables</fr:em>. Furthermore the macros have access to the <fr:em>goal type</fr:em>, which captures the type-directed nature of elaboration.</fr:p>
-                <fr:p>The macro rules are permitted to executed arbitrary code in some metalanguage, which allows for typeclass resolution, unification, and etc to be implemented. This is essentially the direction that Lean 4 seems to have gone -- the user at any point may insert arbitrary definitions of new syntax and transformations on that syntax, and elaboration recursively expands macros until it cannot anymore.</fr:p>
-                <fr:p>This definition is very unsatisfying mathematically though! This is because all it does is capture the initial intuition. Tt provides no new information nor insights into what elaboration <fr:em>should</fr:em> be, nor what it is in relation to the rest of mathematics. Thus this definition is unsuitable for a formalization of elaboration.</fr:p>
-              </fr:mainmatter>
-              <fr:backmatter />
-            </fr:tree>
-            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-              <fr:frontmatter>
-                <fr:anchor>256</fr:anchor>
-                <fr:addr type="user">elaboration-formal</fr:addr>
-                <fr:route>elaboration-formal.xml</fr:route>
-                <fr:title text="Elaboration, Formally">Elaboration, Formally</fr:title>
-                <fr:taxon>Definition</fr:taxon>
                 <fr:authors />
               </fr:frontmatter>
               <fr:mainmatter>
                 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
                   <fr:frontmatter>
-                    <fr:anchor>257</fr:anchor>
-                    <fr:addr type="user">why-formal-elab</fr:addr>
-                    <fr:route>why-formal-elab.xml</fr:route>
-                    <fr:title text="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:title>
+                    <fr:anchor>269</fr:anchor>
+                    <fr:addr type="user">mltt</fr:addr>
+                    <fr:route>mltt.xml</fr:route>
+                    <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                    <fr:authors />
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as formal systems consisting of the following four judgements.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li></fr:ul></fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:p>Combined with <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">hypothetical and generalized judgements</fr:link>, the rules of MLTT may then be presented. For instance, the rules for function types look like the following.</fr:p>
+                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>270</fr:anchor>
+                    <fr:addr type="user">mltt-pi-rules</fr:addr>
+                    <fr:route>mltt-pi-rules.xml</fr:route>
+                    <fr:title text="Rules for Pi Types in MLTT">Rules for Pi Types in MLTT</fr:title>
+                    <fr:taxon>Definition</fr:taxon>
+                    <fr:authors />
+                  </fr:frontmatter>
+                  <fr:mainmatter>
+                    <fr:p>
+                      <fr:ul><fr:li>Formation, introduction, elimination.
+      <fr:tex display="block"><![CDATA[         \frac {           A \, \text {type} \quad            \{x\} \, x : A \vdash  B \, \text {type}         }{           \Pi _{x : A} \, B \, \text {type}         }         \quad          \frac {           \{x\} \, x : A \vdash  e : B         }{           \lambda  x. \, e : \Pi _{x : A} \, B         }         \quad          \frac {           f : \Pi _{x : A} \, B \quad            a : A         }{           f \, a : B[x \mapsto  a]         }       ]]></fr:tex></fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\beta ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\eta ]]></fr:tex> equations.
+      <fr:tex display="block"><![CDATA[         \frac {           A \, \text {type} \quad            \{x\} \, x : A \vdash  e : B \quad            a : A         }{           (\lambda  x. \, e) \, a = e[x \mapsto  a] : B[x \mapsto  a]         }         \quad          \frac {           f : \Pi _{x : A} \, B         }{           f = \lambda  x. \, f \, x : \Pi _{x : A} \, B         }       ]]></fr:tex></fr:li></fr:ul>
+                    </fr:p>
+                  </fr:mainmatter>
+                  <fr:backmatter />
+                </fr:tree>
+                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+                  <fr:frontmatter>
+                    <fr:anchor>271</fr:anchor>
+                    <fr:addr type="user">mltt-pres-trad</fr:addr>
+                    <fr:route>mltt-pres-trad.xml</fr:route>
+                    <fr:title text="Traditional Presentation of MLTT">Traditional Presentation of MLTT</fr:title>
                     <fr:taxon>Remark</fr:taxon>
                     <fr:authors />
                   </fr:frontmatter>
                   <fr:mainmatter>
-                    <fr:p>Formally defining elaboration is important for two broad reasons.
-  <fr:ol><fr:li>It forces us to determine what elaboration <fr:em>should</fr:em> be. What do the "best" examples of elaborators look like, and how do we determine what a "bad" elaborator is?</fr:li>
-    <fr:li>It paves the way for developing abstractions in the space of elaborators. This allows for reusable software components to be developed, which is essential to <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">making construction of proof assistants easier</fr:link>.</fr:li></fr:ol></fr:p>
+                    <fr:p>In contrast to <fr:link type="local" href="mltt.xml" addr="mltt" title="Martin-Löf Type Theory">my presentation of MLTT's judgements</fr:link>, the traditional presentation of MLTT usually combines the hypothetical judgement with each of the typing/equation <fr:link type="external" href="judgements">judgements</fr:link>, i.e the traditional presentation looks like the following.
+  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex> in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
+    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex> in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li></fr:ul>
+  Where each <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are <fr:em>multisets</fr:em> containing typings <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. Finally, the <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">generalized judgement</fr:link> is left implicit. This more specialized presentation is valid because in traditional MLTT, the hypothetical judgements <fr:em>only</fr:em> abstract over typing judgements <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. I use the contextless presentation because it is more general and also a bit easier to read.</fr:p>
                   </fr:mainmatter>
                   <fr:backmatter />
                 </fr:tree>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:p>The metatheory of type theory is still being developed, but generally people have converged on giving type theories semantics in <fr:link type="local" href="categories-with-families.xml" addr="categories-with-families" title="Categories with Families">categories with families</fr:link> and <fr:link type="local" href="algebra.xml" addr="algebra" title="Algebra">algebraic theories</fr:link>.</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>272</fr:anchor>
+                <fr:addr type="user">tt-as-cwf</fr:addr>
+                <fr:route>tt-as-cwf.xml</fr:route>
+                <fr:title text="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:title>
+                <fr:taxon>Discussion</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
                 <fr:p>TODO</fr:p>
               </fr:mainmatter>
               <fr:backmatter />
             </fr:tree>
-          </fr:mainmatter>
-          <fr:backmatter />
-        </fr:tree>
-        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-          <fr:frontmatter>
-            <fr:anchor>408</fr:anchor>
-            <fr:addr type="user">kernel</fr:addr>
-            <fr:route>kernel.xml</fr:route>
-            <fr:title text="Kernel Languages">Kernel Languages</fr:title>
-            <fr:taxon>Definition</fr:taxon>
-            <fr:authors />
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:p>A kernel is a logic designed to be simple, expressive, and easily machine-readable. The readability for humans is explicitly an <fr:em>anti</fr:em>-concern, kernel logics are meant to be the central source of truth for a proof assistant, and thus cannot be bound up in imprecise human reasoning.</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>273</fr:anchor>
+                <fr:addr type="user">tt-as-algebra</fr:addr>
+                <fr:route>tt-as-algebra.xml</fr:route>
+                <fr:title text="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:title>
+                <fr:taxon>Discussion</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>TODO</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
           </fr:mainmatter>
           <fr:backmatter />
         </fr:tree>
