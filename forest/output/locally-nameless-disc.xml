@@ -2,58 +2,17 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>507</fr:anchor>
-    <fr:addr type="user">why-formal-elab</fr:addr>
-    <fr:route>why-formal-elab.xml</fr:route>
-    <fr:title text="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:title>
-    <fr:taxon>Remark</fr:taxon>
+    <fr:anchor>418</fr:anchor>
+    <fr:addr type="user">locally-nameless-disc</fr:addr>
+    <fr:route>locally-nameless-disc.xml</fr:route>
+    <fr:title text="Locally Nameless">Locally Nameless</fr:title>
+    <fr:taxon>Discussion</fr:taxon>
     <fr:authors />
   </fr:frontmatter>
   <fr:mainmatter>
-    <fr:p>Formally defining elaboration is important for two broad reasons.
-  <fr:ol><fr:li>It forces us to determine what elaboration <fr:em>should</fr:em> be. What do the "best" examples of elaborators look like, and how do we determine what a "bad" elaborator is?</fr:li>
-    <fr:li>It paves the way for developing abstractions in the space of elaborators. This allows for reusable software components to be developed, which is essential to <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">making construction of proof assistants easier</fr:link>.</fr:li></fr:ol></fr:p>
+    <fr:p>TODO</fr:p>
   </fr:mainmatter>
   <fr:backmatter>
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-      <fr:frontmatter>
-        <fr:title text="Context">Context</fr:title>
-        <fr:authors />
-      </fr:frontmatter>
-      <fr:mainmatter>
-        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-          <fr:frontmatter>
-            <fr:anchor>508</fr:anchor>
-            <fr:addr type="user">elaboration-formal</fr:addr>
-            <fr:route>elaboration-formal.xml</fr:route>
-            <fr:title text="Elaboration, Formally">Elaboration, Formally</fr:title>
-            <fr:taxon>Definition</fr:taxon>
-            <fr:authors />
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-              <fr:frontmatter>
-                <fr:anchor>257</fr:anchor>
-                <fr:addr type="user">why-formal-elab</fr:addr>
-                <fr:route>why-formal-elab.xml</fr:route>
-                <fr:title text="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:title>
-                <fr:taxon>Remark</fr:taxon>
-                <fr:authors />
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <fr:p>Formally defining elaboration is important for two broad reasons.
-  <fr:ol><fr:li>It forces us to determine what elaboration <fr:em>should</fr:em> be. What do the "best" examples of elaborators look like, and how do we determine what a "bad" elaborator is?</fr:li>
-    <fr:li>It paves the way for developing abstractions in the space of elaborators. This allows for reusable software components to be developed, which is essential to <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">making construction of proof assistants easier</fr:link>.</fr:li></fr:ol></fr:p>
-              </fr:mainmatter>
-              <fr:backmatter />
-            </fr:tree>
-            <fr:p>TODO</fr:p>
-          </fr:mainmatter>
-          <fr:backmatter />
-        </fr:tree>
-      </fr:mainmatter>
-      <fr:backmatter />
-    </fr:tree>
     <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
       <fr:frontmatter>
         <fr:title text="Backlinks">Backlinks</fr:title>
@@ -62,7 +21,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>509</fr:anchor>
+            <fr:anchor>419</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>
@@ -120,50 +79,43 @@
           </fr:mainmatter>
           <fr:backmatter />
         </fr:tree>
-      </fr:mainmatter>
-      <fr:backmatter />
-    </fr:tree>
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-      <fr:frontmatter>
-        <fr:title text="Related">Related</fr:title>
-        <fr:authors />
-      </fr:frontmatter>
-      <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>510</fr:anchor>
-            <fr:addr type="user">proof-assistant-explosion</fr:addr>
-            <fr:route>proof-assistant-explosion.xml</fr:route>
-            <fr:title text="Constructing Proof Assistants">Constructing Proof Assistants</fr:title>
-            <fr:taxon>Problem</fr:taxon>
-            <fr:date>
-              <fr:year>2025</fr:year>
-              <fr:month>3</fr:month>
-              <fr:day>31</fr:day>
-            </fr:date>
+            <fr:anchor>420</fr:anchor>
+            <fr:addr type="user">hoas-cons</fr:addr>
+            <fr:route>hoas-cons.xml</fr:route>
+            <fr:title text="Cons of HOAS">Cons of HOAS</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
             <fr:authors />
           </fr:frontmatter>
           <fr:mainmatter>
-            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-              <fr:frontmatter>
-                <fr:anchor>246</fr:anchor>
-                <fr:addr type="user">programming-language-explosion</fr:addr>
-                <fr:route>programming-language-explosion.xml</fr:route>
-                <fr:title text="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:title>
-                <fr:taxon>Remark</fr:taxon>
-                <fr:date>
-                  <fr:year>2025</fr:year>
-                  <fr:month>3</fr:month>
-                  <fr:day>31</fr:day>
-                </fr:date>
-                <fr:authors />
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <fr:p>It has been known in the PL community for a long time that the number of programming languages has been rising at an increasing rate. This is because there are an increasingly large number of tools that <fr:em>abstract</fr:em> over various parts of language construction, thereby making the entire process much quicker. This is a good thing! It allows for rapid experimentation and iteration on new ideas.</fr:p>
-              </fr:mainmatter>
-              <fr:backmatter />
-            </fr:tree>
-            <fr:p>A problem the proof assistant community faces is that we do not have the same abstractions for constructing provers that the PL people have. We must implement complex algorithms like higher-order unification and normalization-by-evaluation over and over again with slight variations. In recent times there is an ever-growing need for constructing provers to be easier due to the number of new type theories emerging, but we currently do not have the tools to develop provers for these theories at a fast-enough rate.</fr:p>
+            <fr:p>The first con of HOAS is that inspecting terms under a binder becomes impossible. Imagine that you want to implement an operation that checks if a term is equal to the identity function. How will you implement this?
+  <fr:pre>isIdentity :: Term -&gt; Bool
+isIdentity (Lam e) = ...
+isIdentity (App _ _) = False</fr:pre>
+  How do you fill in the <fr:code>...</fr:code>? You can't pattern-match on <fr:code>e</fr:code> because it's a function, so you have to call it on something. You could just pick some arbitrary term to plug in and treat every occurance of that term as if it were a variable, but you have no assurance that a user will never actually write that term, which would cause your algorithm to produce incorrect results.</fr:p>
+            <fr:p>This problem is solvable with some extra work though. If you want to inspect under a binder encoded with HOAS, the correct approach is to add back the explicit variable constructor to your model.
+  <fr:pre>-- HOAS in Haskell
+data Term
+  = Var String
+  | Lam (Term -&gt; Term)
+  | App Term Term</fr:pre>
+  Here I've chosen variables to contain <fr:code>String</fr:code>s that we can use to check equality of variables, but you could pick any other type to represent them. This approach is in fact the <fr:link type="local" href="locally-nameless.xml" addr="locally-nameless" title="Locally Nameless">locally nameless</fr:link> approach, which comes with its own <fr:link type="local" href="locally-nameless-disc.xml" addr="locally-nameless-disc" title="Locally Nameless">pros and cons</fr:link>.</fr:p>
+            <fr:p>The next cons apply to HOAS's use in proof assistants. First, <fr:link type="local" href="when-nonpos-okay.xml" addr="when-nonpos-okay" title="When Nonpositivity is Acceptable">most</fr:link> proof assistants don't permit HOAS in the first place! HOAS is a <fr:link type="local" href="nonpositive-types.xml" addr="nonpositive-types" title="Nonpositive Types">nonpositive type</fr:link>, so proof assistants will reject it as an invalid inductive type. For instance, Rocq gives the following error.
+  <fr:pre>Inductive term :=
+| Lam (e : term -&gt; term)
+| App (f : term) (a : term).</fr:pre>
+  <fr:pre>Error: Non strictly positive occurrence of "term" in "(term -&gt; term) -&gt; term".</fr:pre>
+  Unless you disable the positivity checker and thus make the proof assistant inconsistent, you won't be able to use HOAS.</fr:p>
+            <fr:p>However, let's say that you are okay with the possible inconsistency. If so, you will still run into another problem, which is that HOAS invalidates easy theorems we expect to hold for our languages. For instance, in most languages first-class functions may not be inspected as data. They are opaque code, and the only thing you can do with them is apply them to arguments. This is an important theorem we want to be able to prove when formalizing languages in a proof assistant, and it is false if you use HOAS! Take the following term as an example, using the representation we defined in Rocq.
+  <fr:pre>Definition exotic : term :=
+  Lam (fun x =&gt;
+    match x with
+    | Lam _ =&gt; x
+    | App _ _ =&gt; App x x
+    end)</fr:pre>
+   These kinds of terms are called "exotic terms". The lambda calculus as it is defined mathematically does not allow exotic terms, but in our model they is indeed definable. Thus, HOAS does not allow you to properly model the lambda calculus. The same problem holds for any language (most languages) where we prohibit code to be inspected like data.</fr:p>
+            <fr:p>A final con of HOAS is that the expressivity of the metalanguage limits how useful this approach is. For instance, if the metalanguage lacks first-class functions, the advantages of HOAS with be dubious, as it may be as hard to use HOAS as it would be to use an approach like DeBruijn indices. This is not <fr:em>too</fr:em> much of a problem in practice now that most modern languages have first-class functions and closures.</fr:p>
           </fr:mainmatter>
           <fr:backmatter />
         </fr:tree>

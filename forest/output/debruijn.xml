@@ -2,58 +2,17 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>507</fr:anchor>
-    <fr:addr type="user">why-formal-elab</fr:addr>
-    <fr:route>why-formal-elab.xml</fr:route>
-    <fr:title text="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:title>
-    <fr:taxon>Remark</fr:taxon>
+    <fr:anchor>340</fr:anchor>
+    <fr:addr type="user">debruijn</fr:addr>
+    <fr:route>debruijn.xml</fr:route>
+    <fr:title text="DeBruijn Indices">DeBruijn Indices</fr:title>
+    <fr:taxon>Definition</fr:taxon>
     <fr:authors />
   </fr:frontmatter>
   <fr:mainmatter>
-    <fr:p>Formally defining elaboration is important for two broad reasons.
-  <fr:ol><fr:li>It forces us to determine what elaboration <fr:em>should</fr:em> be. What do the "best" examples of elaborators look like, and how do we determine what a "bad" elaborator is?</fr:li>
-    <fr:li>It paves the way for developing abstractions in the space of elaborators. This allows for reusable software components to be developed, which is essential to <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">making construction of proof assistants easier</fr:link>.</fr:li></fr:ol></fr:p>
+    <fr:p>TODO</fr:p>
   </fr:mainmatter>
   <fr:backmatter>
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-      <fr:frontmatter>
-        <fr:title text="Context">Context</fr:title>
-        <fr:authors />
-      </fr:frontmatter>
-      <fr:mainmatter>
-        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-          <fr:frontmatter>
-            <fr:anchor>508</fr:anchor>
-            <fr:addr type="user">elaboration-formal</fr:addr>
-            <fr:route>elaboration-formal.xml</fr:route>
-            <fr:title text="Elaboration, Formally">Elaboration, Formally</fr:title>
-            <fr:taxon>Definition</fr:taxon>
-            <fr:authors />
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-              <fr:frontmatter>
-                <fr:anchor>257</fr:anchor>
-                <fr:addr type="user">why-formal-elab</fr:addr>
-                <fr:route>why-formal-elab.xml</fr:route>
-                <fr:title text="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:title>
-                <fr:taxon>Remark</fr:taxon>
-                <fr:authors />
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <fr:p>Formally defining elaboration is important for two broad reasons.
-  <fr:ol><fr:li>It forces us to determine what elaboration <fr:em>should</fr:em> be. What do the "best" examples of elaborators look like, and how do we determine what a "bad" elaborator is?</fr:li>
-    <fr:li>It paves the way for developing abstractions in the space of elaborators. This allows for reusable software components to be developed, which is essential to <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">making construction of proof assistants easier</fr:link>.</fr:li></fr:ol></fr:p>
-              </fr:mainmatter>
-              <fr:backmatter />
-            </fr:tree>
-            <fr:p>TODO</fr:p>
-          </fr:mainmatter>
-          <fr:backmatter />
-        </fr:tree>
-      </fr:mainmatter>
-      <fr:backmatter />
-    </fr:tree>
     <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
       <fr:frontmatter>
         <fr:title text="Backlinks">Backlinks</fr:title>
@@ -62,7 +21,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>509</fr:anchor>
+            <fr:anchor>341</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>
@@ -120,50 +79,46 @@
           </fr:mainmatter>
           <fr:backmatter />
         </fr:tree>
-      </fr:mainmatter>
-      <fr:backmatter />
-    </fr:tree>
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-      <fr:frontmatter>
-        <fr:title text="Related">Related</fr:title>
-        <fr:authors />
-      </fr:frontmatter>
-      <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>510</fr:anchor>
-            <fr:addr type="user">proof-assistant-explosion</fr:addr>
-            <fr:route>proof-assistant-explosion.xml</fr:route>
-            <fr:title text="Constructing Proof Assistants">Constructing Proof Assistants</fr:title>
-            <fr:taxon>Problem</fr:taxon>
-            <fr:date>
-              <fr:year>2025</fr:year>
-              <fr:month>3</fr:month>
-              <fr:day>31</fr:day>
-            </fr:date>
+            <fr:anchor>342</fr:anchor>
+            <fr:addr type="user">hoas</fr:addr>
+            <fr:route>hoas.xml</fr:route>
+            <fr:title text="Higher-Order Abstract Syntax">Higher-Order Abstract Syntax</fr:title>
+            <fr:taxon>Definition</fr:taxon>
             <fr:authors />
           </fr:frontmatter>
           <fr:mainmatter>
-            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-              <fr:frontmatter>
-                <fr:anchor>246</fr:anchor>
-                <fr:addr type="user">programming-language-explosion</fr:addr>
-                <fr:route>programming-language-explosion.xml</fr:route>
-                <fr:title text="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:title>
-                <fr:taxon>Remark</fr:taxon>
-                <fr:date>
-                  <fr:year>2025</fr:year>
-                  <fr:month>3</fr:month>
-                  <fr:day>31</fr:day>
-                </fr:date>
-                <fr:authors />
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <fr:p>It has been known in the PL community for a long time that the number of programming languages has been rising at an increasing rate. This is because there are an increasingly large number of tools that <fr:em>abstract</fr:em> over various parts of language construction, thereby making the entire process much quicker. This is a good thing! It allows for rapid experimentation and iteration on new ideas.</fr:p>
-              </fr:mainmatter>
-              <fr:backmatter />
-            </fr:tree>
-            <fr:p>A problem the proof assistant community faces is that we do not have the same abstractions for constructing provers that the PL people have. We must implement complex algorithms like higher-order unification and normalization-by-evaluation over and over again with slight variations. In recent times there is an ever-growing need for constructing provers to be easier due to the number of new type theories emerging, but we currently do not have the tools to develop provers for these theories at a fast-enough rate.</fr:p>
+            <fr:p>Higher-order abstract syntax (HOAS) is a technique where the binding structure of the metalanguage (i.e the implementation language) is <fr:em>reused</fr:em> to implement the binding structure in the object language (i.e the language being defined). The lambda calculus is a concrete example, and may look something like the following in Haskell.
+
+  <fr:pre>-- HOAS in Haskell
+data Term
+  = Lam (Term -&gt; Term)
+  | App Term Term</fr:pre>
+  Note that unlike in other representations of syntax-with-binding like <fr:link type="local" href="debruijn.xml" addr="debruijn" title="DeBruijn Indices">DeBruijn indices</fr:link>, there is no constructor for variables. For instance, in this model the identity function is defined as follows.
+<fr:pre>identity :: Term
+identity = Lam (λ x -&gt; x)</fr:pre></fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>343</fr:anchor>
+            <fr:addr type="user">hoas-pros</fr:addr>
+            <fr:route>hoas-pros.xml</fr:route>
+            <fr:title text="Pros of HOAS">Pros of HOAS</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>The most major advantage of HOAS is that it frees the language implementor from having to think hard about substitution. In <fr:link type="local" href="named-variables.xml" addr="named-variables" title="Named Variables">approaches with named variables</fr:link> the user must handle capture-avoidance, generation of fresh names, and equality checking of variables. <fr:link type="local" href="debruijn.xml" addr="debruijn" title="DeBruijn Indices">DeBruijn indices</fr:link> are much easier to manage, but the user must still handle shifting variables up and down. With HOAS, substitution is as simple as possible. For instance, an evaluator for the <fr:link type="local" href="hoas.xml" addr="hoas" title="Higher-Order Abstract Syntax">lambda calculus defined with HOAS</fr:link> looks like the following.
+  <fr:pre>eval :: Term -&gt; Term
+eval (Lam e) = Lam e
+eval (App f v) =
+  case eval f of
+    Lam e -&gt; e (eval v)
+    _ -&gt; undefined</fr:pre>
+  Here, <fr:code>e (eval v)</fr:code> is the act of substitution. Substitution is so simple that we don't even need to define it as a separate procedure -- it's quite literally as easy as calling a function.</fr:p>
           </fr:mainmatter>
           <fr:backmatter />
         </fr:tree>

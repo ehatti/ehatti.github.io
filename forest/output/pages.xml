@@ -14,19 +14,28 @@
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="admissible-rule.xml" addr="admissible-rule" title="Admissible Rules">Admissible Rules</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="algebra.xml" addr="algebra" title="Algebra">Algebra</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="categories-with-families.xml" addr="categories-with-families" title="Categories with Families">Categories with Families</fr:link></fr:li>
+        <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="debruijn.xml" addr="debruijn" title="DeBruijn Indices">DeBruijn Indices</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration-formal.xml" addr="elaboration-formal" title="Elaboration, Formally">Elaboration, Formally</fr:link></fr:li>
         <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="elaboration-intuition.xml" addr="elaboration-intuition" title="Elaboration, Intuitively">Elaboration, Intuitively</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration.xml" addr="elaboration" title="Elaboration">Elaboration</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">Theories</fr:link></fr:li>
+        <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="hoas-cons.xml" addr="hoas-cons" title="Cons of HOAS">Cons of HOAS</fr:link></fr:li>
+        <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="hoas-disc.xml" addr="hoas-disc" title="Higher-Order Abstract Syntax">Higher-Order Abstract Syntax</fr:link></fr:li>
+        <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="hoas-pros.xml" addr="hoas-pros" title="Pros of HOAS">Pros of HOAS</fr:link></fr:li>
+        <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="hoas.xml" addr="hoas" title="Higher-Order Abstract Syntax">Higher-Order Abstract Syntax</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">Judgements</fr:link></fr:li>
         <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="judgements-disc.xml" addr="judgements-disc" title="Judgements">Judgements</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">Kernel Languages</fr:link></fr:li>
+        <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="locally-nameless-disc.xml" addr="locally-nameless-disc" title="Locally Nameless">Locally Nameless</fr:link></fr:li>
+        <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="locally-nameless.xml" addr="locally-nameless" title="Locally Nameless">Locally Nameless</fr:link></fr:li>
         <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="macro-elab-definition.xml" addr="macro-elab-definition" title="A Macro-Based Explanation of Elaboration">A Macro-Based Explanation of Elaboration</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="macro-expansion.xml" addr="macro-expansion" title="Macro Expansion">Macro Expansion</fr:link></fr:li>
         <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="mltt-disc.xml" addr="mltt-disc" title="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="mltt-pi-rules.xml" addr="mltt-pi-rules" title="Rules for Pi Types in MLTT">Rules for Pi Types in MLTT</fr:link></fr:li>
         <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="mltt-pres-trad.xml" addr="mltt-pres-trad" title="Traditional Presentation of MLTT">Traditional Presentation of MLTT</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="mltt.xml" addr="mltt" title="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:link></fr:li>
+        <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="named-variables.xml" addr="named-variables" title="Named Variables">Named Variables</fr:link></fr:li>
+        <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="nonpositive-types.xml" addr="nonpositive-types" title="Nonpositive Types">Nonpositive Types</fr:link></fr:li>
         <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="programming-language-explosion.xml" addr="programming-language-explosion" title="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:link></fr:li>
         <fr:li><fr:strong>Problem</fr:strong>. <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">Constructing Proof Assistants</fr:link></fr:li>
         <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="readable-theorems.xml" addr="readable-theorems" title="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:link></fr:li>
@@ -44,6 +53,7 @@
         <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-cwf.xml" addr="tt-as-cwf" title="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:link></fr:li>
         <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">Type Theory</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">Vernacular Languages</fr:link></fr:li>
+        <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="when-nonpos-okay.xml" addr="when-nonpos-okay" title="When Nonpositivity is Acceptable">When Nonpositivity is Acceptable</fr:link></fr:li>
         <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="why-formal-elab.xml" addr="why-formal-elab" title="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:link></fr:li>
       </fr:ul>
     </fr:p>
@@ -83,19 +93,28 @@
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="admissible-rule.xml" addr="admissible-rule" title="Admissible Rules">Admissible Rules</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="algebra.xml" addr="algebra" title="Algebra">Algebra</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="categories-with-families.xml" addr="categories-with-families" title="Categories with Families">Categories with Families</fr:link></fr:li>
+                    <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="debruijn.xml" addr="debruijn" title="DeBruijn Indices">DeBruijn Indices</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration-formal.xml" addr="elaboration-formal" title="Elaboration, Formally">Elaboration, Formally</fr:link></fr:li>
                     <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="elaboration-intuition.xml" addr="elaboration-intuition" title="Elaboration, Intuitively">Elaboration, Intuitively</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="elaboration.xml" addr="elaboration" title="Elaboration">Elaboration</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">Theories</fr:link></fr:li>
+                    <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="hoas-cons.xml" addr="hoas-cons" title="Cons of HOAS">Cons of HOAS</fr:link></fr:li>
+                    <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="hoas-disc.xml" addr="hoas-disc" title="Higher-Order Abstract Syntax">Higher-Order Abstract Syntax</fr:link></fr:li>
+                    <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="hoas-pros.xml" addr="hoas-pros" title="Pros of HOAS">Pros of HOAS</fr:link></fr:li>
+                    <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="hoas.xml" addr="hoas" title="Higher-Order Abstract Syntax">Higher-Order Abstract Syntax</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">Judgements</fr:link></fr:li>
                     <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="judgements-disc.xml" addr="judgements-disc" title="Judgements">Judgements</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="kernel.xml" addr="kernel" title="Kernel Languages">Kernel Languages</fr:link></fr:li>
+                    <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="locally-nameless-disc.xml" addr="locally-nameless-disc" title="Locally Nameless">Locally Nameless</fr:link></fr:li>
+                    <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="locally-nameless.xml" addr="locally-nameless" title="Locally Nameless">Locally Nameless</fr:link></fr:li>
                     <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="macro-elab-definition.xml" addr="macro-elab-definition" title="A Macro-Based Explanation of Elaboration">A Macro-Based Explanation of Elaboration</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="macro-expansion.xml" addr="macro-expansion" title="Macro Expansion">Macro Expansion</fr:link></fr:li>
                     <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="mltt-disc.xml" addr="mltt-disc" title="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="mltt-pi-rules.xml" addr="mltt-pi-rules" title="Rules for Pi Types in MLTT">Rules for Pi Types in MLTT</fr:link></fr:li>
                     <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="mltt-pres-trad.xml" addr="mltt-pres-trad" title="Traditional Presentation of MLTT">Traditional Presentation of MLTT</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="mltt.xml" addr="mltt" title="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:link></fr:li>
+                    <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="named-variables.xml" addr="named-variables" title="Named Variables">Named Variables</fr:link></fr:li>
+                    <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="nonpositive-types.xml" addr="nonpositive-types" title="Nonpositive Types">Nonpositive Types</fr:link></fr:li>
                     <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="programming-language-explosion.xml" addr="programming-language-explosion" title="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:link></fr:li>
                     <fr:li><fr:strong>Problem</fr:strong>. <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">Constructing Proof Assistants</fr:link></fr:li>
                     <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="readable-theorems.xml" addr="readable-theorems" title="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:link></fr:li>
@@ -113,6 +132,7 @@
                     <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-cwf.xml" addr="tt-as-cwf" title="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:link></fr:li>
                     <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">Type Theory</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="vernacular.xml" addr="vernacular" title="Vernacular Languages">Vernacular Languages</fr:link></fr:li>
+                    <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="when-nonpos-okay.xml" addr="when-nonpos-okay" title="When Nonpositivity is Acceptable">When Nonpositivity is Acceptable</fr:link></fr:li>
                     <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="why-formal-elab.xml" addr="why-formal-elab" title="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:link></fr:li>
                   </fr:ul>
                 </fr:p>
@@ -249,6 +269,60 @@
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
             <fr:anchor>283</fr:anchor>
+            <fr:addr type="user">hoas-cons</fr:addr>
+            <fr:route>hoas-cons.xml</fr:route>
+            <fr:title text="Cons of HOAS">Cons of HOAS</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>The first con of HOAS is that inspecting terms under a binder becomes impossible. Imagine that you want to implement an operation that checks if a term is equal to the identity function. How will you implement this?
+  <fr:pre>isIdentity :: Term -&gt; Bool
+isIdentity (Lam e) = ...
+isIdentity (App _ _) = False</fr:pre>
+  How do you fill in the <fr:code>...</fr:code>? You can't pattern-match on <fr:code>e</fr:code> because it's a function, so you have to call it on something. You could just pick some arbitrary term to plug in and treat every occurance of that term as if it were a variable, but you have no assurance that a user will never actually write that term, which would cause your algorithm to produce incorrect results.</fr:p>
+            <fr:p>This problem is solvable with some extra work though. If you want to inspect under a binder encoded with HOAS, the correct approach is to add back the explicit variable constructor to your model.
+  <fr:pre>-- HOAS in Haskell
+data Term
+  = Var String
+  | Lam (Term -&gt; Term)
+  | App Term Term</fr:pre>
+  Here I've chosen variables to contain <fr:code>String</fr:code>s that we can use to check equality of variables, but you could pick any other type to represent them. This approach is in fact the <fr:link type="local" href="locally-nameless.xml" addr="locally-nameless" title="Locally Nameless">locally nameless</fr:link> approach, which comes with its own <fr:link type="local" href="locally-nameless-disc.xml" addr="locally-nameless-disc" title="Locally Nameless">pros and cons</fr:link>.</fr:p>
+            <fr:p>The next cons apply to HOAS's use in proof assistants. First, <fr:link type="local" href="when-nonpos-okay.xml" addr="when-nonpos-okay" title="When Nonpositivity is Acceptable">most</fr:link> proof assistants don't permit HOAS in the first place! HOAS is a <fr:link type="local" href="nonpositive-types.xml" addr="nonpositive-types" title="Nonpositive Types">nonpositive type</fr:link>, so proof assistants will reject it as an invalid inductive type. For instance, Rocq gives the following error.
+  <fr:pre>Inductive term :=
+| Lam (e : term -&gt; term)
+| App (f : term) (a : term).</fr:pre>
+  <fr:pre>Error: Non strictly positive occurrence of "term" in "(term -&gt; term) -&gt; term".</fr:pre>
+  Unless you disable the positivity checker and thus make the proof assistant inconsistent, you won't be able to use HOAS.</fr:p>
+            <fr:p>However, let's say that you are okay with the possible inconsistency. If so, you will still run into another problem, which is that HOAS invalidates easy theorems we expect to hold for our languages. For instance, in most languages first-class functions may not be inspected as data. They are opaque code, and the only thing you can do with them is apply them to arguments. This is an important theorem we want to be able to prove when formalizing languages in a proof assistant, and it is false if you use HOAS! Take the following term as an example, using the representation we defined in Rocq.
+  <fr:pre>Definition exotic : term :=
+  Lam (fun x =&gt;
+    match x with
+    | Lam _ =&gt; x
+    | App _ _ =&gt; App x x
+    end)</fr:pre>
+   These kinds of terms are called "exotic terms". The lambda calculus as it is defined mathematically does not allow exotic terms, but in our model they is indeed definable. Thus, HOAS does not allow you to properly model the lambda calculus. The same problem holds for any language (most languages) where we prohibit code to be inspected like data.</fr:p>
+            <fr:p>A final con of HOAS is that the expressivity of the metalanguage limits how useful this approach is. For instance, if the metalanguage lacks first-class functions, the advantages of HOAS with be dubious, as it may be as hard to use HOAS as it would be to use an approach like DeBruijn indices. This is not <fr:em>too</fr:em> much of a problem in practice now that most modern languages have first-class functions and closures.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>284</fr:anchor>
+            <fr:addr type="user">debruijn</fr:addr>
+            <fr:route>debruijn.xml</fr:route>
+            <fr:title text="DeBruijn Indices">DeBruijn Indices</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>TODO</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>285</fr:anchor>
             <fr:addr type="user">srs-eager</fr:addr>
             <fr:route>srs-eager.xml</fr:route>
             <fr:title text="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:title>
@@ -262,7 +336,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>284</fr:anchor>
+            <fr:anchor>286</fr:anchor>
             <fr:addr type="user">srs-eager-is-eager</fr:addr>
             <fr:route>srs-eager-is-eager.xml</fr:route>
             <fr:title text="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:title>
@@ -277,7 +351,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>285</fr:anchor>
+            <fr:anchor>287</fr:anchor>
             <fr:addr type="user">elaboration</fr:addr>
             <fr:route>elaboration.xml</fr:route>
             <fr:title text="Elaboration">Elaboration</fr:title>
@@ -354,7 +428,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>286</fr:anchor>
+            <fr:anchor>288</fr:anchor>
             <fr:addr type="user">elaboration-formal</fr:addr>
             <fr:route>elaboration-formal.xml</fr:route>
             <fr:title text="Elaboration, Formally">Elaboration, Formally</fr:title>
@@ -384,7 +458,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>287</fr:anchor>
+            <fr:anchor>289</fr:anchor>
             <fr:addr type="user">elaboration-intuition</fr:addr>
             <fr:route>elaboration-intuition.xml</fr:route>
             <fr:title text="Elaboration, Intuitively">Elaboration, Intuitively</fr:title>
@@ -402,7 +476,126 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>288</fr:anchor>
+            <fr:anchor>290</fr:anchor>
+            <fr:addr type="user">hoas</fr:addr>
+            <fr:route>hoas.xml</fr:route>
+            <fr:title text="Higher-Order Abstract Syntax">Higher-Order Abstract Syntax</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Higher-order abstract syntax (HOAS) is a technique where the binding structure of the metalanguage (i.e the implementation language) is <fr:em>reused</fr:em> to implement the binding structure in the object language (i.e the language being defined). The lambda calculus is a concrete example, and may look something like the following in Haskell.
+
+  <fr:pre>-- HOAS in Haskell
+data Term
+  = Lam (Term -&gt; Term)
+  | App Term Term</fr:pre>
+  Note that unlike in other representations of syntax-with-binding like <fr:link type="local" href="debruijn.xml" addr="debruijn" title="DeBruijn Indices">DeBruijn indices</fr:link>, there is no constructor for variables. For instance, in this model the identity function is defined as follows.
+<fr:pre>identity :: Term
+identity = Lam (λ x -&gt; x)</fr:pre></fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>291</fr:anchor>
+            <fr:addr type="user">hoas-disc</fr:addr>
+            <fr:route>hoas-disc.xml</fr:route>
+            <fr:title text="Higher-Order Abstract Syntax">Higher-Order Abstract Syntax</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>292</fr:anchor>
+                <fr:addr type="user">hoas</fr:addr>
+                <fr:route>hoas.xml</fr:route>
+                <fr:title text="Higher-Order Abstract Syntax">Higher-Order Abstract Syntax</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Higher-order abstract syntax (HOAS) is a technique where the binding structure of the metalanguage (i.e the implementation language) is <fr:em>reused</fr:em> to implement the binding structure in the object language (i.e the language being defined). The lambda calculus is a concrete example, and may look something like the following in Haskell.
+
+  <fr:pre>-- HOAS in Haskell
+data Term
+  = Lam (Term -&gt; Term)
+  | App Term Term</fr:pre>
+  Note that unlike in other representations of syntax-with-binding like <fr:link type="local" href="debruijn.xml" addr="debruijn" title="DeBruijn Indices">DeBruijn indices</fr:link>, there is no constructor for variables. For instance, in this model the identity function is defined as follows.
+<fr:pre>identity :: Term
+identity = Lam (λ x -&gt; x)</fr:pre></fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>293</fr:anchor>
+                <fr:addr type="user">hoas-pros</fr:addr>
+                <fr:route>hoas-pros.xml</fr:route>
+                <fr:title text="Pros of HOAS">Pros of HOAS</fr:title>
+                <fr:taxon>Discussion</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>The most major advantage of HOAS is that it frees the language implementor from having to think hard about substitution. In <fr:link type="local" href="named-variables.xml" addr="named-variables" title="Named Variables">approaches with named variables</fr:link> the user must handle capture-avoidance, generation of fresh names, and equality checking of variables. <fr:link type="local" href="debruijn.xml" addr="debruijn" title="DeBruijn Indices">DeBruijn indices</fr:link> are much easier to manage, but the user must still handle shifting variables up and down. With HOAS, substitution is as simple as possible. For instance, an evaluator for the <fr:link type="local" href="hoas.xml" addr="hoas" title="Higher-Order Abstract Syntax">lambda calculus defined with HOAS</fr:link> looks like the following.
+  <fr:pre>eval :: Term -&gt; Term
+eval (Lam e) = Lam e
+eval (App f v) =
+  case eval f of
+    Lam e -&gt; e (eval v)
+    _ -&gt; undefined</fr:pre>
+  Here, <fr:code>e (eval v)</fr:code> is the act of substitution. Substitution is so simple that we don't even need to define it as a separate procedure -- it's quite literally as easy as calling a function.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:p>Despite this being such a major pro, HOAS has some major cons as well.</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>294</fr:anchor>
+                <fr:addr type="user">hoas-cons</fr:addr>
+                <fr:route>hoas-cons.xml</fr:route>
+                <fr:title text="Cons of HOAS">Cons of HOAS</fr:title>
+                <fr:taxon>Discussion</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>The first con of HOAS is that inspecting terms under a binder becomes impossible. Imagine that you want to implement an operation that checks if a term is equal to the identity function. How will you implement this?
+  <fr:pre>isIdentity :: Term -&gt; Bool
+isIdentity (Lam e) = ...
+isIdentity (App _ _) = False</fr:pre>
+  How do you fill in the <fr:code>...</fr:code>? You can't pattern-match on <fr:code>e</fr:code> because it's a function, so you have to call it on something. You could just pick some arbitrary term to plug in and treat every occurance of that term as if it were a variable, but you have no assurance that a user will never actually write that term, which would cause your algorithm to produce incorrect results.</fr:p>
+                <fr:p>This problem is solvable with some extra work though. If you want to inspect under a binder encoded with HOAS, the correct approach is to add back the explicit variable constructor to your model.
+  <fr:pre>-- HOAS in Haskell
+data Term
+  = Var String
+  | Lam (Term -&gt; Term)
+  | App Term Term</fr:pre>
+  Here I've chosen variables to contain <fr:code>String</fr:code>s that we can use to check equality of variables, but you could pick any other type to represent them. This approach is in fact the <fr:link type="local" href="locally-nameless.xml" addr="locally-nameless" title="Locally Nameless">locally nameless</fr:link> approach, which comes with its own <fr:link type="local" href="locally-nameless-disc.xml" addr="locally-nameless-disc" title="Locally Nameless">pros and cons</fr:link>.</fr:p>
+                <fr:p>The next cons apply to HOAS's use in proof assistants. First, <fr:link type="local" href="when-nonpos-okay.xml" addr="when-nonpos-okay" title="When Nonpositivity is Acceptable">most</fr:link> proof assistants don't permit HOAS in the first place! HOAS is a <fr:link type="local" href="nonpositive-types.xml" addr="nonpositive-types" title="Nonpositive Types">nonpositive type</fr:link>, so proof assistants will reject it as an invalid inductive type. For instance, Rocq gives the following error.
+  <fr:pre>Inductive term :=
+| Lam (e : term -&gt; term)
+| App (f : term) (a : term).</fr:pre>
+  <fr:pre>Error: Non strictly positive occurrence of "term" in "(term -&gt; term) -&gt; term".</fr:pre>
+  Unless you disable the positivity checker and thus make the proof assistant inconsistent, you won't be able to use HOAS.</fr:p>
+                <fr:p>However, let's say that you are okay with the possible inconsistency. If so, you will still run into another problem, which is that HOAS invalidates easy theorems we expect to hold for our languages. For instance, in most languages first-class functions may not be inspected as data. They are opaque code, and the only thing you can do with them is apply them to arguments. This is an important theorem we want to be able to prove when formalizing languages in a proof assistant, and it is false if you use HOAS! Take the following term as an example, using the representation we defined in Rocq.
+  <fr:pre>Definition exotic : term :=
+  Lam (fun x =&gt;
+    match x with
+    | Lam _ =&gt; x
+    | App _ _ =&gt; App x x
+    end)</fr:pre>
+   These kinds of terms are called "exotic terms". The lambda calculus as it is defined mathematically does not allow exotic terms, but in our model they is indeed definable. Thus, HOAS does not allow you to properly model the lambda calculus. The same problem holds for any language (most languages) where we prohibit code to be inspected like data.</fr:p>
+                <fr:p>A final con of HOAS is that the expressivity of the metalanguage limits how useful this approach is. For instance, if the metalanguage lacks first-class functions, the advantages of HOAS with be dubious, as it may be as hard to use HOAS as it would be to use an approach like DeBruijn indices. This is not <fr:em>too</fr:em> much of a problem in practice now that most modern languages have first-class functions and closures.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>295</fr:anchor>
             <fr:addr type="user">judgement</fr:addr>
             <fr:route>judgement.xml</fr:route>
             <fr:title text="Judgements">Judgements</fr:title>
@@ -421,7 +614,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>289</fr:anchor>
+            <fr:anchor>296</fr:anchor>
             <fr:addr type="user">judgements-disc</fr:addr>
             <fr:route>judgements-disc.xml</fr:route>
             <fr:title text="Judgements">Judgements</fr:title>
@@ -431,7 +624,7 @@
           <fr:mainmatter>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>290</fr:anchor>
+                <fr:anchor>297</fr:anchor>
                 <fr:addr type="user">judgement</fr:addr>
                 <fr:route>judgement.xml</fr:route>
                 <fr:title text="Judgements">Judgements</fr:title>
@@ -450,7 +643,7 @@
             </fr:tree>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>291</fr:anchor>
+                <fr:anchor>298</fr:anchor>
                 <fr:addr type="user">rel-judgements-fol</fr:addr>
                 <fr:route>rel-judgements-fol.xml</fr:route>
                 <fr:title text="Judgements and FOL">Judgements and FOL</fr:title>
@@ -465,7 +658,7 @@
             </fr:tree>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>292</fr:anchor>
+                <fr:anchor>299</fr:anchor>
                 <fr:addr type="user">rel-judgements-natural-deduction</fr:addr>
                 <fr:route>rel-judgements-natural-deduction.xml</fr:route>
                 <fr:title text="Judgements and Natural Deduction">Judgements and Natural Deduction</fr:title>
@@ -483,7 +676,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>293</fr:anchor>
+            <fr:anchor>300</fr:anchor>
             <fr:addr type="user">rel-judgements-fol</fr:addr>
             <fr:route>rel-judgements-fol.xml</fr:route>
             <fr:title text="Judgements and FOL">Judgements and FOL</fr:title>
@@ -498,7 +691,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>294</fr:anchor>
+            <fr:anchor>301</fr:anchor>
             <fr:addr type="user">rel-judgements-natural-deduction</fr:addr>
             <fr:route>rel-judgements-natural-deduction.xml</fr:route>
             <fr:title text="Judgements and Natural Deduction">Judgements and Natural Deduction</fr:title>
@@ -513,7 +706,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>295</fr:anchor>
+            <fr:anchor>302</fr:anchor>
             <fr:addr type="user">kernel</fr:addr>
             <fr:route>kernel.xml</fr:route>
             <fr:title text="Kernel Languages">Kernel Languages</fr:title>
@@ -527,7 +720,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>296</fr:anchor>
+            <fr:anchor>303</fr:anchor>
             <fr:addr type="user">srs-eager-prop</fr:addr>
             <fr:route>srs-eager-prop.xml</fr:route>
             <fr:title text="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:title>
@@ -542,7 +735,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>297</fr:anchor>
+            <fr:anchor>304</fr:anchor>
             <fr:addr type="user">srs-eager-prop-proof</fr:addr>
             <fr:route>srs-eager-prop-proof.xml</fr:route>
             <fr:title text="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:title>
@@ -552,7 +745,7 @@
           <fr:mainmatter>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>298</fr:anchor>
+                <fr:anchor>305</fr:anchor>
                 <fr:addr type="user">srs-eager-prop</fr:addr>
                 <fr:route>srs-eager-prop.xml</fr:route>
                 <fr:title text="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:title>
@@ -568,7 +761,7 @@
             <fr:p>We want to prove that, given a string rewrite system, <fr:link type="local" href="srs-eager-prop.xml" addr="srs-eager-prop" title="Local Rewriting Preserves Normal Forms">local rewrites preserve normal forms</fr:link>. First, we notice the following lemmas</fr:p>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>299</fr:anchor>
+                <fr:anchor>306</fr:anchor>
                 <fr:addr type="user">srs-eager-twice-noop</fr:addr>
                 <fr:route>srs-eager-twice-noop.xml</fr:route>
                 <fr:title text="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:title>
@@ -583,7 +776,7 @@
             </fr:tree>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>300</fr:anchor>
+                <fr:anchor>307</fr:anchor>
                 <fr:addr type="user">srs-eager-is-eager</fr:addr>
                 <fr:route>srs-eager-is-eager.xml</fr:route>
                 <fr:title text="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:title>
@@ -614,7 +807,35 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>301</fr:anchor>
+            <fr:anchor>308</fr:anchor>
+            <fr:addr type="user">locally-nameless</fr:addr>
+            <fr:route>locally-nameless.xml</fr:route>
+            <fr:title text="Locally Nameless">Locally Nameless</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>TODO</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>309</fr:anchor>
+            <fr:addr type="user">locally-nameless-disc</fr:addr>
+            <fr:route>locally-nameless-disc.xml</fr:route>
+            <fr:title text="Locally Nameless">Locally Nameless</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>TODO</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>310</fr:anchor>
             <fr:addr type="user">macro-expansion</fr:addr>
             <fr:route>macro-expansion.xml</fr:route>
             <fr:title text="Macro Expansion">Macro Expansion</fr:title>
@@ -628,7 +849,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>302</fr:anchor>
+            <fr:anchor>311</fr:anchor>
             <fr:addr type="user">mltt</fr:addr>
             <fr:route>mltt.xml</fr:route>
             <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
@@ -646,7 +867,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>303</fr:anchor>
+            <fr:anchor>312</fr:anchor>
             <fr:addr type="user">mltt-disc</fr:addr>
             <fr:route>mltt-disc.xml</fr:route>
             <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
@@ -716,7 +937,35 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>304</fr:anchor>
+            <fr:anchor>313</fr:anchor>
+            <fr:addr type="user">named-variables</fr:addr>
+            <fr:route>named-variables.xml</fr:route>
+            <fr:title text="Named Variables">Named Variables</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>TODO</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>314</fr:anchor>
+            <fr:addr type="user">nonpositive-types</fr:addr>
+            <fr:route>nonpositive-types.xml</fr:route>
+            <fr:title text="Nonpositive Types">Nonpositive Types</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>TODO</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>315</fr:anchor>
             <fr:addr type="user">srs-eager-twice-noop</fr:addr>
             <fr:route>srs-eager-twice-noop.xml</fr:route>
             <fr:title text="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:title>
@@ -731,7 +980,28 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>305</fr:anchor>
+            <fr:anchor>316</fr:anchor>
+            <fr:addr type="user">hoas-pros</fr:addr>
+            <fr:route>hoas-pros.xml</fr:route>
+            <fr:title text="Pros of HOAS">Pros of HOAS</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>The most major advantage of HOAS is that it frees the language implementor from having to think hard about substitution. In <fr:link type="local" href="named-variables.xml" addr="named-variables" title="Named Variables">approaches with named variables</fr:link> the user must handle capture-avoidance, generation of fresh names, and equality checking of variables. <fr:link type="local" href="debruijn.xml" addr="debruijn" title="DeBruijn Indices">DeBruijn indices</fr:link> are much easier to manage, but the user must still handle shifting variables up and down. With HOAS, substitution is as simple as possible. For instance, an evaluator for the <fr:link type="local" href="hoas.xml" addr="hoas" title="Higher-Order Abstract Syntax">lambda calculus defined with HOAS</fr:link> looks like the following.
+  <fr:pre>eval :: Term -&gt; Term
+eval (Lam e) = Lam e
+eval (App f v) =
+  case eval f of
+    Lam e -&gt; e (eval v)
+    _ -&gt; undefined</fr:pre>
+  Here, <fr:code>e (eval v)</fr:code> is the act of substitution. Substitution is so simple that we don't even need to define it as a separate procedure -- it's quite literally as easy as calling a function.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>317</fr:anchor>
             <fr:addr type="user">mltt-pi-rules</fr:addr>
             <fr:route>mltt-pi-rules.xml</fr:route>
             <fr:title text="Rules for Pi Types in MLTT">Rules for Pi Types in MLTT</fr:title>
@@ -750,7 +1020,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>306</fr:anchor>
+            <fr:anchor>318</fr:anchor>
             <fr:addr type="user">readable-theorems</fr:addr>
             <fr:route>readable-theorems.xml</fr:route>
             <fr:title text="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:title>
@@ -768,7 +1038,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>307</fr:anchor>
+            <fr:anchor>319</fr:anchor>
             <fr:addr type="user">signature</fr:addr>
             <fr:route>signature.xml</fr:route>
             <fr:title text="Signatures">Signatures</fr:title>
@@ -782,7 +1052,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>308</fr:anchor>
+            <fr:anchor>320</fr:anchor>
             <fr:addr type="user">string-rewrite-system</fr:addr>
             <fr:route>string-rewrite-system.xml</fr:route>
             <fr:title text="String Rewrite System">String Rewrite System</fr:title>
@@ -796,7 +1066,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>309</fr:anchor>
+            <fr:anchor>321</fr:anchor>
             <fr:addr type="user">tactics</fr:addr>
             <fr:route>tactics.xml</fr:route>
             <fr:title text="Tactics">Tactics</fr:title>
@@ -813,7 +1083,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>310</fr:anchor>
+            <fr:anchor>322</fr:anchor>
             <fr:addr type="user">first-order-theory</fr:addr>
             <fr:route>first-order-theory.xml</fr:route>
             <fr:title text="Theories">Theories</fr:title>
@@ -827,7 +1097,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>311</fr:anchor>
+            <fr:anchor>323</fr:anchor>
             <fr:addr type="user">mltt-pres-trad</fr:addr>
             <fr:route>mltt-pres-trad.xml</fr:route>
             <fr:title text="Traditional Presentation of MLTT">Traditional Presentation of MLTT</fr:title>
@@ -846,7 +1116,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>312</fr:anchor>
+            <fr:anchor>324</fr:anchor>
             <fr:addr type="user">tt-as-algebra</fr:addr>
             <fr:route>tt-as-algebra.xml</fr:route>
             <fr:title text="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:title>
@@ -860,7 +1130,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>313</fr:anchor>
+            <fr:anchor>325</fr:anchor>
             <fr:addr type="user">tt-as-cwf</fr:addr>
             <fr:route>tt-as-cwf.xml</fr:route>
             <fr:title text="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:title>
@@ -874,7 +1144,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>314</fr:anchor>
+            <fr:anchor>326</fr:anchor>
             <fr:addr type="user">type-theory</fr:addr>
             <fr:route>type-theory.xml</fr:route>
             <fr:title text="Type Theory">Type Theory</fr:title>
@@ -987,7 +1257,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>315</fr:anchor>
+            <fr:anchor>327</fr:anchor>
             <fr:addr type="user">vernacular</fr:addr>
             <fr:route>vernacular.xml</fr:route>
             <fr:title text="Vernacular Languages">Vernacular Languages</fr:title>
@@ -1001,7 +1271,21 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>316</fr:anchor>
+            <fr:anchor>328</fr:anchor>
+            <fr:addr type="user">when-nonpos-okay</fr:addr>
+            <fr:route>when-nonpos-okay.xml</fr:route>
+            <fr:title text="When Nonpositivity is Acceptable">When Nonpositivity is Acceptable</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>TODO</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>329</fr:anchor>
             <fr:addr type="user">why-formal-elab</fr:addr>
             <fr:route>why-formal-elab.xml</fr:route>
             <fr:title text="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:title>
