@@ -2,15 +2,37 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>491</fr:anchor>
-    <fr:addr type="user">first-order-theory</fr:addr>
-    <fr:route>first-order-theory.xml</fr:route>
-    <fr:title text="Theories">Theories</fr:title>
+    <fr:anchor>449</fr:anchor>
+    <fr:addr type="user">phoas</fr:addr>
+    <fr:route>phoas.xml</fr:route>
+    <fr:title text="Parametric Higher-Order Abstract Syntax">Parametric Higher-Order Abstract Syntax</fr:title>
     <fr:taxon>Definition</fr:taxon>
     <fr:authors />
   </fr:frontmatter>
   <fr:mainmatter>
-    <fr:p>A theory over a <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">signature</fr:link> <fr:tex display="inline"><![CDATA[E]]></fr:tex> is merely a set of <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">judgements</fr:link> over <fr:tex display="inline"><![CDATA[E]]></fr:tex>.</fr:p>
+    <fr:p>Parametric Higher-Order Abstract Syntax (PHOAS) is a variation on <fr:link type="external" href="HOAS">hoas</fr:link> that solves many of its problems while also retaining many of its advantages. Recall the definition of HOAS.</fr:p>
+    <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:anchor>317</fr:anchor>
+        <fr:addr type="user">hoas</fr:addr>
+        <fr:route>hoas.xml</fr:route>
+        <fr:title text="Higher-Order Abstract Syntax">Higher-Order Abstract Syntax</fr:title>
+        <fr:taxon>Definition</fr:taxon>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:p>Higher-order abstract syntax (HOAS) is a technique where the binding structure of the metalanguage (i.e the implementation language) is <fr:em>reused</fr:em> to implement the binding structure in the object language (i.e the language being defined). The lambda calculus is a concrete example, and may look something like the following in Haskell.
+
+  <fr:pre>-- HOAS in Haskell
+data Term
+  = Lam (Term -&gt; Term)
+  | App Term Term</fr:pre>
+  Note that unlike in other representations of syntax-with-binding like <fr:link type="local" href="debruijn.xml" addr="debruijn" title="DeBruijn Indices">DeBruijn indices</fr:link>, there is no constructor for variables. For instance, in this model the identity function is defined as follows.
+<fr:pre>identity :: Term
+identity = Lam (λ x -&gt; x)</fr:pre></fr:p>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
   </fr:mainmatter>
   <fr:backmatter>
     <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
@@ -21,21 +43,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>492</fr:anchor>
-            <fr:addr type="user">admissible-rule</fr:addr>
-            <fr:route>admissible-rule.xml</fr:route>
-            <fr:title text="Admissible Rules">Admissible Rules</fr:title>
-            <fr:taxon>Definition</fr:taxon>
-            <fr:authors />
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:p>Given a <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">theory</fr:link> <fr:tex display="inline"><![CDATA[\mathbb {T}]]></fr:tex>, an axiom is admissible if adding it to <fr:tex display="inline"><![CDATA[\mathbb {T}]]></fr:tex> doesn't change <fr:tex display="inline"><![CDATA[\mathbb {T}]]></fr:tex>'s set of <fr:em>theorems</fr:em>, i.e the set of true <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">judgements</fr:link>.</fr:p>
-          </fr:mainmatter>
-          <fr:backmatter />
-        </fr:tree>
-        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-          <fr:frontmatter>
-            <fr:anchor>493</fr:anchor>
+            <fr:anchor>450</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>
@@ -69,12 +77,12 @@
                 <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="mltt.xml" addr="mltt" title="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:link></fr:li>
                 <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="named-variables.xml" addr="named-variables" title="Named Variables">Named Variables</fr:link></fr:li>
                 <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="nonpositive-types.xml" addr="nonpositive-types" title="Nonpositive Types">Nonpositive Types</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="phoas.xml" addr="phoas" title="Parametric Higher-Order Abstract Syntax">Parametric Higher-Order Abstract Syntax</fr:link></fr:li>
                 <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="programming-language-explosion.xml" addr="programming-language-explosion" title="Continued Explosion of Programming Languages">Continued Explosion of Programming Languages</fr:link></fr:li>
                 <fr:li><fr:strong>Problem</fr:strong>. <fr:link type="local" href="proof-assistant-explosion.xml" addr="proof-assistant-explosion" title="Constructing Proof Assistants">Constructing Proof Assistants</fr:link></fr:li>
                 <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="readable-theorems.xml" addr="readable-theorems" title="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:link></fr:li>
                 <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-fol.xml" addr="rel-judgements-fol" title="Judgements and FOL">Judgements and FOL</fr:link></fr:li>
                 <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-natural-deduction.xml" addr="rel-judgements-natural-deduction" title="Judgements and Natural Deduction">Judgements and Natural Deduction</fr:link></fr:li>
-                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="semantics.xml" addr="semantics" title="Semantics">Semantics</fr:link></fr:li>
                 <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">Signatures</fr:link></fr:li>
                 <fr:li><fr:strong>Lemma</fr:strong>. <fr:link type="local" href="srs-eager-is-eager.xml" addr="srs-eager-is-eager" title="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:link></fr:li>
                 <fr:li><fr:strong>Proof</fr:strong>. <fr:link type="local" href="srs-eager-prop-proof.xml" addr="srs-eager-prop-proof" title="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:link></fr:li>
@@ -82,8 +90,6 @@
                 <fr:li><fr:strong>Theorem</fr:strong>. <fr:link type="local" href="srs-eager-twice-noop.xml" addr="srs-eager-twice-noop" title="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:link></fr:li>
                 <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:link></fr:li>
                 <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">String Rewrite System</fr:link></fr:li>
-                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="syntax-vs-semantics.xml" addr="syntax-vs-semantics" title="Syntax and Semantics">Syntax and Semantics</fr:link></fr:li>
-                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="syntax.xml" addr="syntax" title="Syntax">Syntax</fr:link></fr:li>
                 <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="tactics.xml" addr="tactics" title="Tactics">Tactics</fr:link></fr:li>
                 <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-algebra.xml" addr="tt-as-algebra" title="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:link></fr:li>
                 <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-cwf.xml" addr="tt-as-cwf" title="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:link></fr:li>
@@ -93,85 +99,6 @@
                 <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="why-formal-elab.xml" addr="why-formal-elab" title="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:link></fr:li>
               </fr:ul>
             </fr:p>
-          </fr:mainmatter>
-          <fr:backmatter />
-        </fr:tree>
-        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-          <fr:frontmatter>
-            <fr:anchor>494</fr:anchor>
-            <fr:addr type="user">judgement</fr:addr>
-            <fr:route>judgement.xml</fr:route>
-            <fr:title text="Judgements">Judgements</fr:title>
-            <fr:taxon>Definition</fr:taxon>
-            <fr:authors />
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:p>The <fr:em>judgements</fr:em> over a <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">signature</fr:link> <fr:tex display="inline"><![CDATA[E]]></fr:tex> are defined as follows.
-  <fr:tex display="block"><![CDATA[     \mathcal {J} :=       \mathcal {R}(\overline {e}) \,\, | \,\,       \{x\} \, \mathcal {J} \,\, | \,\,       \mathcal {J} \vdash  \mathcal {J}   ]]></fr:tex>
-  The proof rules for judgements are then straightfoward.
-  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\mathcal {R}(\overline {e})]]></fr:tex>: Supplied by the background <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">theory</fr:link></fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\{x\} \, \mathcal {J}]]></fr:tex>: Generalization and specialization</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\mathcal {H} \vdash  \mathcal {J}]]></fr:tex>: Abstraction and application</fr:li></fr:ul></fr:p>
-          </fr:mainmatter>
-          <fr:backmatter />
-        </fr:tree>
-        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-          <fr:frontmatter>
-            <fr:anchor>495</fr:anchor>
-            <fr:addr type="user">mltt</fr:addr>
-            <fr:route>mltt.xml</fr:route>
-            <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
-            <fr:taxon>Definition</fr:taxon>
-            <fr:authors />
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">formal systems</fr:link> over the following four judgements.
-  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type.</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types.</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li></fr:ul></fr:p>
-          </fr:mainmatter>
-          <fr:backmatter />
-        </fr:tree>
-      </fr:mainmatter>
-      <fr:backmatter />
-    </fr:tree>
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-      <fr:frontmatter>
-        <fr:title text="Related">Related</fr:title>
-        <fr:authors />
-      </fr:frontmatter>
-      <fr:mainmatter>
-        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-          <fr:frontmatter>
-            <fr:anchor>496</fr:anchor>
-            <fr:addr type="user">judgement</fr:addr>
-            <fr:route>judgement.xml</fr:route>
-            <fr:title text="Judgements">Judgements</fr:title>
-            <fr:taxon>Definition</fr:taxon>
-            <fr:authors />
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:p>The <fr:em>judgements</fr:em> over a <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">signature</fr:link> <fr:tex display="inline"><![CDATA[E]]></fr:tex> are defined as follows.
-  <fr:tex display="block"><![CDATA[     \mathcal {J} :=       \mathcal {R}(\overline {e}) \,\, | \,\,       \{x\} \, \mathcal {J} \,\, | \,\,       \mathcal {J} \vdash  \mathcal {J}   ]]></fr:tex>
-  The proof rules for judgements are then straightfoward.
-  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\mathcal {R}(\overline {e})]]></fr:tex>: Supplied by the background <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">theory</fr:link></fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\{x\} \, \mathcal {J}]]></fr:tex>: Generalization and specialization</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\mathcal {H} \vdash  \mathcal {J}]]></fr:tex>: Abstraction and application</fr:li></fr:ul></fr:p>
-          </fr:mainmatter>
-          <fr:backmatter />
-        </fr:tree>
-        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-          <fr:frontmatter>
-            <fr:anchor>497</fr:anchor>
-            <fr:addr type="user">signature</fr:addr>
-            <fr:route>signature.xml</fr:route>
-            <fr:title text="Signatures">Signatures</fr:title>
-            <fr:taxon>Definition</fr:taxon>
-            <fr:authors />
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:p>A signature (also known as a <fr:em>language</fr:em>) is a tuple <fr:tex display="inline"><![CDATA[(E, \alpha )]]></fr:tex>, where <fr:tex display="inline"><![CDATA[E]]></fr:tex> is a set of symbols and <fr:tex display="inline"><![CDATA[\alpha ]]></fr:tex> assigns each symbols an <fr:em>arity</fr:em>.</fr:p>
           </fr:mainmatter>
           <fr:backmatter />
         </fr:tree>

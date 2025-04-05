@@ -41,6 +41,7 @@
         <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="readable-theorems.xml" addr="readable-theorems" title="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:link></fr:li>
         <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-fol.xml" addr="rel-judgements-fol" title="Judgements and FOL">Judgements and FOL</fr:link></fr:li>
         <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-natural-deduction.xml" addr="rel-judgements-natural-deduction" title="Judgements and Natural Deduction">Judgements and Natural Deduction</fr:link></fr:li>
+        <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="semantics.xml" addr="semantics" title="Semantics">Semantics</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">Signatures</fr:link></fr:li>
         <fr:li><fr:strong>Lemma</fr:strong>. <fr:link type="local" href="srs-eager-is-eager.xml" addr="srs-eager-is-eager" title="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:link></fr:li>
         <fr:li><fr:strong>Proof</fr:strong>. <fr:link type="local" href="srs-eager-prop-proof.xml" addr="srs-eager-prop-proof" title="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:link></fr:li>
@@ -48,6 +49,8 @@
         <fr:li><fr:strong>Theorem</fr:strong>. <fr:link type="local" href="srs-eager-twice-noop.xml" addr="srs-eager-twice-noop" title="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">String Rewrite System</fr:link></fr:li>
+        <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="syntax-vs-semantics.xml" addr="syntax-vs-semantics" title="Syntax and Semantics">Syntax and Semantics</fr:link></fr:li>
+        <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="syntax.xml" addr="syntax" title="Syntax">Syntax</fr:link></fr:li>
         <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="tactics.xml" addr="tactics" title="Tactics">Tactics</fr:link></fr:li>
         <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-algebra.xml" addr="tt-as-algebra" title="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:link></fr:li>
         <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-cwf.xml" addr="tt-as-cwf" title="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:link></fr:li>
@@ -120,6 +123,7 @@
                     <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="readable-theorems.xml" addr="readable-theorems" title="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:link></fr:li>
                     <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-fol.xml" addr="rel-judgements-fol" title="Judgements and FOL">Judgements and FOL</fr:link></fr:li>
                     <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-natural-deduction.xml" addr="rel-judgements-natural-deduction" title="Judgements and Natural Deduction">Judgements and Natural Deduction</fr:link></fr:li>
+                    <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="semantics.xml" addr="semantics" title="Semantics">Semantics</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">Signatures</fr:link></fr:li>
                     <fr:li><fr:strong>Lemma</fr:strong>. <fr:link type="local" href="srs-eager-is-eager.xml" addr="srs-eager-is-eager" title="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:link></fr:li>
                     <fr:li><fr:strong>Proof</fr:strong>. <fr:link type="local" href="srs-eager-prop-proof.xml" addr="srs-eager-prop-proof" title="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:link></fr:li>
@@ -127,6 +131,8 @@
                     <fr:li><fr:strong>Theorem</fr:strong>. <fr:link type="local" href="srs-eager-twice-noop.xml" addr="srs-eager-twice-noop" title="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">String Rewrite System</fr:link></fr:li>
+                    <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="syntax-vs-semantics.xml" addr="syntax-vs-semantics" title="Syntax and Semantics">Syntax and Semantics</fr:link></fr:li>
+                    <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="syntax.xml" addr="syntax" title="Syntax">Syntax</fr:link></fr:li>
                     <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="tactics.xml" addr="tactics" title="Tactics">Tactics</fr:link></fr:li>
                     <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-algebra.xml" addr="tt-as-algebra" title="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:link></fr:li>
                     <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-cwf.xml" addr="tt-as-cwf" title="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:link></fr:li>
@@ -1021,6 +1027,22 @@ eval (App f v) =
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
             <fr:anchor>318</fr:anchor>
+            <fr:addr type="user">semantics</fr:addr>
+            <fr:route>semantics.xml</fr:route>
+            <fr:title text="Semantics">Semantics</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Previously, the working mathematician started studying some object, and developed a <fr:link type="local" href="syntax.xml" addr="syntax" title="Syntax">syntax</fr:link> for it. Now this mathematician has been studying the object for a good while. They have a good idea of what properties the object satisfies and how it works, but they want a deeper understanding. The problem that this mathematician faces is that their syntax is a <fr:em>walled garden</fr:em>. Their invented notation and axioms makes sense to them, but only to them! How is anyone else supposed to understand what it is that they are studying?</fr:p>
+            <fr:p>Realizing this, the mathematician talks with their colleagues and starts to draw analogies to established areas of math that their colleagues are more familiar with. "Oh, my object <fr:tex display="inline"><![CDATA[A]]></fr:tex> is like <fr:tex display="inline"><![CDATA[B]]></fr:tex>, but with <fr:tex display="inline"><![CDATA[C]]></fr:tex> removed", or "You see, <fr:tex display="inline"><![CDATA[A]]></fr:tex> is just like <fr:tex display="inline"><![CDATA[D]]></fr:tex> if you convert <fr:tex display="inline"><![CDATA[e]]></fr:tex> to <fr:tex display="inline"><![CDATA[f(e)]]></fr:tex>", or "Actually, the property <fr:tex display="inline"><![CDATA[P]]></fr:tex> is really just like your property <fr:tex display="inline"><![CDATA[Q]]></fr:tex>".</fr:p>
+            <fr:p>Slowly through these analogies, everyone comes to an understanding about what exactly our mathematician has developed. These analogies are what mathematicians call <fr:strong>semantics</fr:strong>, and they are the other half of the picture that <fr:link type="local" href="syntax.xml" addr="syntax" title="Syntax">syntax</fr:link> starts. If syntax represents the intuitive, surface-level, and somewhat trivial understanding of an object, semantics represents the deep and nontrivial understanding of the object <fr:em>in terms of</fr:em> other, more established mathematical objects.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>319</fr:anchor>
             <fr:addr type="user">readable-theorems</fr:addr>
             <fr:route>readable-theorems.xml</fr:route>
             <fr:title text="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:title>
@@ -1038,7 +1060,7 @@ eval (App f v) =
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>319</fr:anchor>
+            <fr:anchor>320</fr:anchor>
             <fr:addr type="user">signature</fr:addr>
             <fr:route>signature.xml</fr:route>
             <fr:title text="Signatures">Signatures</fr:title>
@@ -1052,7 +1074,7 @@ eval (App f v) =
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>320</fr:anchor>
+            <fr:anchor>321</fr:anchor>
             <fr:addr type="user">string-rewrite-system</fr:addr>
             <fr:route>string-rewrite-system.xml</fr:route>
             <fr:title text="String Rewrite System">String Rewrite System</fr:title>
@@ -1066,7 +1088,67 @@ eval (App f v) =
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>321</fr:anchor>
+            <fr:anchor>322</fr:anchor>
+            <fr:addr type="user">syntax</fr:addr>
+            <fr:route>syntax.xml</fr:route>
+            <fr:title text="Syntax">Syntax</fr:title>
+            <fr:taxon>Definition</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Let's say we have some object which the working mathematician has just started to study. The mathematician has some intuitive understanding of how the object works, but they want to study the object in a formal, mathematical manner. As a start, they invent some notation for depicting the object on paper (or a computer screen, or whatever else). Next, using whatever language they are most comfortable in -- be that a natural language or some more formal notation -- they write down the <fr:em>properties</fr:em> they expect the object to satisfy.</fr:p>
+            <fr:p>What I have just described is a mathematician creating a <fr:strong>syntax</fr:strong>. A syntax represents a surface-level and literal understanding of an object being studied. It represents how the object is used, observed, and manipulated in everyday practice -- it conveys only what is immediately apparent and obvious about the object and nothing more. This is an <fr:em>essential</fr:em> purpose, and it is exactly one half of the picture that <fr:link type="local" href="semantics.xml" addr="semantics" title="Semantics">semantics</fr:link> completes.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>323</fr:anchor>
+            <fr:addr type="user">syntax-vs-semantics</fr:addr>
+            <fr:route>syntax-vs-semantics.xml</fr:route>
+            <fr:title text="Syntax and Semantics">Syntax and Semantics</fr:title>
+            <fr:taxon>Discussion</fr:taxon>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Mathematics is hard to define, especially the act of "doing" mathematics, but we can represent it in broad strokes by discussing <fr:em>syntax</fr:em> and <fr:em>semantics</fr:em>.</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>324</fr:anchor>
+                <fr:addr type="user">syntax</fr:addr>
+                <fr:route>syntax.xml</fr:route>
+                <fr:title text="Syntax">Syntax</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Let's say we have some object which the working mathematician has just started to study. The mathematician has some intuitive understanding of how the object works, but they want to study the object in a formal, mathematical manner. As a start, they invent some notation for depicting the object on paper (or a computer screen, or whatever else). Next, using whatever language they are most comfortable in -- be that a natural language or some more formal notation -- they write down the <fr:em>properties</fr:em> they expect the object to satisfy.</fr:p>
+                <fr:p>What I have just described is a mathematician creating a <fr:strong>syntax</fr:strong>. A syntax represents a surface-level and literal understanding of an object being studied. It represents how the object is used, observed, and manipulated in everyday practice -- it conveys only what is immediately apparent and obvious about the object and nothing more. This is an <fr:em>essential</fr:em> purpose, and it is exactly one half of the picture that <fr:link type="local" href="semantics.xml" addr="semantics" title="Semantics">semantics</fr:link> completes.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>325</fr:anchor>
+                <fr:addr type="user">semantics</fr:addr>
+                <fr:route>semantics.xml</fr:route>
+                <fr:title text="Semantics">Semantics</fr:title>
+                <fr:taxon>Definition</fr:taxon>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Previously, the working mathematician started studying some object, and developed a <fr:link type="local" href="syntax.xml" addr="syntax" title="Syntax">syntax</fr:link> for it. Now this mathematician has been studying the object for a good while. They have a good idea of what properties the object satisfies and how it works, but they want a deeper understanding. The problem that this mathematician faces is that their syntax is a <fr:em>walled garden</fr:em>. Their invented notation and axioms makes sense to them, but only to them! How is anyone else supposed to understand what it is that they are studying?</fr:p>
+                <fr:p>Realizing this, the mathematician talks with their colleagues and starts to draw analogies to established areas of math that their colleagues are more familiar with. "Oh, my object <fr:tex display="inline"><![CDATA[A]]></fr:tex> is like <fr:tex display="inline"><![CDATA[B]]></fr:tex>, but with <fr:tex display="inline"><![CDATA[C]]></fr:tex> removed", or "You see, <fr:tex display="inline"><![CDATA[A]]></fr:tex> is just like <fr:tex display="inline"><![CDATA[D]]></fr:tex> if you convert <fr:tex display="inline"><![CDATA[e]]></fr:tex> to <fr:tex display="inline"><![CDATA[f(e)]]></fr:tex>", or "Actually, the property <fr:tex display="inline"><![CDATA[P]]></fr:tex> is really just like your property <fr:tex display="inline"><![CDATA[Q]]></fr:tex>".</fr:p>
+                <fr:p>Slowly through these analogies, everyone comes to an understanding about what exactly our mathematician has developed. These analogies are what mathematicians call <fr:strong>semantics</fr:strong>, and they are the other half of the picture that <fr:link type="local" href="syntax.xml" addr="syntax" title="Syntax">syntax</fr:link> starts. If syntax represents the intuitive, surface-level, and somewhat trivial understanding of an object, semantics represents the deep and nontrivial understanding of the object <fr:em>in terms of</fr:em> other, more established mathematical objects.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>326</fr:anchor>
             <fr:addr type="user">tactics</fr:addr>
             <fr:route>tactics.xml</fr:route>
             <fr:title text="Tactics">Tactics</fr:title>
@@ -1083,7 +1165,7 @@ eval (App f v) =
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>322</fr:anchor>
+            <fr:anchor>327</fr:anchor>
             <fr:addr type="user">first-order-theory</fr:addr>
             <fr:route>first-order-theory.xml</fr:route>
             <fr:title text="Theories">Theories</fr:title>
@@ -1097,7 +1179,7 @@ eval (App f v) =
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>323</fr:anchor>
+            <fr:anchor>328</fr:anchor>
             <fr:addr type="user">mltt-pres-trad</fr:addr>
             <fr:route>mltt-pres-trad.xml</fr:route>
             <fr:title text="Traditional Presentation of MLTT">Traditional Presentation of MLTT</fr:title>
@@ -1116,7 +1198,7 @@ eval (App f v) =
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>324</fr:anchor>
+            <fr:anchor>329</fr:anchor>
             <fr:addr type="user">tt-as-algebra</fr:addr>
             <fr:route>tt-as-algebra.xml</fr:route>
             <fr:title text="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:title>
@@ -1130,7 +1212,7 @@ eval (App f v) =
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>325</fr:anchor>
+            <fr:anchor>330</fr:anchor>
             <fr:addr type="user">tt-as-cwf</fr:addr>
             <fr:route>tt-as-cwf.xml</fr:route>
             <fr:title text="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:title>
@@ -1144,7 +1226,7 @@ eval (App f v) =
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>326</fr:anchor>
+            <fr:anchor>331</fr:anchor>
             <fr:addr type="user">type-theory</fr:addr>
             <fr:route>type-theory.xml</fr:route>
             <fr:title text="Type Theory">Type Theory</fr:title>
@@ -1257,7 +1339,7 @@ eval (App f v) =
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>327</fr:anchor>
+            <fr:anchor>332</fr:anchor>
             <fr:addr type="user">vernacular</fr:addr>
             <fr:route>vernacular.xml</fr:route>
             <fr:title text="Vernacular Languages">Vernacular Languages</fr:title>
@@ -1271,7 +1353,7 @@ eval (App f v) =
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>328</fr:anchor>
+            <fr:anchor>333</fr:anchor>
             <fr:addr type="user">when-nonpos-okay</fr:addr>
             <fr:route>when-nonpos-okay.xml</fr:route>
             <fr:title text="When Nonpositivity is Acceptable">When Nonpositivity is Acceptable</fr:title>
@@ -1285,7 +1367,7 @@ eval (App f v) =
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>329</fr:anchor>
+            <fr:anchor>334</fr:anchor>
             <fr:addr type="user">why-formal-elab</fr:addr>
             <fr:route>why-formal-elab.xml</fr:route>
             <fr:title text="Why Formalize Elaboration?">Why Formalize Elaboration?</fr:title>

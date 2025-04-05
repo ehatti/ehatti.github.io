@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>415</fr:anchor>
+    <fr:anchor>420</fr:anchor>
     <fr:addr type="user">locally-nameless</fr:addr>
     <fr:route>locally-nameless.xml</fr:route>
     <fr:title text="Locally Nameless">Locally Nameless</fr:title>
@@ -21,7 +21,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>416</fr:anchor>
+            <fr:anchor>421</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>
@@ -60,6 +60,7 @@
                 <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="readable-theorems.xml" addr="readable-theorems" title="Should Kernel Theorems be Readable?">Should Kernel Theorems be Readable?</fr:link></fr:li>
                 <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-fol.xml" addr="rel-judgements-fol" title="Judgements and FOL">Judgements and FOL</fr:link></fr:li>
                 <fr:li><fr:strong>Remark</fr:strong>. <fr:link type="local" href="rel-judgements-natural-deduction.xml" addr="rel-judgements-natural-deduction" title="Judgements and Natural Deduction">Judgements and Natural Deduction</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="semantics.xml" addr="semantics" title="Semantics">Semantics</fr:link></fr:li>
                 <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="signature.xml" addr="signature" title="Signatures">Signatures</fr:link></fr:li>
                 <fr:li><fr:strong>Lemma</fr:strong>. <fr:link type="local" href="srs-eager-is-eager.xml" addr="srs-eager-is-eager" title="Eager Evaluation is Eager">Eager Evaluation is Eager</fr:link></fr:li>
                 <fr:li><fr:strong>Proof</fr:strong>. <fr:link type="local" href="srs-eager-prop-proof.xml" addr="srs-eager-prop-proof" title="Local Rewriting Preserves Normal Forms">Local Rewriting Preserves Normal Forms</fr:link></fr:li>
@@ -67,6 +68,8 @@
                 <fr:li><fr:strong>Theorem</fr:strong>. <fr:link type="local" href="srs-eager-twice-noop.xml" addr="srs-eager-twice-noop" title="Normalizing Normalize Does Nothing">Normalizing Normalize Does Nothing</fr:link></fr:li>
                 <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="srs-eager.xml" addr="srs-eager" title="Eager Evaluation in String Rewrite Systems">Eager Evaluation in String Rewrite Systems</fr:link></fr:li>
                 <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="string-rewrite-system.xml" addr="string-rewrite-system" title="String Rewrite System">String Rewrite System</fr:link></fr:li>
+                <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="syntax-vs-semantics.xml" addr="syntax-vs-semantics" title="Syntax and Semantics">Syntax and Semantics</fr:link></fr:li>
+                <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="syntax.xml" addr="syntax" title="Syntax">Syntax</fr:link></fr:li>
                 <fr:li><fr:strong>Definition</fr:strong>. <fr:link type="local" href="tactics.xml" addr="tactics" title="Tactics">Tactics</fr:link></fr:li>
                 <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-algebra.xml" addr="tt-as-algebra" title="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:link></fr:li>
                 <fr:li><fr:strong>Discussion</fr:strong>. <fr:link type="local" href="tt-as-cwf.xml" addr="tt-as-cwf" title="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:link></fr:li>
@@ -81,7 +84,7 @@
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>417</fr:anchor>
+            <fr:anchor>422</fr:anchor>
             <fr:addr type="user">hoas-cons</fr:addr>
             <fr:route>hoas-cons.xml</fr:route>
             <fr:title text="Cons of HOAS">Cons of HOAS</fr:title>

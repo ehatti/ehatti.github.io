@@ -2,139 +2,48 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>503</fr:anchor>
-    <fr:addr type="user">tt-as-algebra</fr:addr>
-    <fr:route>tt-as-algebra.xml</fr:route>
-    <fr:title text="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:title>
+    <fr:anchor>484</fr:anchor>
+    <fr:addr type="user">syntax-vs-semantics</fr:addr>
+    <fr:route>syntax-vs-semantics.xml</fr:route>
+    <fr:title text="Syntax and Semantics">Syntax and Semantics</fr:title>
     <fr:taxon>Discussion</fr:taxon>
     <fr:authors />
   </fr:frontmatter>
   <fr:mainmatter>
-    <fr:p>TODO</fr:p>
-  </fr:mainmatter>
-  <fr:backmatter>
-    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+    <fr:p>Mathematics is hard to define, especially the act of "doing" mathematics, but we can represent it in broad strokes by discussing <fr:em>syntax</fr:em> and <fr:em>semantics</fr:em>.</fr:p>
+    <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
       <fr:frontmatter>
-        <fr:title text="Context">Context</fr:title>
+        <fr:anchor>324</fr:anchor>
+        <fr:addr type="user">syntax</fr:addr>
+        <fr:route>syntax.xml</fr:route>
+        <fr:title text="Syntax">Syntax</fr:title>
+        <fr:taxon>Definition</fr:taxon>
         <fr:authors />
       </fr:frontmatter>
       <fr:mainmatter>
-        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-          <fr:frontmatter>
-            <fr:anchor>504</fr:anchor>
-            <fr:addr type="user">type-theory</fr:addr>
-            <fr:route>type-theory.xml</fr:route>
-            <fr:title text="Type Theory">Type Theory</fr:title>
-            <fr:taxon>Discussion</fr:taxon>
-            <fr:authors />
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:p>Type theory is a style of formal system that emphasizes syntax.</fr:p>
-            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-              <fr:frontmatter>
-                <fr:anchor>268</fr:anchor>
-                <fr:addr type="user">mltt-disc</fr:addr>
-                <fr:route>mltt-disc.xml</fr:route>
-                <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
-                <fr:taxon>Discussion</fr:taxon>
-                <fr:authors />
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-                  <fr:frontmatter>
-                    <fr:anchor>269</fr:anchor>
-                    <fr:addr type="user">mltt</fr:addr>
-                    <fr:route>mltt.xml</fr:route>
-                    <fr:title text="Martin-Löf Type Theory">Martin-Löf Type Theory</fr:title>
-                    <fr:taxon>Definition</fr:taxon>
-                    <fr:authors />
-                  </fr:frontmatter>
-                  <fr:mainmatter>
-                    <fr:p>Martin-Löf Type Theory (MLTT) is a family of <fr:link type="local" href="type-theory.xml" addr="type-theory" title="Type Theory">type theories</fr:link>, and the original form can be regarded as the first "modern" type theory. MLTTs are presented as <fr:link type="local" href="first-order-theory.xml" addr="first-order-theory" title="Theories">formal systems</fr:link> over the following four judgements.
-  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type.</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types.</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex>.</fr:li></fr:ul></fr:p>
-                  </fr:mainmatter>
-                  <fr:backmatter />
-                </fr:tree>
-                <fr:p>Combined with <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">hypothetical and generalized judgements</fr:link>, the rules of MLTT may then be presented. For instance, the rules for function types look like the following.</fr:p>
-                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-                  <fr:frontmatter>
-                    <fr:anchor>270</fr:anchor>
-                    <fr:addr type="user">mltt-pi-rules</fr:addr>
-                    <fr:route>mltt-pi-rules.xml</fr:route>
-                    <fr:title text="Rules for Pi Types in MLTT">Rules for Pi Types in MLTT</fr:title>
-                    <fr:taxon>Definition</fr:taxon>
-                    <fr:authors />
-                  </fr:frontmatter>
-                  <fr:mainmatter>
-                    <fr:p>
-                      <fr:ul><fr:li>Formation, introduction, elimination.
-      <fr:tex display="block"><![CDATA[         \frac {           A \, \text {type} \quad            \{x\} \, x : A \vdash  B \, \text {type}         }{           \Pi _{x : A} \, B \, \text {type}         }         \quad          \frac {           \{x\} \, x : A \vdash  e : B         }{           \lambda  x. \, e : \Pi _{x : A} \, B         }         \quad          \frac {           f : \Pi _{x : A} \, B \quad            a : A         }{           f \, a : B[x \mapsto  a]         }       ]]></fr:tex></fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\beta ]]></fr:tex> and <fr:tex display="inline"><![CDATA[\eta ]]></fr:tex> equations.
-      <fr:tex display="block"><![CDATA[         \frac {           A \, \text {type} \quad            \{x\} \, x : A \vdash  e : B \quad            a : A         }{           (\lambda  x. \, e) \, a = e[x \mapsto  a] : B[x \mapsto  a]         }         \quad          \frac {           f : \Pi _{x : A} \, B         }{           f = \lambda  x. \, f \, x : \Pi _{x : A} \, B         }       ]]></fr:tex></fr:li></fr:ul>
-                    </fr:p>
-                  </fr:mainmatter>
-                  <fr:backmatter />
-                </fr:tree>
-                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-                  <fr:frontmatter>
-                    <fr:anchor>271</fr:anchor>
-                    <fr:addr type="user">mltt-pres-trad</fr:addr>
-                    <fr:route>mltt-pres-trad.xml</fr:route>
-                    <fr:title text="Traditional Presentation of MLTT">Traditional Presentation of MLTT</fr:title>
-                    <fr:taxon>Remark</fr:taxon>
-                    <fr:authors />
-                  </fr:frontmatter>
-                  <fr:mainmatter>
-                    <fr:p>In contrast to <fr:link type="local" href="mltt.xml" addr="mltt" title="Martin-Löf Type Theory">my presentation of MLTT's judgements</fr:link>, the traditional presentation of MLTT usually combines the hypothetical judgement with each of the typing/equation <fr:link type="external" href="judgements">judgements</fr:link>, i.e the traditional presentation looks like the following.
-  <fr:ul><fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  A \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> is a well-formed type in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  A = B \, \text {type}]]></fr:tex>. <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> are equal types in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  s : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> has type <fr:tex display="inline"><![CDATA[A]]></fr:tex> in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li>
-    <fr:li><fr:tex display="inline"><![CDATA[\Gamma  \vdash  s = t : A]]></fr:tex>. <fr:tex display="inline"><![CDATA[s]]></fr:tex> and <fr:tex display="inline"><![CDATA[t]]></fr:tex> are equal terms of type <fr:tex display="inline"><![CDATA[A]]></fr:tex> in context <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex>.</fr:li></fr:ul>
-  Where each <fr:tex display="inline"><![CDATA[\Gamma ]]></fr:tex> are <fr:em>multisets</fr:em> containing typings <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. Finally, the <fr:link type="local" href="judgement.xml" addr="judgement" title="Judgements">generalized judgement</fr:link> is left implicit. This more specialized presentation is valid because in traditional MLTT, the hypothetical judgements <fr:em>only</fr:em> abstract over typing judgements <fr:tex display="inline"><![CDATA[x : A]]></fr:tex>. I use the contextless presentation because it is more general and also a bit easier to read.</fr:p>
-                  </fr:mainmatter>
-                  <fr:backmatter />
-                </fr:tree>
-              </fr:mainmatter>
-              <fr:backmatter />
-            </fr:tree>
-            <fr:p>The metatheory of type theory is still being developed, but generally people have converged on giving type theories semantics in <fr:link type="local" href="categories-with-families.xml" addr="categories-with-families" title="Categories with Families">categories with families</fr:link> and <fr:link type="local" href="algebra.xml" addr="algebra" title="Algebra">algebraic theories</fr:link>.</fr:p>
-            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-              <fr:frontmatter>
-                <fr:anchor>272</fr:anchor>
-                <fr:addr type="user">tt-as-cwf</fr:addr>
-                <fr:route>tt-as-cwf.xml</fr:route>
-                <fr:title text="Type Theories as Categories with Families">Type Theories as Categories with Families</fr:title>
-                <fr:taxon>Discussion</fr:taxon>
-                <fr:authors />
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <fr:p>TODO</fr:p>
-              </fr:mainmatter>
-              <fr:backmatter />
-            </fr:tree>
-            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-              <fr:frontmatter>
-                <fr:anchor>273</fr:anchor>
-                <fr:addr type="user">tt-as-algebra</fr:addr>
-                <fr:route>tt-as-algebra.xml</fr:route>
-                <fr:title text="Type Theories as Algebraic Theories">Type Theories as Algebraic Theories</fr:title>
-                <fr:taxon>Discussion</fr:taxon>
-                <fr:authors />
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <fr:p>TODO</fr:p>
-              </fr:mainmatter>
-              <fr:backmatter />
-            </fr:tree>
-          </fr:mainmatter>
-          <fr:backmatter />
-        </fr:tree>
+        <fr:p>Let's say we have some object which the working mathematician has just started to study. The mathematician has some intuitive understanding of how the object works, but they want to study the object in a formal, mathematical manner. As a start, they invent some notation for depicting the object on paper (or a computer screen, or whatever else). Next, using whatever language they are most comfortable in -- be that a natural language or some more formal notation -- they write down the <fr:em>properties</fr:em> they expect the object to satisfy.</fr:p>
+        <fr:p>What I have just described is a mathematician creating a <fr:strong>syntax</fr:strong>. A syntax represents a surface-level and literal understanding of an object being studied. It represents how the object is used, observed, and manipulated in everyday practice -- it conveys only what is immediately apparent and obvious about the object and nothing more. This is an <fr:em>essential</fr:em> purpose, and it is exactly one half of the picture that <fr:link type="local" href="semantics.xml" addr="semantics" title="Semantics">semantics</fr:link> completes.</fr:p>
       </fr:mainmatter>
       <fr:backmatter />
     </fr:tree>
+    <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:anchor>325</fr:anchor>
+        <fr:addr type="user">semantics</fr:addr>
+        <fr:route>semantics.xml</fr:route>
+        <fr:title text="Semantics">Semantics</fr:title>
+        <fr:taxon>Definition</fr:taxon>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:p>Previously, the working mathematician started studying some object, and developed a <fr:link type="local" href="syntax.xml" addr="syntax" title="Syntax">syntax</fr:link> for it. Now this mathematician has been studying the object for a good while. They have a good idea of what properties the object satisfies and how it works, but they want a deeper understanding. The problem that this mathematician faces is that their syntax is a <fr:em>walled garden</fr:em>. Their invented notation and axioms makes sense to them, but only to them! How is anyone else supposed to understand what it is that they are studying?</fr:p>
+        <fr:p>Realizing this, the mathematician talks with their colleagues and starts to draw analogies to established areas of math that their colleagues are more familiar with. "Oh, my object <fr:tex display="inline"><![CDATA[A]]></fr:tex> is like <fr:tex display="inline"><![CDATA[B]]></fr:tex>, but with <fr:tex display="inline"><![CDATA[C]]></fr:tex> removed", or "You see, <fr:tex display="inline"><![CDATA[A]]></fr:tex> is just like <fr:tex display="inline"><![CDATA[D]]></fr:tex> if you convert <fr:tex display="inline"><![CDATA[e]]></fr:tex> to <fr:tex display="inline"><![CDATA[f(e)]]></fr:tex>", or "Actually, the property <fr:tex display="inline"><![CDATA[P]]></fr:tex> is really just like your property <fr:tex display="inline"><![CDATA[Q]]></fr:tex>".</fr:p>
+        <fr:p>Slowly through these analogies, everyone comes to an understanding about what exactly our mathematician has developed. These analogies are what mathematicians call <fr:strong>semantics</fr:strong>, and they are the other half of the picture that <fr:link type="local" href="syntax.xml" addr="syntax" title="Syntax">syntax</fr:link> starts. If syntax represents the intuitive, surface-level, and somewhat trivial understanding of an object, semantics represents the deep and nontrivial understanding of the object <fr:em>in terms of</fr:em> other, more established mathematical objects.</fr:p>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:mainmatter>
+  <fr:backmatter>
     <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
       <fr:frontmatter>
         <fr:title text="Backlinks">Backlinks</fr:title>
@@ -143,7 +52,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>505</fr:anchor>
+            <fr:anchor>485</fr:anchor>
             <fr:addr type="user">pages</fr:addr>
             <fr:route>pages.xml</fr:route>
             <fr:title text="All Pages">All Pages</fr:title>
